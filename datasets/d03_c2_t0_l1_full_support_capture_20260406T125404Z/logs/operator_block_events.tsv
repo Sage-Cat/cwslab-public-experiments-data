@@ -1,0 +1,19 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_started	-	0	1775480048308	2026-04-06 15:54:08 EEST	serial/esp32_guided_session.log
+block_started	W0	120	1775480151778	2026-04-06 15:55:51 EEST	technical warm-up and raw-stream sanity check before the D03 support capture
+block_finished	W0	120	1775480272041	2026-04-06 15:57:52 EEST	
+block_started	E1	180	1775480275772	2026-04-06 15:57:55 EEST	extended empty reference for local-features and raw-central comparison
+block_finished	E1	180	1775480456174	2026-04-06 16:00:56 EEST	
+block_started	S1	150	1775480557623	2026-04-06 16:02:37 EEST	extended static presence support segment
+block_finished	S1	150	1775480707959	2026-04-06 16:05:07 EEST	
+block_started	M1	150	1775480710371	2026-04-06 16:05:10 EEST	extended slow-motion support segment
+block_finished	M1	150	1775480860709	2026-04-06 16:07:40 EEST	
+block_started	E2	180	1775480870282	2026-04-06 16:07:50 EEST	extended empty recovery after the first long cycle
+block_finished	E2	180	1775481050678	2026-04-06 16:10:50 EEST	
+block_started	S2	150	1775481072272	2026-04-06 16:11:12 EEST	second extended static presence support segment
+block_finished	S2	150	1775481222612	2026-04-06 16:13:42 EEST	
+block_started	M2	150	1775481227897	2026-04-06 16:13:47 EEST	second extended slow-motion support segment
+block_finished	M2	150	1775481378229	2026-04-06 16:16:18 EEST	
+block_started	E3	180	1775481392216	2026-04-06 16:16:32 EEST	final extended empty recovery for comparator anchoring
+block_finished	E3	180	1775481572610	2026-04-06 16:19:32 EEST	
+capture_finished	-	0	1775481576196	2026-04-06 16:19:36 EEST	serial/esp32_guided_session.log

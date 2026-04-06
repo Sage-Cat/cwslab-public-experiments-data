@@ -13,7 +13,7 @@ It does not claim full 802.11bf or EasyMesh compliance. Public wording stays car
 ## Status Snapshot
 
 - Repository status: public-derived, self-contained dataset repository
-- Published measured bundles: `5`
+- Published measured bundles: `6`
 - Excluded raw-incomplete candidate bundles: `1`
 - Git tagging rule: `experiment/<bundle-id>`
 - Public hardware naming rule: `primary prplOS-compatible dual-band AP node`
@@ -85,6 +85,7 @@ cwslab-public-experiments-data/
 | `d01_c1_t0_l1_repeatability_20260406T095034Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T095034Z` | `2026-04-06T09:50:34+00:00` | Dissertation-aligned repeatability baseline under the same stand geometry. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
 | `d01_c1_t0_l1_repeatability_20260406T113903Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T113903Z` | `2026-04-06T11:39:03+00:00` | Dissertation-aligned repeatability baseline rerun under the same stand geometry with full block coverage. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
 | `d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `experiment/d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `2026-04-06T12:24:40+00:00` | Honest quiet-control candidate on the same stand with an explicit downgrade-to-`L1` gate unless quietness is independently confirmed. | `D02`, `C1 / T0 / L0` | Raw serial log + operator block-event log |
+| `d03_c2_t0_l1_full_support_capture_20260406T125404Z` | `experiment/d03_c2_t0_l1_full_support_capture_20260406T125404Z` | `2026-04-06T12:54:04+00:00` | Full-support capture on the same stand with extended comparator windows for later local-feature and raw-central analysis. | `D03`, `C2 / T0 / L1` | Raw serial log + operator block-event log |
 
 ## What A Published Bundle Contains
 
