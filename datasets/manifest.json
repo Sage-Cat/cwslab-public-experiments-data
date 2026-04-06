@@ -1,0 +1,94 @@
+{
+  "repository": "cwslab-public-experiments-data",
+  "generated_from": "cws-lab",
+  "generated_at": "2026-04-06T13:43:16+03:00",
+  "datasets": [
+    {
+      "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
+      "status": "published",
+      "source_bundle": "experiments/runs/w01_e01_c1_t0_l1_baseline_20260330T101537Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "serial/esp32_guided_session.log"
+      ],
+      "excluded_surfaces": [
+        "analysis/",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "scripts/",
+        "session.env"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths and internal plan references",
+        "removed AP host/device identifiers and credential material",
+        "kept raw serial capture and operator block timing surface"
+      ]
+    },
+    {
+      "bundle_id": "w03_e05_c2_t0_l1_low_density_support_20260330T130337Z",
+      "status": "published",
+      "source_bundle": "experiments/runs/w03_e05_c2_t0_l1_low_density_support_20260330T130337Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "serial/esp32_guided_session.log"
+      ],
+      "excluded_surfaces": [
+        "analysis/",
+        "analysis_handoff*",
+        "experiment_report*",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "scripts/",
+        "session.env"
+      ],
+      "sanitization_summary": [
+        "removed future-plan and internal-analysis references where they were not needed for public dataset context",
+        "removed absolute local paths and private runtime identifiers",
+        "kept raw serial capture and operator block timing surface"
+      ]
+    },
+    {
+      "bundle_id": "d01_c1_t0_l1_repeatability_20260406T095034Z",
+      "status": "published",
+      "source_bundle": "experiments/runs/d01_c1_t0_l1_repeatability_20260406T095034Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "serial/esp32_guided_session.log"
+      ],
+      "excluded_surfaces": [
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/operator_block_log.md",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "scripts/",
+        "session.env"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths and non-public device identifiers",
+        "removed AP credentials and runtime-specific environment details",
+        "kept raw serial capture and operator block timing surface"
+      ]
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "bundle_id": "w01_e02_c1_t0_l1_repeat_20260330T121227Z",
+      "status": "excluded",
+      "reason": "metadata and runbook were present, but the bundle did not contain a publishable raw serial capture or operator-event log surface."
+    }
+  ]
+}

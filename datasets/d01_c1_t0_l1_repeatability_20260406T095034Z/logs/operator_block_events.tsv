@@ -1,0 +1,12 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_started	-	0	1775469042955	2026-04-06 12:50:42 EEST	serial/esp32_guided_session.log
+block_started	W0	120	1775469370891	2026-04-06 12:56:10 EEST	post-reset technical warm-up and transport sanity check
+block_finished	W0	120	1775469491244	2026-04-06 12:58:11 EEST	
+block_started	E1	120	1775469565788	2026-04-06 12:59:25 EEST	empty scene repeated baseline
+block_finished	E1	120	1775469686144	2026-04-06 13:01:26 EEST	
+block_started	S1	120	1775469748858	2026-04-06 13:02:28 EEST	repeated static presence in the controlled path
+block_finished	S1	120	1775469869224	2026-04-06 13:04:29 EEST	
+block_started	M1	120	1775469911260	2026-04-06 13:05:11 EEST	repeated slow motion in the controlled path
+block_finished	M1	120	1775470031629	2026-04-06 13:07:11 EEST	
+block_started	E2	120	1775470180364	2026-04-06 13:09:40 EEST	empty scene recovery after the first repeated motion cycle
+block_finished	E2	120	1775470300701	2026-04-06 13:11:40 EEST	

@@ -1,0 +1,12 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_started	-	0	1774875821991	2026-03-30 16:03:41 EEST	serial/esp32_guided_session.log
+block_started	W0	120	1774875960634	2026-03-30 16:06:00 EEST	technical warm-up and raw-stream sanity check before the C2 support capture
+block_finished	W0	120	1774876080965	2026-03-30 16:08:00 EEST	
+block_started	E1	180	1774876212534	2026-03-30 16:10:12 EEST	extended empty reference for reduced-density and compression support
+block_finished	E1	180	1774876393003	2026-03-30 16:13:12 EEST	
+block_started	S1	150	1774876469153	2026-03-30 16:14:29 EEST	extended static presence support segment
+block_finished	S1	150	1774876619550	2026-03-30 16:16:59 EEST	
+block_started	M1	150	1774877045150	2026-03-30 16:24:05 EEST	extended slow-motion support segment
+block_finished	M1	150	1774877195580	2026-03-30 16:26:35 EEST	
+block_started	E2	180	1774877254457	2026-03-30 16:27:34 EEST	extended empty recovery after the first long cycle
+block_finished	E2	180	1774877434957	2026-03-30 16:30:34 EEST	

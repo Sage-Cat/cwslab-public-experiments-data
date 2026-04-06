@@ -1,0 +1,46 @@
+@startuml
+title Repository Layout
+
+skinparam backgroundColor white
+skinparam shadowing false
+skinparam packageStyle rectangle
+
+package "cwslab-public-experiments-data" {
+  folder "docs" {
+    folder "plan"
+    folder "architecture" {
+      folder "diagrams"
+    }
+    folder "structure" {
+      folder "diagrams"
+    }
+    folder "dataset-policy"
+  }
+
+  folder "scripts" {
+    file "run_session.sh"
+    file "run_*.sh"
+    file "render_diagrams.sh"
+    folder "sessions" {
+      folder "<session-id>" {
+        file "blocks.tsv"
+        file "session.env.example"
+      }
+    }
+  }
+
+  folder "datasets" {
+    file "manifest.json"
+    folder "<bundle-id>" {
+      file "metadata.json"
+      file "runbook.md"
+      file "operator_notes.md"
+      folder "logs" {
+        file "operator_block_events.tsv"
+      }
+      folder "serial"
+    }
+  }
+}
+
+@enduml

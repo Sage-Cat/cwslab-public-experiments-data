@@ -1,0 +1,33 @@
+@startuml
+title Public Repository Context
+
+skinparam backgroundColor white
+skinparam componentStyle rectangle
+skinparam shadowing false
+
+actor Operator
+component "scripts/\npublic launch surface" as Scripts
+component "scripts/sessions/\nsession profiles" as Profiles
+component "runtime output bundle\n(local operator workspace)" as RuntimeBundle
+database "datasets/\ncurated measured bundles" as Datasets
+component "datasets/manifest.json\npublication index" as Manifest
+component "docs/\npublic repository docs" as Docs
+
+Operator --> Scripts : launch a reference session
+Scripts --> Profiles : load blocks and env template
+Scripts --> RuntimeBundle : write new capture bundle
+Docs --> Scripts : describe usage and boundaries
+Docs --> Datasets : document publication rules
+Manifest --> Datasets : index curated bundles
+
+note right of Scripts
+Reference implementation only.
+No full 802.11bf or EasyMesh compliance claim.
+end note
+
+note bottom of Datasets
+Published bundles keep raw/public-safe surfaces only.
+Derived analysis is excluded.
+end note
+
+@enduml

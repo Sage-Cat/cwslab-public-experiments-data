@@ -1,0 +1,5 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_started	-	0	1774865742432	2026-03-30 13:15:42 EEST	serial/esp32_guided_session.log
+block_started	W0	120	1774867780413	2026-03-30 13:49:40 EEST	technical warm-up and transport sanity check
+block_finished	W0	120	1774867900727	2026-03-30 13:51:40 EEST	
+block_started	E1	120	1774867943839	2026-03-30 13:52:23 EEST	empty scene, first baseline
