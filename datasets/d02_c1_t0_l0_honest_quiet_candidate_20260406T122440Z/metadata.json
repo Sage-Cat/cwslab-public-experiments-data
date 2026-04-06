@@ -1,0 +1,197 @@
+{
+  "config": {
+    "ap": {
+      "kind": "ssh",
+      "public_node_role": "primary prplOS-compatible dual-band AP node",
+      "snapshot_command_names": [
+        "uname",
+        "ip-brief",
+        "iw-dev",
+        "iwinfo",
+        "ping-esp32"
+      ],
+      "ssh_args": [
+        "-o",
+        "StrictHostKeyChecking=accept-new"
+      ]
+    },
+    "ap_control": {
+      "access_point_enable": true,
+      "access_point_ref": "Device.WiFi.AccessPoint.3.",
+      "auto_channel_enable": false,
+      "bridge_interface": "br-lan",
+      "channel": 36,
+      "key_passphrase": "<redacted>",
+      "multi_ap_type": null,
+      "operating_channel_bandwidth": "20MHz",
+      "profile_id": "public_reference_ap_profile",
+      "radio_enable": true,
+      "radio_ref": "Device.WiFi.Radio.2.",
+      "security_mode_enabled": "WPA2-Personal",
+      "ssid_advertisement_enabled": true,
+      "ssid_enable": true,
+      "ssid_name": "<redacted>",
+      "ssid_ref": "Device.WiFi.SSID.4.",
+      "wds_enable": false,
+      "wps_cert_mode_enable": null,
+      "wps_enable": false
+    },
+    "capture_blocks": [
+      {
+        "block_id": "W0",
+        "duration_s": 90,
+        "human_present": false,
+        "objective": "confirm that the path is stable before the optional quiet-window run",
+        "operator_instructions": [
+          "Confirm that D01 has already been completed and saved.",
+          "Stay outside the controlled path between AP and ESP32-C5.",
+          "If the path looks unstable or the background is not honestly quieter, stop and do not claim L0."
+        ],
+        "scenario": "short technical warm-up before the quiet-control attempt"
+      },
+      {
+        "block_id": "E1",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "capture a stronger empty control segment under the quietest background that can be honestly defended",
+        "operator_instructions": [
+          "Leave the controlled 2.00 m path between AP and ESP32-C5.",
+          "If possible, leave the room or stand far enough to avoid affecting the radio path.",
+          "Keep the room layout unchanged and minimize nearby human activity."
+        ],
+        "scenario": "longer empty baseline under the quietest honestly available condition"
+      },
+      {
+        "block_id": "S1",
+        "duration_s": 120,
+        "human_present": true,
+        "objective": "capture one static-presence segment under the same quiet-control condition",
+        "operator_instructions": [
+          "Enter the midpoint of the controlled path between AP and ESP32-C5.",
+          "Stand almost still with a natural posture.",
+          "Do not touch the chair, AP, table, or cables."
+        ],
+        "scenario": "static presence under the same quiet-control attempt"
+      },
+      {
+        "block_id": "M1",
+        "duration_s": 120,
+        "human_present": true,
+        "objective": "capture one slow-motion segment under the same quiet-control condition",
+        "operator_instructions": [
+          "Stay within the same controlled path between AP and ESP32-C5.",
+          "Move slowly back and forth without leaving the corridor.",
+          "Do not change the topology of the stand."
+        ],
+        "scenario": "slow motion under the same quiet-control attempt"
+      },
+      {
+        "block_id": "E2",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "finish the run with a second long empty reference under the same quiet-control condition",
+        "operator_instructions": [
+          "Leave the controlled path one final time.",
+          "If possible, leave the room or stand far enough to avoid affecting the radio path.",
+          "Keep the room layout unchanged until the capture is stopped."
+        ],
+        "scenario": "final empty recovery under the same quiet-control attempt"
+      }
+    ],
+    "description": "D02 honest quiet-control candidate on the current single-link stand.",
+    "experiment_plan_path": "<not-published>",
+    "firmware": {
+      "build_command": "idf.py build",
+      "env_script": "<redacted>",
+      "flash_command": "idf.py -p <serial-device> flash",
+      "root": "<redacted>",
+      "target": "esp32c5",
+      "tools_path": "<redacted>"
+    },
+    "local_preflight_commands": [
+      "python3 --version",
+      "git rev-parse --show-toplevel",
+      "ping -c 2 -W 1 <primary-ap-host>"
+    ],
+    "operator_notes": [
+      "Honest quiet-control candidate captured on the same physical stand as D01.",
+      "Run this only if D01 already produced a usable repeatability package.",
+      "Keep the primary prplOS-compatible dual-band AP node on 5 GHz / channel 36 / 20 MHz.",
+      "Do not claim L0 if the room and network background are not independently quieter than ordinary L1."
+    ],
+    "output_root": "<redacted>",
+    "research": {
+      "baselines": [
+        "B0",
+        "B1"
+      ],
+      "campaign_code": "C1",
+      "condition_code": "L0",
+      "condition_confirmation": "independent_confirmation_required",
+      "execution_mode": "H",
+      "fallback_condition_code": "L1",
+      "honesty_notes": [
+        "This runtime surface does not prove L0 automatically.",
+        "Disabling Wi-Fi on the control laptop alone is not sufficient evidence for L0."
+      ],
+      "novelty_placeholders": [],
+      "program_id": "D02",
+      "support_level": "full",
+      "topology_code": "T0"
+    },
+    "sensor": {
+      "baud_rate": 115200,
+      "capture_seconds": 1020,
+      "device": "<redacted-serial-device>",
+      "kind": "serial_tty",
+      "pre_capture_commands": []
+    },
+    "session_id": "d02_c1_t0_l0_honest_quiet_candidate",
+    "workspace_root": "<redacted>"
+  },
+  "config_path": "<not-published>",
+  "generated_at_utc": "2026-04-06T12:24:40+00:00",
+  "scripts": [
+    {
+      "step_id": "preflight_local",
+      "description": "Check local WSL/Linux dependencies and capture-device visibility."
+    },
+    {
+      "step_id": "ap_configure",
+      "description": "Apply the requested router radio, SSID, and AccessPoint settings."
+    },
+    {
+      "step_id": "ap_snapshot",
+      "description": "Collect router-side snapshots over SSH or serial console."
+    },
+    {
+      "step_id": "firmware_build",
+      "description": "Build the configured ESP32 firmware workspace."
+    },
+    {
+      "step_id": "firmware_flash",
+      "description": "Flash the configured ESP32 firmware workspace."
+    },
+    {
+      "step_id": "serial_capture",
+      "description": "Capture the ESP32 serial stream for the configured duration."
+    },
+    {
+      "step_id": "operator_guided_capture",
+      "description": "Run a continuous serial capture and pause for operator confirmation between configured capture blocks."
+    },
+    {
+      "step_id": "run_experiment",
+      "description": "Run preflight, AP setup, AP snapshot, and then the interactive operator-guided capture sequence."
+    }
+  ],
+  "publication": {
+    "surface": "public-safe measured dataset repository",
+    "sanitization": [
+      "absolute local paths removed",
+      "AP host/device identifiers removed",
+      "credentials and passphrases removed",
+      "derived analysis/reporting references removed"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "repository": "cwslab-public-experiments-data",
   "generated_from": "cws-lab",
-  "generated_at": "2026-04-06T15:07:18+03:00",
+  "generated_at": "2026-04-06T15:42:25+03:00",
   "datasets": [
     {
       "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
@@ -113,6 +113,39 @@
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
         "kept raw serial capture and operator block timing surface"
+      ]
+    },
+    {
+      "bundle_id": "d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z",
+      "status": "published",
+      "source_bundle": "experiments/runs/d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "serial/esp32_guided_session.log"
+      ],
+      "excluded_surfaces": [
+        "analysis/",
+        "analysis_handoff*",
+        "artifact_checklist.md",
+        "experiment_report*",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/operator_block_log.md",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "manifest.json",
+        "qc_summary*",
+        "runner-logs/",
+        "scripts/",
+        "session.env"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths and non-public device identifiers",
+        "removed AP credentials and runtime-specific environment details",
+        "kept raw serial capture and operator block timing surface while preserving the honest L0 downgrade gate"
       ]
     }
   ],

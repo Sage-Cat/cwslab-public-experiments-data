@@ -1,0 +1,13 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_started	-	0	1775478284961	2026-04-06 15:24:44 EEST	serial/esp32_guided_session.log
+block_started	W0	90	1775478322352	2026-04-06 15:25:22 EEST	short technical warm-up before the quiet-control attempt
+block_finished	W0	90	1775478412562	2026-04-06 15:26:52 EEST	
+block_started	E1	180	1775478423377	2026-04-06 15:27:03 EEST	longer empty baseline under the quietest honestly available condition
+block_finished	E1	180	1775478603774	2026-04-06 15:30:03 EEST	
+block_started	S1	120	1775478625431	2026-04-06 15:30:25 EEST	static presence under the same quiet-control attempt
+block_finished	S1	120	1775478745705	2026-04-06 15:32:25 EEST	
+block_started	M1	120	1775478794045	2026-04-06 15:33:14 EEST	slow motion under the same quiet-control attempt
+block_finished	M1	120	1775478914319	2026-04-06 15:35:14 EEST	
+block_started	E2	180	1775478919397	2026-04-06 15:35:19 EEST	final empty recovery under the same quiet-control attempt
+block_finished	E2	180	1775479099809	2026-04-06 15:38:19 EEST	
+capture_finished	-	0	1775479108380	2026-04-06 15:38:28 EEST	serial/esp32_guided_session.log

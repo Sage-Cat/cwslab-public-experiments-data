@@ -13,7 +13,7 @@ It does not claim full 802.11bf or EasyMesh compliance. Public wording stays car
 ## Status Snapshot
 
 - Repository status: public-derived, self-contained dataset repository
-- Published measured bundles: `4`
+- Published measured bundles: `5`
 - Excluded raw-incomplete candidate bundles: `1`
 - Git tagging rule: `experiment/<bundle-id>`
 - Public hardware naming rule: `primary prplOS-compatible dual-band AP node`
@@ -40,6 +40,7 @@ The identifiers below are local shorthand used by this project. They are not pub
 | `C1` | Campaign code for single-link baseline and repeatability evidence on the current stand. |
 | `C2` | Campaign code for single-link support/comparator captures on the same stand. |
 | `T0` | The current single-link stand topology. |
+| `L0` | Honest quiet-control candidate that still requires independent confirmation before being claimed as quieter than ordinary `L1`. |
 | `L1` | The ordinary observed lab condition used as the honest baseline condition in the published runs here. |
 | `baseline` | First structured reference capture for a condition/topology combination. |
 | `repeat` | A repeated run intended to test short-term repeatability after reset or rerun. |
@@ -83,6 +84,7 @@ cwslab-public-experiments-data/
 | `w03_e05_c2_t0_l1_low_density_support_20260330T130337Z` | `experiment/w03_e05_c2_t0_l1_low_density_support_20260330T130337Z` | `2026-03-30T13:03:37+00:00` | Support capture for reduced-density and comparator studies on the same stand. | `C2 / T0 / L1` | Raw serial log + operator block-event log |
 | `d01_c1_t0_l1_repeatability_20260406T095034Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T095034Z` | `2026-04-06T09:50:34+00:00` | Dissertation-aligned repeatability baseline under the same stand geometry. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
 | `d01_c1_t0_l1_repeatability_20260406T113903Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T113903Z` | `2026-04-06T11:39:03+00:00` | Dissertation-aligned repeatability baseline rerun under the same stand geometry with full block coverage. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
+| `d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `experiment/d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `2026-04-06T12:24:40+00:00` | Honest quiet-control candidate on the same stand with an explicit downgrade-to-`L1` gate unless quietness is independently confirmed. | `D02`, `C1 / T0 / L0` | Raw serial log + operator block-event log |
 
 ## What A Published Bundle Contains
 
