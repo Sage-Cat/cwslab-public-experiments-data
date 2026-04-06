@@ -1,66 +1,116 @@
 # cwslab-public-experiments-data
 
-Public-safe experimental launch scripts and measured dataset bundles derived from the local `cws-lab` monorepo.
+Public-safe launch scripts, curated measured bundles, and lightweight reference documentation for cooperative Wi-Fi sensing experiments.
 
-This repository is a measured dataset repository and reference implementation surface for cooperative Wi-Fi sensing experiments. It keeps only the public launch surface, curated raw measurement bundles, and self-contained repository documentation. It does not claim full 802.11bf or EasyMesh compliance; the materials here are `802.11bf-inspired`, use `EasyMesh-inspired metrics/control-plane alignment`, and remain a `reference implementation` plus `measured dataset repository`.
+This repository is a `measured dataset repository` plus a `reference implementation` surface. It keeps only the material needed to understand and reuse the published experiments:
 
-## What This Repository Contains
+- measured raw capture bundles
+- public-safe launch wrappers
+- concise documentation for structure, architecture, and dataset policy
 
-- public-safe hardware launch scripts for sessions that target a `primary prplOS-compatible dual-band AP node`
-- curated measured dataset bundles with raw serial captures, operator block-event logs, and sanitized metadata
-- public repository docs for plan, architecture, structure, and dataset publication policy
-- PlantUML sources under `docs/**/diagrams/` as the source of truth for repository diagrams
+It does not claim full 802.11bf or EasyMesh compliance. Public wording stays careful: `802.11bf-inspired`, `EasyMesh-inspired metrics/control-plane alignment`, and `reference implementation`.
 
-## What This Repository Excludes
+## Status Snapshot
 
-- analysis, reporting, dissertation, internal planning, status reviews, and internal Codex artifacts
-- `.codex/`, `reports/status/`, `docs/research/`, `site/`, `tests/`, and other non-public monorepo surfaces
-- derived artifacts such as `analysis/`, `analysis_handoff*`, `experiment_report*`, and `qc_summary*`
-- private or host-specific data such as absolute local paths, AP host/device identifiers, environment snapshots, credentials, and firmware workspace paths
-- AP snapshot/configuration logs that expose non-public device state or version details
+- Repository status: public-derived, self-contained dataset repository
+- Published measured bundles: `4`
+- Excluded raw-incomplete candidate bundles: `1`
+- Git tagging rule: `experiment/<bundle-id>`
+- Public hardware naming rule: `primary prplOS-compatible dual-band AP node`
 
-## Repository Layout
+## Why This Repository Exists
+
+The scientific value of this repository is concentrated in three places:
+
+- raw capture evidence that can be versioned and cited
+- operator block-event timing that preserves the capture sequence
+- compact metadata that explains what each run was meant to capture without exposing private infrastructure details
+
+Offline analysis, dissertation writing, internal planning, status reviews, and other non-public workflow surfaces are intentionally excluded.
+
+## Repository-Specific Notation
+
+The identifiers below are local shorthand used by this project. They are not public standards and should be read as repository conventions.
+
+| Token | Meaning In This Repository |
+| --- | --- |
+| `wNN` | Weekly experiment-series identifier used in the earlier hardware campaign workflow. |
+| `eNN` | Experiment number inside a weekly series. |
+| `dNN` | Dissertation-aligned experiment program identifier. |
+| `C1` | Campaign code for single-link baseline and repeatability evidence on the current stand. |
+| `C2` | Campaign code for single-link support/comparator captures on the same stand. |
+| `T0` | The current single-link stand topology. |
+| `L1` | The ordinary observed lab condition used as the honest baseline condition in the published runs here. |
+| `baseline` | First structured reference capture for a condition/topology combination. |
+| `repeat` | A repeated run intended to test short-term repeatability after reset or rerun. |
+| `repeatability` | A more explicit repeatability evidence package, here aligned with dissertation tracking. |
+| `low_density_support` | A support capture kept for later reduced-density or comparator studies rather than for a standalone final claim. |
+| `W0` | Warm-up / transport sanity-check block before the main labeled sequence. |
+| `E1`, `E2`, `E3` | Empty-scene blocks. |
+| `S1`, `S2` | Static-presence blocks. |
+| `M1`, `M2` | Motion blocks. |
+| `YYYYMMDDThhmmssZ` | UTC timestamp suffix attached to a bundle identifier. |
+
+## Main Structure
 
 ```text
 cwslab-public-experiments-data/
 ├── README.md
 ├── datasets/
+│   ├── manifest.json
+│   └── <bundle-id>/
+│       ├── metadata.json
+│       ├── runbook.md
+│       ├── operator_notes.md
+│       ├── logs/operator_block_events.tsv
+│       └── serial/
 ├── docs/
-│   ├── architecture/
-│   ├── dataset-policy/
 │   ├── plan/
-│   └── structure/
+│   ├── architecture/
+│   ├── structure/
+│   └── dataset-policy/
 └── scripts/
+    ├── run_session.sh
+    ├── run_*.sh
+    └── sessions/<session-id>/
 ```
 
-## Published Dataset Surface
+## Published Experiments
 
-- `datasets/w01_e01_c1_t0_l1_baseline_20260330T101537Z/`
-- `datasets/w03_e05_c2_t0_l1_low_density_support_20260330T130337Z/`
-- `datasets/d01_c1_t0_l1_repeatability_20260406T095034Z/`
+| Bundle ID | Git Tag | UTC Timestamp | Focus | Research Shorthand | Capture Surface |
+| --- | --- | --- | --- | --- | --- |
+| `w01_e01_c1_t0_l1_baseline_20260330T101537Z` | `experiment/w01_e01_c1_t0_l1_baseline_20260330T101537Z` | `2026-03-30T10:15:37+00:00` | First structured single-link baseline session with fixed operator blocks. | `C1 / T0 / L1` | Raw serial log + operator block-event log |
+| `w03_e05_c2_t0_l1_low_density_support_20260330T130337Z` | `experiment/w03_e05_c2_t0_l1_low_density_support_20260330T130337Z` | `2026-03-30T13:03:37+00:00` | Support capture for reduced-density and comparator studies on the same stand. | `C2 / T0 / L1` | Raw serial log + operator block-event log |
+| `d01_c1_t0_l1_repeatability_20260406T095034Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T095034Z` | `2026-04-06T09:50:34+00:00` | Dissertation-aligned repeatability baseline under the same stand geometry. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
+| `d01_c1_t0_l1_repeatability_20260406T113903Z` | `experiment/d01_c1_t0_l1_repeatability_20260406T113903Z` | `2026-04-06T11:39:03+00:00` | Dissertation-aligned repeatability baseline rerun under the same stand geometry with full block coverage. | `D01`, `C1 / T0 / L1` | Raw serial log + operator block-event log |
 
-Machine-readable publication status lives in `datasets/manifest.json`.
+## What A Published Bundle Contains
 
-## Script Surface
+- `metadata.json`: sanitized session metadata and block definitions
+- `runbook.md`: compact bundle-level summary
+- `operator_notes.md`: sanitized operator-facing notes and block instructions
+- `logs/operator_block_events.tsv`: machine-readable timing for the labeled block sequence
+- `serial/esp32_guided_session.log`: raw captured stream
 
-- `scripts/run_w01_e01_c1_t0_l1_baseline.sh`
-- `scripts/run_w01_e02_c1_t0_l1_repeat.sh`
-- `scripts/run_w03_e05_c2_t0_l1_low_density_support.sh`
-- `scripts/run_d01_c1_t0_l1_repeatability.sh`
-- `scripts/run_session.sh`
-- `scripts/render_diagrams.sh`
+## Current Evidence Boundaries
 
-The top-level wrappers are public-safe derivatives of the original monorepo launch wrappers. They no longer depend on the internal `cwslab` CLI and instead use session-local example configuration under `scripts/sessions/`.
+Included here:
 
-## How To Extend The Repository
+- measured raw/public-safe capture surfaces
+- bundle-level metadata needed to interpret the raw files
+- public-safe launch wrappers for reproducing the capture workflow
 
-- Add new measured runs by following [docs/dataset-policy/policy.md](docs/dataset-policy/policy.md) and updating `datasets/manifest.json`.
-- Add new launch scripts by creating a new session directory under `scripts/sessions/`, then adding a thin wrapper in `scripts/`.
-- Render diagrams with `scripts/render_diagrams.sh`.
+Intentionally not included here:
 
-## Related Docs
+- offline analysis and reporting outputs
+- dissertation text and internal planning
+- AP snapshot/configuration logs
+- environment dumps, credentials, host-specific paths, and private device identifiers
 
-- [Repository Plan](docs/plan/repository-plan.md)
+## Where To Look Next
+
+- [Dataset Manifest](datasets/manifest.json)
+- [Dataset Policy](docs/dataset-policy/policy.md)
 - [Architecture Overview](docs/architecture/overview.md)
 - [Repository Structure](docs/structure/repository-structure.md)
-- [Dataset Policy](docs/dataset-policy/policy.md)
+- [Repository Plan](docs/plan/repository-plan.md)
