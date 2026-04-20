@@ -1,7 +1,7 @@
 {
   "repository": "cwslab-public-experiments-data",
   "generated_from": "cws-lab",
-  "generated_at": "2026-04-06T16:23:00+03:00",
+  "generated_at": "2026-04-20T14:42:13+03:00",
   "datasets": [
     {
       "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
@@ -180,6 +180,42 @@
         "removed AP credentials and runtime-specific environment details",
         "removed personal participant identity while keeping human-presence block semantics",
         "kept raw serial capture and operator block timing surface for later comparator analysis"
+      ]
+    },
+    {
+      "bundle_id": "d04_c2_t0_l2_support_under_load_20260420T110543Z",
+      "status": "published",
+      "source_bundle": "experiments/runs/d04_c2_t0_l2_support_under_load_20260420T110543Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "serial/esp32_guided_session.log"
+      ],
+      "excluded_surfaces": [
+        "analysis/",
+        "analysis_handoff*",
+        "artifact_checklist.md",
+        "experiment_report*",
+        "interference_load_notes.md",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/operator_block_log.md",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "manifest.json",
+        "qc_summary*",
+        "runner-logs/",
+        "scripts/",
+        "session.env",
+        "traffic/"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths and non-public device identifiers",
+        "removed AP credentials and runtime-specific environment details",
+        "removed internal analysis and reporting outputs from the public copy",
+        "preserved the honest D04 limitation that protected traffic traces were not retained, so the published bundle is not claim-grade under-load evidence"
       ]
     }
   ],

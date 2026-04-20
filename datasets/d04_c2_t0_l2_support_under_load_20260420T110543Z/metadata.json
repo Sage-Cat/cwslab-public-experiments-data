@@ -1,0 +1,248 @@
+{
+  "config": {
+    "ap": {
+      "kind": "ssh",
+      "public_node_role": "primary prplOS-compatible dual-band AP node",
+      "snapshot_command_names": [
+        "uname",
+        "ip-brief",
+        "iw-dev",
+        "iwinfo",
+        "ping-esp32"
+      ],
+      "ssh_args": [
+        "-o",
+        "StrictHostKeyChecking=accept-new"
+      ]
+    },
+    "ap_control": {
+      "access_point_enable": true,
+      "access_point_ref": "Device.WiFi.AccessPoint.3.",
+      "auto_channel_enable": false,
+      "bridge_interface": "br-lan",
+      "channel": 36,
+      "key_passphrase": "<redacted>",
+      "multi_ap_type": null,
+      "operating_channel_bandwidth": "20MHz",
+      "profile_id": "public_reference_ap_profile",
+      "radio_enable": true,
+      "radio_ref": "Device.WiFi.Radio.2.",
+      "security_mode_enabled": "WPA2-Personal",
+      "ssid_advertisement_enabled": true,
+      "ssid_enable": true,
+      "ssid_name": "<redacted>",
+      "ssid_ref": "Device.WiFi.SSID.4.",
+      "wds_enable": false,
+      "wps_cert_mode_enable": null,
+      "wps_enable": false
+    },
+    "capture_blocks": [
+      {
+        "block_id": "W0",
+        "duration_s": 120,
+        "human_present": false,
+        "objective": "confirm AP state, UART capture path, and helper-node traffic tooling before the first L2 block",
+        "operator_instructions": [
+          "Stay outside the controlled path between AP and capture node.",
+          "Keep the helper traffic nodes powered and reachable, but do not start the protected traffic yet.",
+          "Verify that the future trace files will be saved into the bundle traffic/ directory before moving to E1."
+        ],
+        "scenario": "technical warm-up and protected-traffic synchronization check before the loaded capture"
+      },
+      {
+        "block_id": "E1",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "collect the first long empty baseline while the same L2 load profile is active",
+        "operator_instructions": [
+          "Before pressing Enter, confirm the protected-traffic generator is already running and the trace collector is recording.",
+          "Leave the controlled 2.00 m path between AP and capture node.",
+          "Keep the room layout unchanged and avoid entering the path during the block."
+        ],
+        "scenario": "extended empty reference under injected protected traffic"
+      },
+      {
+        "block_id": "S1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "capture static presence while the protected traffic remains active",
+        "operator_instructions": [
+          "Keep the protected-traffic generator running continuously.",
+          "Enter the midpoint of the controlled path between AP and capture node.",
+          "Stand almost still and do not touch the chair, AP node, table, capture node, or helper nodes."
+        ],
+        "scenario": "extended static presence under the same injected load"
+      },
+      {
+        "block_id": "M1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "capture slow motion while the same L2 load profile remains active",
+        "operator_instructions": [
+          "Keep the protected-traffic generator and trace collector running.",
+          "Stay within the same controlled path between AP and capture node.",
+          "Move slowly back and forth without changing the topology of the stand."
+        ],
+        "scenario": "extended slow motion under the same injected load"
+      },
+      {
+        "block_id": "E2",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "check the reverse transition back to empty under the same L2 load",
+        "operator_instructions": [
+          "Leave the controlled path again while keeping the traffic load active.",
+          "If the helper traffic path restarts or stalls, record that explicitly in the optional note before continuing.",
+          "Keep the room layout unchanged."
+        ],
+        "scenario": "extended empty recovery after the first loaded motion cycle"
+      },
+      {
+        "block_id": "S2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for static presence with matched load conditions",
+        "operator_instructions": [
+          "Confirm the protected-traffic trace is still recording before pressing Enter.",
+          "Return to the midpoint of the controlled path and stand almost still.",
+          "Avoid unnecessary motion not required for the block."
+        ],
+        "scenario": "second extended static presence under the same injected load"
+      },
+      {
+        "block_id": "M2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for slow motion with matched load conditions",
+        "operator_instructions": [
+          "Keep the protected-traffic generator and trace collector running.",
+          "Stay within the same controlled path used in M1.",
+          "Repeat the same slow motion pattern without moving helper nodes, AP node, capture node, or cables."
+        ],
+        "scenario": "second extended slow motion under the same injected load"
+      },
+      {
+        "block_id": "E3",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "finish the loaded support set with a final empty reference and aligned traffic trace",
+        "operator_instructions": [
+          "Leave the controlled path one final time while keeping the traffic load active until the block ends.",
+          "Stop the protected-traffic generator only after the block is finished and the capture is complete.",
+          "Export and copy the trace files into traffic/ before finalizing the bundle."
+        ],
+        "scenario": "final extended empty recovery under the same injected load"
+      }
+    ],
+    "description": "D04 loaded support capture on the current single-link stand for later under-load comparator analysis.",
+    "experiment_plan_path": "<not-published>",
+    "firmware": {
+      "build_command": "idf.py build",
+      "env_script": "<redacted>",
+      "flash_command": "idf.py -p <serial-device> flash",
+      "root": "<redacted>",
+      "target": "esp32c5",
+      "tools_path": "<redacted>"
+    },
+    "local_preflight_commands": [
+      "python3 --version",
+      "git rev-parse --show-toplevel",
+      "ip -br addr show dev <host-interface>",
+      "ping -c 2 -W 1 <primary-ap-host>"
+    ],
+    "operator_notes": [
+      "Loaded support capture recorded on the same physical stand as D01-D03.",
+      "Keep the primary prplOS-compatible dual-band AP node on 5 GHz / channel 36 / 20 MHz.",
+      "Recommended helper roles: one protected-traffic client through the AP and one remote server / trace collector on stable backhaul.",
+      "Keep helper traffic nodes and extra cabling outside the controlled path between AP and capture node.",
+      "Start the protected-traffic generator and trace collector after W0 and before E1, then keep the load active through E3.",
+      "This public copy does not include retained protected-traffic traces, so it must not be treated as claim-grade D04 evidence by itself."
+    ],
+    "output_root": "<redacted>",
+    "research": {
+      "baselines": [
+        "B0",
+        "B4"
+      ],
+      "campaign_code": "C2",
+      "condition_code": "L2",
+      "condition_confirmation": "not_required",
+      "execution_mode": "H",
+      "fallback_condition_code": null,
+      "honesty_notes": [
+        "Keep the sensing topology identical to D03; the only changed axis is the injected L2 load condition.",
+        "Do not claim completed D04 if protected-traffic traces are missing or cannot be aligned with the block-event log.",
+        "Helper traffic nodes must stay outside the controlled 2.00 m path so they change load, not topology.",
+        "The published public bundle preserves the raw capture surface but does not include retained protected-traffic traces."
+      ],
+      "human_participant_name": null,
+      "novelty_placeholders": [
+        "[K_D^min]",
+        "[ΔC^min]",
+        "[δQ_2^max]",
+        "[K_bh^min]",
+        "[K_dec^min]",
+        "[ΔCPU^min]",
+        "[δQ_p^max]"
+      ],
+      "program_id": "D04",
+      "support_level": "stub",
+      "topology_code": "T0"
+    },
+    "sensor": {
+      "baud_rate": 115200,
+      "capture_seconds": 1500,
+      "device": "<redacted-serial-device>",
+      "kind": "serial_tty",
+      "pre_capture_commands": []
+    },
+    "session_id": "d04_c2_t0_l2_support_under_load",
+    "workspace_root": "<redacted>"
+  },
+  "config_path": "<not-published>",
+  "generated_at_utc": "2026-04-20T11:05:43+00:00",
+  "scripts": [
+    {
+      "step_id": "preflight_local",
+      "description": "Check local WSL/Linux dependencies and capture-device visibility."
+    },
+    {
+      "step_id": "ap_configure",
+      "description": "Apply the requested router radio, SSID, and AccessPoint settings."
+    },
+    {
+      "step_id": "ap_snapshot",
+      "description": "Collect router-side snapshots over SSH or serial console."
+    },
+    {
+      "step_id": "firmware_build",
+      "description": "Build the configured ESP32 firmware workspace."
+    },
+    {
+      "step_id": "firmware_flash",
+      "description": "Flash the configured ESP32 firmware workspace."
+    },
+    {
+      "step_id": "serial_capture",
+      "description": "Capture the ESP32 serial stream for the configured duration."
+    },
+    {
+      "step_id": "operator_guided_capture",
+      "description": "Run a continuous serial capture and pause for operator confirmation between configured capture blocks."
+    },
+    {
+      "step_id": "run_experiment",
+      "description": "Run preflight, AP setup, AP snapshot, and then the interactive operator-guided capture sequence."
+    }
+  ],
+  "publication": {
+    "surface": "public-safe measured dataset repository",
+    "sanitization": [
+      "absolute local paths removed",
+      "AP host/device identifiers removed",
+      "credentials and passphrases removed",
+      "derived analysis/reporting references removed",
+      "preserved the honest D04 limitation that protected traffic traces were not retained in the public bundle"
+    ]
+  }
+}
