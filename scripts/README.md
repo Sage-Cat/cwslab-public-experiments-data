@@ -10,6 +10,13 @@ This directory contains the public-safe experimental launch surface.
 - `sessions/<session-id>/blocks.tsv`: block definitions for one session
 - `sessions/<session-id>/session.env.example`: public-safe environment template
 
+## Current Capability Notes
+
+The generic runtime supports:
+
+- one primary local serial/UART capture stream
+- one optional auxiliary command-backed capture stream for cooperative/helper-node sessions such as `D05`
+
 ## Runtime Model
 
 The wrapper scripts do not depend on the `cws-lab` internal CLI. They expect a local `session.env` file next to `session.env.example` for the selected session profile.

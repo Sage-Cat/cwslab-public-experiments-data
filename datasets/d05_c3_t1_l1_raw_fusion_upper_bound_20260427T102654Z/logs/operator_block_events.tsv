@@ -1,0 +1,33 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_stream_started	esp32-c5-a	0	1777285627169	2026-04-27 13:27:07 EEST	serial_tty:<redacted-serial-device>:datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_guided_session.log
+capture_stream_started	esp32-c5-b	0	1777285627182	2026-04-27 13:27:07 EEST	command:./scripts/capture_esp32_c5_rpi4_uart_via_rpi5.sh:datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_c5_b_guided_session.log
+capture_started	-	0	1777285632252	2026-04-27 13:27:12 EEST	datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_guided_session.log datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_c5_b_guided_session.log 
+timing_checkpoint	sync_pre	0	1777285632268	2026-04-27 13:27:12 EEST	sync_pre.p1:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777285632554	2026-04-27 13:27:12 EEST	sync_pre.p2:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777285632843	2026-04-27 13:27:12 EEST	sync_pre.p3:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777285633132	2026-04-27 13:27:13 EEST	sync_pre.p4:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777285633417	2026-04-27 13:27:13 EEST	sync_pre.p5:controller-side start-of-session alignment checkpoint
+block_started	W0	120	1777285648589	2026-04-27 13:27:28 EEST	two-node transport warm-up and alignment sanity check
+block_finished	W0	120	1777285768888	2026-04-27 13:29:28 EEST	
+block_started	E1	180	1777285770721	2026-04-27 13:29:30 EEST	shared empty-scene reference for both nodes
+block_finished	E1	180	1777285951175	2026-04-27 13:32:31 EEST	
+block_started	S1	150	1777285957654	2026-04-27 13:32:37 EEST	static presence in the shared interaction zone
+block_finished	S1	150	1777286108041	2026-04-27 13:35:08 EEST	
+block_started	M1	150	1777286113310	2026-04-27 13:35:13 EEST	slow motion through the shared interaction zone
+block_finished	M1	150	1777286263715	2026-04-27 13:37:43 EEST	
+timing_checkpoint	sync_mid	0	1777286270150	2026-04-27 13:37:50 EEST	sync_mid.p1:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777286270440	2026-04-27 13:37:50 EEST	sync_mid.p2:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777286270734	2026-04-27 13:37:50 EEST	sync_mid.p3:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777286271026	2026-04-27 13:37:51 EEST	sync_mid.p4:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777286271317	2026-04-27 13:37:51 EEST	sync_mid.p5:controller-side mid-session alignment checkpoint before empty recovery
+block_started	E2	180	1777286356543	2026-04-27 13:39:16 EEST	empty recovery after the first cooperative cycle
+block_finished	E2	180	1777286537009	2026-04-27 13:42:16 EEST	
+block_started	S2	150	1777286594305	2026-04-27 13:43:14 EEST	second static presence in the shared interaction zone
+block_finished	S2	150	1777286744719	2026-04-27 13:45:44 EEST	
+block_started	M2	150	1777286750390	2026-04-27 13:45:50 EEST	second slow motion in the shared interaction zone
+block_finished	M2	150	1777286900797	2026-04-27 13:48:20 EEST	
+block_started	E3	180	1777286926313	2026-04-27 13:48:46 EEST	final empty recovery for cooperative upper-bound anchoring
+block_finished	E3	180	1777287106809	2026-04-27 13:51:46 EEST	
+stream_output_stalled	esp32-c5-b	0	1777287108970	2026-04-27 13:51:48 EEST	block E3:datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_c5_b_guided_session.log
+capture_stream_stopped	esp32-c5-a	0	1777287109193	2026-04-27 13:51:49 EEST	datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_guided_session.log
+capture_stream_stopped	esp32-c5-b	0	1777287109414	2026-04-27 13:51:49 EEST	datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z/serial/esp32_c5_b_guided_session.log

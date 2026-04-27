@@ -1,0 +1,273 @@
+{
+  "bundle_id": "d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z",
+  "config": {
+    "ap": {
+      "kind": "ssh",
+      "public_node_role": "primary prplOS-compatible dual-band AP node",
+      "snapshot_command_names": [
+        "uname",
+        "ip-brief",
+        "iw-dev",
+        "iwinfo",
+        "ping-esp32-a"
+      ],
+      "ssh_args": [
+        "-o",
+        "StrictHostKeyChecking=accept-new"
+      ]
+    },
+    "ap_control": {
+      "access_point_enable": true,
+      "access_point_ref": "Device.WiFi.AccessPoint.3.",
+      "auto_channel_enable": false,
+      "bridge_interface": "br-lan",
+      "channel": 36,
+      "key_passphrase": "<redacted>",
+      "multi_ap_type": null,
+      "operating_channel_bandwidth": "20MHz",
+      "profile_id": "public_reference_ap_profile",
+      "radio_enable": true,
+      "radio_ref": "Device.WiFi.Radio.2.",
+      "security_mode_enabled": "WPA2-Personal",
+      "ssid_advertisement_enabled": true,
+      "ssid_enable": true,
+      "ssid_name": "<redacted>",
+      "ssid_ref": "Device.WiFi.SSID.4.",
+      "wds_enable": false,
+      "wps_cert_mode_enable": null,
+      "wps_enable": false
+    },
+    "auxiliary_sensors": [
+      {
+        "capture_seconds": 1500,
+        "kind": "command_stream",
+        "label": "node-b",
+        "public_command_role": "helper-node UART forwarding command",
+        "sensor_id": "esp32-c5-b"
+      }
+    ],
+    "capture_blocks": [
+      {
+        "block_id": "W0",
+        "duration_s": 120,
+        "human_present": false,
+        "objective": "confirm that both serial paths, both AP paths, and the shared timeline are stable before cooperative capture",
+        "operator_instructions": [
+          "Stay outside both controlled paths while both raw capture processes are started.",
+          "Confirm that both raw files are growing and that the alignment note template is open for editing.",
+          "Do not continue if one node still lacks a trustworthy AP path or serial stream."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "two-node transport warm-up and alignment sanity check"
+      },
+      {
+        "block_id": "E1",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "collect the first matched empty cooperative baseline",
+        "operator_instructions": [
+          "Leave the shared operator interaction zone and both controlled paths.",
+          "Keep the room layout unchanged for both Node A and Node B.",
+          "Record any node-specific disturbance immediately in the alignment notes."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "shared empty-scene reference for both nodes"
+      },
+      {
+        "block_id": "S1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "capture the first matched static cooperative segment",
+        "operator_instructions": [
+          "Stand in the shared midpoint zone chosen to be visible to both Node A and Node B.",
+          "Stay almost still and do not touch any AP, sensor, stand, or helper host.",
+          "If visibility is asymmetric between nodes, record that immediately."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "static presence in the shared interaction zone"
+      },
+      {
+        "block_id": "M1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "capture the first matched motion cooperative segment",
+        "operator_instructions": [
+          "Move slowly through the shared interaction zone without leaving the region visible to both nodes.",
+          "Keep the topology of both stands unchanged.",
+          "Record any timing drift noticed between the two capture hosts."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "slow motion through the shared interaction zone"
+      },
+      {
+        "block_id": "E2",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "observe the reverse transition back to empty for both nodes",
+        "operator_instructions": [
+          "Leave both controlled paths again.",
+          "Keep both nodes powered and both raw capture processes running.",
+          "Record any restart or serial glitch explicitly before continuing."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "empty recovery after the first cooperative cycle"
+      },
+      {
+        "block_id": "S2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the cooperative static segment",
+        "operator_instructions": [
+          "Return to approximately the same shared midpoint used in S1.",
+          "Stand almost still and avoid unnecessary motion.",
+          "Confirm in notes that both raw streams are still recording."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second static presence in the shared interaction zone"
+      },
+      {
+        "block_id": "M2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the cooperative motion segment",
+        "operator_instructions": [
+          "Repeat the same slow-motion pattern used in M1 as closely as practical.",
+          "Do not move APs, sensors, helper hosts, or cables.",
+          "Record whether node-wise timing still appears coherent."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second slow motion in the shared interaction zone"
+      },
+      {
+        "block_id": "E3",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "finish with a matched empty reference and complete alignment notes",
+        "operator_instructions": [
+          "Leave the shared interaction zone one final time and keep both capture processes running until the block ends.",
+          "Stop raw capture only after both nodes have finished the same block timeline.",
+          "Fill the final trust verdict in notes/per_node_alignment_notes.md before treating the bundle as usable."
+        ],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "final empty recovery for cooperative upper-bound anchoring"
+      }
+    ],
+    "capture_mode": "coordinated_multi_sensor",
+    "capture_quality_gates": {
+      "max_controller_traffic_gap_ms": null,
+      "max_csi_row_ratio_across_live_sensors": 4.0,
+      "max_dropped_per_sensor": 0,
+      "max_timeouts_per_sensor": 0,
+      "max_zero_len_per_sensor": 0,
+      "min_controller_decisions_per_required_controller_stream": 1,
+      "min_csi_rows_per_sensor": 32,
+      "min_feature_windows_per_required_feature_stream": 1,
+      "min_latency_samples_per_required_traffic_stream": 1,
+      "min_lines_per_required_sidecar": 1,
+      "min_throughput_samples_per_required_traffic_stream": 0,
+      "min_traffic_samples_per_required_traffic_stream": 1,
+      "require_activity_after_every_block": true,
+      "startup_activity_grace_s": 15
+    },
+    "description": "D05 coordinated cooperative two-node capture attempt with one primary local ESP32-C5 stream and one helper-node ESP32-C5 stream.",
+    "firmware": {
+      "build_command": "idf.py build",
+      "env_script": "<redacted>",
+      "flash_command": "idf.py -p <serial-device> flash",
+      "root": "<redacted>",
+      "target": "esp32c5",
+      "tools_path": "<redacted>"
+    },
+    "operator_notes": [
+      "D05 was run as a coordinated multi-sensor cooperative bridge capture.",
+      "The primary sensing path used the primary prplOS-compatible dual-band AP node on 5 GHz / channel 36 / 20 MHz.",
+      "Node A is the primary local ESP32-C5 serial stream; node B is a helper-node ESP32-C5 UART stream forwarded through a command-backed capture path.",
+      "All planned blocks are present in the public block-event log.",
+      "This public bundle preserves the honest limitation that the node-B stream stalled at the end, the capture_finished event is missing, the live-sensor row ratio exceeded the gate, and cooperative timing failed."
+    ],
+    "research": {
+      "baselines": [
+        "B1",
+        "B4"
+      ],
+      "campaign_code": "C3",
+      "condition_code": "L1",
+      "condition_confirmation": "not_required",
+      "execution_mode": "H",
+      "fallback_condition_code": null,
+      "honesty_notes": [
+        "Do not treat this D05 bundle as claim-grade cooperative fusion evidence.",
+        "Both sensors were live, but node-B produced only 102 CSI rows while node-A produced 1452 rows.",
+        "The bundle lacks a clean capture_finished event because node-B stalled after E3.",
+        "Cooperative timing evidence failed and is included for auditability."
+      ],
+      "novelty_placeholders": [
+        "[DeltaQ_1^min]",
+        "[M_Q^coop]",
+        "[M_Q^coop-B1]"
+      ],
+      "program_id": "D05",
+      "support_level": "full",
+      "topology_code": "T1"
+    },
+    "sensor": {
+      "baud_rate": 115200,
+      "capture_seconds": 1500,
+      "device": "<redacted-serial-device>",
+      "kind": "serial_tty",
+      "sensor_id": "esp32-c5-a"
+    },
+    "session_id": "d05_c3_t1_l1_raw_fusion_upper_bound",
+    "workspace_root": "<redacted>"
+  },
+  "config_path": "<not-published>",
+  "generated_at_utc": "2026-04-27T10:26:54+00:00",
+  "publication_status": "published-not-claim-grade",
+  "scripts": [
+    {
+      "description": "Check local WSL/Linux dependencies and capture-device visibility.",
+      "step_id": "preflight_local"
+    },
+    {
+      "description": "Apply the requested router radio, SSID, and AccessPoint settings.",
+      "step_id": "ap_configure"
+    },
+    {
+      "description": "Collect router-side snapshots over SSH or serial console.",
+      "step_id": "ap_snapshot"
+    },
+    {
+      "description": "Build the configured ESP32 firmware workspace.",
+      "step_id": "firmware_build"
+    },
+    {
+      "description": "Flash the configured ESP32 firmware workspace.",
+      "step_id": "firmware_flash"
+    },
+    {
+      "description": "Capture the ESP32 serial stream for the configured duration.",
+      "step_id": "serial_capture"
+    },
+    {
+      "description": "Capture the serial stream for auxiliary sensor `esp32-c5-b`.",
+      "step_id": "serial_capture_esp32_c5_b"
+    },
+    {
+      "description": "Run continuous capture streams and pause for operator confirmation between configured capture blocks.",
+      "step_id": "operator_guided_capture"
+    },
+    {
+      "description": "Run preflight, AP setup, AP snapshot, and then the interactive operator-guided capture sequence.",
+      "step_id": "run_experiment"
+    }
+  ],
+  "source_bundle": "experiments/runs/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z"
+}

@@ -1,0 +1,653 @@
+
+
+
+
+6 hw_us=510992602 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2057 len=114 first_word_invalid=0 preview=[-8,-9,-7,-11,-7,-12,-5,-14,-4,-15,-3,-16,-2,-17,-1,-18]
+6 hw_us=512075524 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-67 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2061 len=106 first_word_invalid=0 preview=[10,-6,12,-5,14,-3,15,-1,15,0,16,2,17,4,17,5]
+
+I (513706) esp32_capture_fw: ping reply count=2051 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=3742 interval=7 dropped=0 seen=20675 mismatch=16933 zero_len=0 host_ms=514556 hw_us=514093492 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2069 len=106 first_word_invalid=0 preview=[12,4,12,6,12,8,12,10,11,12,10,13,10,14,10,15]
+n=114 sig_len=83 rx_state=0 rx_seq=2073 len=490 first_word_invalid=0 preview=[-6,-11,-4,-12,-3,-13,-1,-14,0,-15,1,-16,2,-16,3,-17]
+I (516206) esp32_capture_fw: ping reply count=2061 timeouts=0
+
+YO
+H�|�en=114 sig_len=83 rx_state=0 rx_seq=2089 len=490 first_word_invalid=0 preview=[1,-13,3,-13,4,-14,5,-14,7,-15,8,-15,10,-15,10,-15]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=3811 interval=9 dropped=0 seen=20981 mismatch=17170 zero_len=0 host_ms=522716 hw_us=522251607 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=277 rx_state=0 rx_seq=3637 len=106 first_word_invalid=0 preview=[14,5,13,7,14,8,14,9,14,10,15,11,15,12,15,12]
+
+
+C����� �,��/8���4��9���W�ݗ��ݗ��X[�]��]�[��~͍�L�.�l=7 dropped=0 seen=21095 mismatch=17257 zero_len=0 host_ms=526706 hw_us=526241631 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2119 len=114 first_word_invalid=0 preview=[-8,10,-10,9,-12,8,-13,7,-15,6,-15,5,-17,4,-17,3]
+
+
+�����
+
+
+
+I (538706) esp32_capture_fw: ping reply count=2151 timeouts=0
+n=10� k_g_len=277rx�rtate=0 rx_seq=3839#l州�4�9����8��47��lid=0 preview=[-14,-5,-13,-7,-12,-9,-12,-11,-12,-12,-11,-13,-11,-15,-10,-16]
+6 hw_us=540626317 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le86 hw_us=541626460 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2180 len=490 first_word_invalid=0 preview=[-11,5,-12,4,-14,2,-15,1,-15,-1,-16,-2,-17,-2,-18,-3]
+M
+
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4055 interval=10 dropped=0 seen=22129 mismatch=18074 zero_len=0 host_ms=557336 hw_us=556876172 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2241 len=490 first_word_invalid=0 preview=[-11,2,-12,1,-13,-1,-14,-3,-14,-3,-15,-4,-15,-5,-16,-6]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4063 interval=8 dropped=0 seen=22160 mismatch=18097 zero_len=0 host_ms=55835n=114 sig_len=83 rx_state=0 rx_seq=2254 len=114 first_word_invalid=0 preview=[11,-3,12,-1,13,1,13,2,14,4,14,5,14,7,15,7]
+56 hw_us=560991574 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2258 len=114 first_word_invalid=0 preview=[-10,-3,-11,-5,-11,-7,-11,-8,-10,-10,-10,-11,-10,-12,-11,-13]
+56 hw_us=561991601 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4111 interval=10 dropped=0 seen=22331 mismatch=18220 zero_len=0 host_ms=563456 hw_us=562991473 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_l6 hw_us=563991463 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le6 hw_us=566126099 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2279 len=490 first_word_invalid=0 preview=[-12,0,-12,-3,-13,-4,-13,-6,-12,-7,-12,-9,-12,-11,-86 hw_us=567126086 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2283 len=490 first_word_invalid=0 preview=[-4,-11,-2,-12,-1,-13,1,-14,1,-15,3,-15,4,-16,4,-16]
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4231 interval=11 dropped=0 seen=22828 mismatch=18597 zero_len=0 host_ms=5757en=114 sig_len=83 rx_state=0 rx_seq=2316 len=114 first_word_invalid=0 preview=[7,9,6,11,5,12,3,13,2,15,1,15,0,16,-1,17]
+I (576206) esp32_capture_fw: ping reply count=2301 timeouts=0
+6 hw_us=576241470 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2320 len=114 first_word_invalid=0 preview=[-3,11,-5,11,-6,12,-8,12,-8,12,-10,12,-11,12,-12,12]
+\��2�1�s��~�
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4281 interval=9 dropped=0 seen=23063 mismatch=18782 zero_len=0 host_ms=582846 hw_us=582387121 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-60 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=272 len=106 first_word_invalid=0 preview=[-2,-13,-1,-14,1,-15,2,-15,3,-16,4,-16,4,-16,4,-17]
+I (583706) esp32_capture_fw: ping reply count=2331 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4287 interval=6 dropped=0 seen=23085 mismatch=18798 zero_len=0 host_ms=583916 hw_us=583455031 mac=82:7d:2a:9b:a4:22 dmac=5c:62:8b:36:83:e0 rssi=-48 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2348 len=106 first_word_invalid=0 preview=[11,-1,12,1,13,3,14,4,13,6,13,8,13,9,13,10]
+
+
+
+�W��]id=0 preview=[-3,11,-4,12,-6,12,-7,12,-8,12,-9,12,-10,12,-11,12]
+n=114 sig_len=28 rx_state=0 rx_seq=2365 len=106 first_word_invalid=0 preview=[-9,6,-11,5,-13,4,-14,3,-15,2,-15,1,-16,0,-17,-1]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4322 interval=5 dropped=0 seen=23278 mismatch=18956 zero_len=0 host_ms=589026 hw_us=589491523 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2373 len=114 first_word_invalid=0 preview=[11,-3,13,-2,13,1,14,1,14,2,15,3,15,4,16,5]
+
+�HW�XO͘���
+ΌNhY[�X��}��L�o�c~����n=114 sig_len=83 rx_state=0 rx_seq=2406 len=114 first_word_invalid=0 preview=[1,12,-1,12,-2,13,-4,13,-5,14,-6,14,-7,15,-7,15]
+
+
+
+�47�2��(l=5 dropped=0#seen=23831&mismatoh=19393 ze~�/�2����������ؚ�6 hw_us=603875861 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len==14 sig�ken=83 rx_ktate=0 rx_seq=2�2� len=490 first_woq|_�/�(�11]
+����������x���]
+�0�������07�1���y�q7/���9���0�4�����I (608706) esp32_capture_fw: ping reply count=2431 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4481 interval=10 dropped=0 seen=24001 mismatch=19520 zero_len=0 host_ms=609406 hw_us=608944589 mac=1e:f4:3f:f0:3d:a7 dmac=01:80:c2:00:00:13 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_l6 hw_us=609991584 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leid=0 preview=[-10,-5,-10,-7,-10,-8,-10,-10,-9,-11,-9,-12,-8,-13,-9,-15]
+I (611206) esp32_capture_fw: ping reply count=2441 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4494 interval=7 dropped=0 seen=24059 mismatch=19565 zero_len=0 host_ms=61145CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4505 interval=11 dropped=0 seen=24094 mismatch=19589 zero_len=0 host_ms=6124en=114 sig_len=83 rx_state=0 rx_seq=2464 len=114 first_word_invalid=0 preview=[-9,-7,-8,-9,-8,-10,-7,-12,-6,-13,-5,-14,-5,-15,-5,-16]
+
+
+
+
+
+
+
+�
+K�K�{K�K�J�KLLW�CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4606 interval=5 dropped=0 seen=24506 mismatch=19900 zero_len=0 host_ms=62470n=114 sig_len=83 rx_state=0 rx_seq=2513 len=114 first_word_invalid=0 preview=[-11,-2,-12,-4,-12,-5,-12,-7,-12,-8,-12,-10,-12,-11,-12,-12]
+
+
+en=114 sig_len=28 rx_state=0 rx_seq=2521 len=106 first_word_invalid=0 preview=[-11,-3,-11,-5,-12,-7,-11,-9,-11,-10,-10,-12,-10,-12,-10,-14]
+
+KKKKL
+KK�
+;KK�
+�
+K-18]
+
+6 hw_us=630394409 mac=5e:62:8b:56:83:e1 dmac=ff:ff:ff:ff:ff:ff rssi=-57 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (631206) esp32_capture_fw: ping reply count=2521 timeouts=0
+n=114 sig_len=83 rx_state=0 rx_seq=2541 len=490 first_word_invalid=0 preview=[-11,-3,-12,-4,-12,-6,-11,-8,-11,-10,-11,-11,-11,-12,-10,-13]
+
+��͘���ssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le6 hw_us=634405274 mac=1e:f4:3f:f0:3d:a7 dmac=01:80:c2:00:00:13 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=174 rx_state=0 rx_seq=900 len=106 first_word_invalid=0 preview=[14,-1,14,0,15,1,15,3,16,4,16,4,17,5,17,5]
+n=114 sig_len=83 rx_state=0 rx_seq=2558 len=114 first_word_invalid=0 preview=[-9,-8,-8,-10,-7,-11,-6,-12,-5,-14,-4,-14,-4,-16,-3,-16]
+M]Z[�[�ZL��CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4698 interval=8 dropped=0 seen=24994 mismatch=20296 zero_len=0 host_ms=63695ssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=17��ri�^�dn=83 rx_stare=0�sx_seq=2562 len=114 fir?���79��47�066 hw_us=637491610 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4714 interval=8 dropped=0 seen=25064 mismatch=20350 zero_len=0 host_ms=638956 hw_us=638491841 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4719 interval=5 dropped=0 seen=25083 mismatch=20364 zero_len=0 host_ms=639966 hw_us=639499952 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leen=114 sig_len=98 rx_state=0 rx_seq=2578 len=106 first_word_invalid=0 preview=[-5,-11,-3,-13,-1,-14,1,-14,2,-15,4,-15,5,-15,6,-16]
+86 hw_us=642625585 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4760 interval=5 dropped=0 seen=25229 mismatch=20469 zero_len=0 host_ms=64410id=0 preview=[4,11,3,12,2,14,1,14,0,15,-1,16,-2,16,-2,17]
+36 hw_us=645671603 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=1040 len=106 first_word_invalid=0 preview=[-13,-31,-13,-34,-13,-36,-13,-38,-12,-39,-13,-41,-13,-43,-13,-45]
+
+
+
+
+I (656206) esp32_capture_fw: ping reply count=2621 timeouts=0
+
+
+��\U��Ʀ����m'&��,M^����+��ͭ��0]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=4926 interval=8 dropped=0 seen=25991 mismatch=21065 zero_len=0 host_ms=663456 hw_us=662991608 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (663706) esp32_capture_fw: ping reply count=2651 timeouts=0
+
+6 hw_us=663991664 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 ^oise=-9?�0�����1�07�2������77���9�/{0�,�~HُLn=114 sig_len=83 rx_state=0 rx_seq=2673 len=114 first_word_invalid=0 preview=[11,-6,13,-5,14,-3,15,-1,15,0,16,2,16,2,17,3]
+
+1���29ssi=-66 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2681 len=106 first_word_invalid=0 preview=[-9,8,-11,8,-13,6,-14,5,-15,5,-15,4,-16,3,-17,3]
+
+16 hw_us=667050300 mac=82:7d:2a:9b:a4:22 dmac=5c:62:8b:36:83:e0 rssi=-48 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2685 len=106 first_word_invalid=0 preview=[-5,-11,-4,-13,-3,-14,-1,-14,0,-16,2,-16,2,-16,4,-17]
+
+\Z�W��K���K��-ͮ��.����$���L�.l=6 dropped=0 seen=26432 mismatch=21426 zero_len=0 host_ms=674702]
+��ݛ�����hd=0 preview=[9,~���
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5051 interval=11 dropped=0 seen=26589 mismatch=21538 zero_len=0 host_ms=6787en=114 sig_len=83 rx_state=0 rx_seq=2730 len=114 first_word_invalid=0 preview=[-6,11,-8,10,-11,9,-12,8,-13,8,-14,6,-16,6,-16,5]
+
+
+I (683706) esp32_capture_fw: ping reply count=2731 timeouts=0
+�*���4�9���79�_��]�id=0 preview=[6,11,5,12,5,13,4,14,3,15,2,15,1,17,1,17]
+Y;�X��Θ�N��N��N؍M
+�rs�d�u�����~OK�D��ml'~��Zgk�����ހϕ�����̌�ͱ}مqe��ĀT���en=114 sig_len=83 rx_state=0 rx_seq=2771 len=114 first_word_invalid=0 preview=[6,11,4,12,3,13,2,14,1,15,0,16,-1,16,-1,17]
+
+96 hw_us=689535543 mac=5c:62:8b:36:83:e0 dmac=fa:e1:e9:c7:e2:5c rssi=-56 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5151 interval=5 dropped=0 seen=27009 mismatch=21858 zero_len=0 host_ms=69096I (691206) esp32_capture_fw: ping reply count=2761 timeouts=0
+
+n=114 sig_len=83 rx_state=0 rx_seq=2804 len=490 first_word_invalid=0 preview=[11,-6,12,-4,14,-2,15,-1,15,0,16,1,16,3,17,4]
+
+n=106 sig_len=83 rx_state=0 rx_seq=1685 len=490 first_word_invalid=0 preview=[13,6,12,8,12,10,11,12,11,13,10,14,10,15,9,16]
+
+�\L�Bid=0 preview=[3,-14,4,-14,6,-14,7,-14,8,-15,9,-15,10,-14,11,-15]
+
+�47�29��l=6 droppe�<< seen=�6797�lismatch=2�573 zero_l��w���������6 hw_us=711991554 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2866 len=114 first_word_invalid=0 preview=[9,-9,11,-7,13,-6,14,-5,15,-4,16,-2,17,-2,17,-1]
+K+��冣�ǆ冥%�妫�
+�2��x�4y����79��47�0lid=0 preview=[4,-12,6,-11,8,-11,9,-11,11,-11,12,-10,13,-10,14,-10]
+
+��KK+L=KK.�
+
+6 hw_us=724185029 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=495 rx_state=0 rx_seq=2923 len=106 first_word_invalid=0 preview=[11,-5,13,-3,14,-2,14,0,15,1,15,3,17,3,17,4]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5441 interval=9 dropped=0 seen=28414 mismatch=22973 zero_len=0 host_ms=72770CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5448 interval=7 dropped=0 seen=28437 mismatch=22989 zero_len=0 host_ms=728706 hw_us=730339481 mac=1e:f4:3f:f0:3d:a7 dmac=ff:ff:ff:ff:ff:ff rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=348 rx_state=0 rx_seq=2939 len=106 first_word_invalid=0 preview=[9,-8,11,-8,12,-6,13,-6,14,-5,16,-4,16,-4,17,-4]
+
+KK�=K���%�%憥%�%��E�%&��AACSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5483 interval=7 dropped=0 seen=28609 mismatch=23126 zero_len=0 host_ms=732846 hw_us=�2238067� m�b=5c:6�;~1����2�����x��2������Y�\ssi=-56 n_ose=-��0����ؐ���y��77���9�/���4�~Hُ,n=114 sig_len=530 rx_state=0 rx_seq=2947 len=106 first_word_invalid=0 preview=[-11,5,-12,3,-14,2,-15,1,-15,0,-16,-2,-16,-2,-17,-3]
+6 hw_us=734375124 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2959 len=490 first_word_invalid=0 preview=[10,-7,11,-7,13,-6,14,-4,14,-4,16,-3,16,-2,18,-2]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5517 interval=9 dropped=0 seen=28746 mismatch=23229 zero_len=0 host_ms=73795n=114 sig_len=83 rx_state=0 rx_seq=2968 len=114 first_word_invalid=0 preview=[-5,-11,-3,-13,-1,-14,0,-14,2,-16,4,-16,5,-16,7,-16]
+I (738706)8Ssp32_cmpture?���	�4w��>����[���G&�&�.��פֿn��ߠCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5527 interval=10 dropped=0 seen=28787 mismatch=23260 zero_len=0 host_ms=7389CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5535 interval=8 dropped=0 seen=28821 mismatch=23286 zero_len=0 host_ms=739956 hw_us=739491608 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5540 interval=5 dropped=0 seen=28845 mismatch=23305 zero_len=0 host_ms=740956 hw_us=740491582 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (741206) esp32_capture_fw: ping reply count=2961 timeouts=0
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5573 interval=14 dropped=0 seen=28971 mismatch=23398 zero_len=0 host_ms=743956 hw_us=743491494 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_l6 hw_us=744625022 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2997 len=490 first_word_invalid=0 preview=[10,-6,12,-5,14,-3,15,-2,15,-1,16,1,17,1,17,3]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5585 interval=7 dropped=0 seen=29031 mismatch=23446 zero_len=0 host_ms=74608I (746206) esp32_capture_fw: ping reply count=2981 timeouts=0
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5639 interval=7 dropped=0 seen=29229 mismatch=23590 zero_len=0 host_ms=75325n=114 sig_len=82 rx_state=0 rx_seq=3030 len=106 first_word_invalid=0 preview=[9,-8,11,-7,13,-6,14,-4,15,-3,15,-2,17,-2,17,0]
+
+6 hw_us=753805182 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-60 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5658 interval=5 dropped=0 seen=29375 mismatch=23717 zero_len=0 host_ms=756296 hw_us=755835617 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-73 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=2377 len=106 first_word_invalid=0 preview=[-6,13,-7,13,-9,13,-10,13,-11,13,-12,13,-13,12,-14,13]
+
+6 hw_us=762991534 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (763706) esp32_capture_fw: ping reply count=3051 timeouts=0
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5738 interval=8 dropped=0 seen=29694 mismatch=23956 zero_len=0 host_ms=768456 hw_us=767991538 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3091 len=114 first_word_invalid=0 preview=[9,-8,11,-7,13,-6,14,-4,15,-4,16,-3,17,-2,17,-1]
+
+
+[�6 dw_us=7731+򛜙��sq�J���_��^��F��F����6�cf�Sf�of�ce�cf�oU�9�s�h=-48�ooi�d=-99 rate=11 ckan^el=�7 secong=3,est_va_Yd=1 S?�/��CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5779 interval=7 dropped=0 seen=29927 mismatch=24148 zero_len=0 host_ms=77462=114 sig_len=225 rx_state=0 rx_seq=3119 len=106 first_word_invalid=0 preview=[-3,12,-5,12,-7,12,-8,11,-10,12,-11,12,-12,12,-13,11]
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5880 interval=14 dropped=0 seen=30492 mismatch=24612 zero_len=0 host_ms=78896 hw_us=789491425 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3178 len=114 first_word_invalid=0 preview=[-7,-10,-5,-13,-3,-13,-2,-14,-1,-15,1,-16,2,-17,3,-17]
+
+I (791206) e��X��08�:��/�;�4�3й28�<���:7����������:����CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5899 interval=7 dropped=0 seen=30601 mismatch=24702 zero_len=0 host_ms=791956 hw_us=791491452 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (793706) esp32_capture_fw: ping reply count=3171 timeouts=0
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=5920 interval=8 dropped=0 seen=30676 mismatch=24756 zero_len=0 host_ms=79399,-17]
+
+
+I (801226) esp32_capture_fw: ping reply count=3201 timeouts=0
+
+
+6 hw_us=804797280 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-87 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_lenI (806206) esp32_capture_fw: ping reply count=3221 timeouts=0
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6021 interval=7 dropped=0 seen=31221 mismatch=25200 zero_len=0 host_ms=80833CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6044 interval=11 dropped=0 seen=31301 mismatch=25257 zero_len=0 host_ms=8103en=114 sig_len=83 rx_state=0 rx_seq=3259 len=490 first_word_invalid=0 preview=[8,9,7,11,6,12,5,13,5,14,4,15,3,16,3,17]
+
+
+n=106 sig_len==74 rx_state=0 rx_seq=303.�2���4�9���79��47��lid=0 preview=[-11��������
+
+
+M�6 hw_us=815991635 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le56 hw_us=816991556 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lI (818706) esp32_capture_fw: ping reply count=3271 timeouts=0
+�6��^��1�07�2�����q77���9�/�0�,����9�/�en=114 sig_len=83 rx_state=0 rx_seq=3318 len=114 first_word_invalid=0 preview=[-12,2,-13,0,-14,-1,-14,-3,-14,-5,-14,-7,-15,-7,-15,-9]
+
+-14,�3,-1,*-6,�</,-7,+/2,~���4,-5]n=114 sig_len=28 rx_state=0 rx_seq=3334 len=106 first_word_invalid=0 preview=[10,-7,12,-5,13,-4,14,-3,15,-2,16,-1,16,0,17,1]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6206 interval=5 dropped=0 seen=32079 mismatch=25873 zero_len=0 host_ms=831836 hw_us=832399190 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-84 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_lenCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6221 interval=8 dropped=0 seen=32153 mismatch=25932 zero_len=0 host_ms=833876 hw_us=833417663 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-85 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=3354 len=106 first_word_invalid=0 preview=[10,8,10,10,10,11,9,12,8,14,7,15,7,16,7,17]
+
+���2�19ssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3362 len=490 first_word_invalid=0 preview=[1,-14,3,-14,5,-15,7,-15,8,-15,10,-14,11,-14,12,-14]
+
+����Ό�N�
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6267 interval=7 dropped=0 seen=32373 mismatch=26106 zero_len=0 host_ms=840956 hw_us=840491429 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3383 len=114 first_word_invalid=0 preview=[8,-8,10,-7,11,-7,12,-6,13,-5,14,-5,15,-5,15,-5]
+
+I (841206) esp32_capture_fw: ping reply count=3361 timeouts=0
+
+
+��WYI (846206) esp32_capture_fw: ping reply count=3381 timeouts=0
+
+6 hw_us=847679481 mac=1e:f4:3f:f0:3d:a7 dmac=01:80:c2:00:00:13 rssi=-44 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (848706) esp32_capture_fw: ping reply count=3391 timeouts=0
+
+6 hw_us=848703832 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le6 hw_us=849741520 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leI (851206) esp32_capture_fw: ping reply count=3401 timeouts=0
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6359 interval=7 dropped=0 seen=32887 mismatch=26528 zero_len=0 host_ms=854286 hw_us=853827113 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-66 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=3436 len=106 first_word_invalid=0 preview=[0,17,-2,18,-4,18,-5,18,-7,18,-8,17,-9,18,-10,18]
+
+�2���4�����/9����][�d=0 preview=[6,17,5,18,3,19,2,19,1,20,0,20,0,20,1,21]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6420 interval=10 dropped=0 seen=33142 mismatch=26722 zero_len=0 host_ms=862406 hw_us=861939964 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-63 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=288jt_state=0 rx_����x�2����
+Kˌ
+�冥eƇ%��e&�%8,-33]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6432 interval=12 dropped=0 seen=33195 mismatch=26763 zero_len=0 host_ms=8634CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6443 interval=11 dropped=0 seen=33233 mismatch=26790 zero_len=0 host_ms=864456 hw_us=863995199 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-89 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_le6 hw_us=864993533 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-90 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=3482 len=106 first_word_invalid=0 preview=[17,-1,18,1,18,4,18,6,18,8,17,10,17,11,17,12]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6460 interval=7 dropped=0 seen=33320 mismatch=26860 zero_len=0 host_ms=86745n=114 sig_len=83 rx_state=0 rx_seq=3490 len=114 first_word_invalid=0 preview=[14,-9,16,-6,18,-4,19,-3,19,-1,19,1,20,2,20,3]
+
+86 hw_us=869124103 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_ln=114 sig_len=83 rx_state=0 rx_seq=3502 len=490 first_word_invalid=0 preview=[-9,-14,-7,-16,-5,-17,-3,-18,-1,-19,0,-19,1,-19,2,-20]
+
+I (873706) esp32_capture_fw: ping reply count=3491 timeouts=0
+
+�Y
+�-l��Fg�L'f&�F'�F'�D�ssi=-45 noise=-99 rat}�Xx�1�07�2����Z�؛Y�
+�؏��.�-��'�\��CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6530 interval=10 dropped=0 seen=33691 mismatch=27161 zero_len=0 host_ms=877736 hw_us=877273539 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=277 rx_state=0 rx_seq=3784 len=106 first_word_invalid=0 preview=[7,16,5,18,4,18,3,19,2,19,2,20,1,20,1,21]
+
+66 hw_us=878303241 mac=5e:62:8b:56:83:e1 dmac=ff:ff:ff:ff:ff:ff rssi=-57 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6557 interval=5 dropped=0 seen=33792 mismatch=27235 zero_len=0 host_ms=880706 hw_us=880243133 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=277 rx_state=0 rx_seq=3825 len=106 first_word_invalid=0 preview=[16,8,16,10,15,11,14,13,14,14,14,16,13,16,14,17]
+
+36 hw_us=883373913 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6593 interval=10 dropped=0 seen=33929 mismatch=27336 zero_len=0 host_ms=884836 hw_us=884373912 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6598 interval=5 dropped=0 seen=33951 mismatch=27353 zero_len=0 host_ms=88583I (886206) esp32_capture_fw: ping reply count=3541 timeouts=0
+
+I (891206) esp32_capture_fw: ping reply count=3561 timeouts=0
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6654 interval=10 dropped=0 seen=34177 mismatch=27523 zero_len=0 host_ms=8929n=114 sig_len=342 rx_state=0 rx_seq=3596 len=106 first_word_invalid=0 preview=[16,5,15,8,15,10,15,12,14,13,14,15,12,16,13,17]
+
+86 hw_us=894623849 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-44 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3601 len=490 first_word_invalid=0 preview=[-7,-15,-5,-17,-3,-18,0,-19,1,-19,3,-19,4,-19,5,-20]
+
+I (896206) esp32_capture_fw: ping reply count=3581 timeouts=0
+6 hw_us=896623895 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-44 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le86 hw_us=899623821 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3621 len=490 first_word_invalid=0 preview=[-2,17,-5,18,-8,17,-9,16,-11,16,-13,15,-15,15,-16,15]
+�0�����1�07�2������77���9�/�0�4����9�/�en=114 sig_len=28 rx_state=0 rx_seq=3638 len=106 first_word_invalid=0 preview=[16,0,16,2,17,5,17,7,17,8,16,10,16,11,16,13]
+06 hw_us=904741542 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3642 len=114 first_word_invalid=0 preview=[-12,-12,-10,-14,-8,-16,-6,-18,-4,-19,-2,-19,-1,-20,1,-20]
+I (906206) esp32_capture_fw: ping reply count=3621 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6769 interval=5 dropped=0 seen=34677 mismatch=27908 zero_len=0 host_ms=90621n=114 sig_len=342 rx_state=0 rx_seq=3646 len=106 first_word_invalid=0 preview=[-15,8,-16,5,-18,3,-18,2,-19,0,-19,-1,-20,-2,-20,-2]
+���en=114 sig_len=83 rx_state=0 rx_seq=3654 len=490 first_word_invalid=0 preview=[-15,-7,-14,-9,-14,-11,-13,-13,-12,-14,-12,-15,-12,-16,-12,-16]
+I (908706) esp32_capture_fw: ping reply count=3631 timeouts=0
+�0�����1�07�2������77���9�/�0�4����9�/6en=114 sig_len=83 rx_state=0 rx_seq=3662 len=490 first_word_invalid=0 preview=[-5,15,-7,15,-9,15,-10,15,-11,15,-13,14,-13,14,-14,14]
+I (911~���9����08�:��/�;�4�3�28�<���:7��������:���CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6808 interval=5 dropped=0 seen=34838 mismatch=28030 zero_len=0 host_ms=911336 hw_us=910873756 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leen=106 sig_len=83 rx_state=0 rx_seq=136 len=490 first_word_invalid=0 preview=[-10,-16,-8,-16,-7,-18,-6,-18,-5,-19,-4,-19,-4,-20,-4,-20]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6828 interval=9 dropped=0 seen=34908 mismatch=28080 zero_len=0 host_ms=9134056 hw_us=914991469 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3683 len=114 first_word_invalid=0 preview=[2,17,-1,18,-3,18,-5,18,-7,18,-8,18,-9,18,-10,18]
+
+n=114 sig_len=534 rx_state=0 rx_seq=3691 len=106 first_word_invalid=0 preview=[13,-9,15,-7,17,-5,18,-3,19,-2,19,0,19,1,20,2]
+en=114 sig_len=98 rx_state=0 rx_seq=3695 len=106 first_word_invalid=0 preview=[5,-16,8,-16,10,-15,11,-15,12,-14,14,-13,15,-13,16,-13]
+I (918706) esp32_capture_fw: ping reply count=3671 timeouts=0
+R6G���CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=6905 interval=11 dropped=0 seen=35206 mismatch=28301 zero_len=0 host_ms=922616 hw_us=922151304 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-62 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_l36 hw_us=923175328 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-62 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lI (923��7� esp3�08�:��/s;p�4�3|�28�<���:7z��������:����36 hw_us=924175666 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=80 rx_state=0 rx_seq=304 len=106 first_word_invalid=0 preview=[-2,-32,-1,-34,1,-35,1,-36,3,-37,2,-38,2,-39,1,-39]
+�0�����1�07�2������77���9�/�0�4����9�/�2I (926206) esp32_capture_fw: ping reply count=3701 timeouts=0
+en=106 sig_len=80 rx_state=0 rx_seq=340 len=106 first_word_invalid=0 preview=[18,7,17,10,16,12,15,14,15,15,14,16,13,18,13,18]
+�2���4�9���79��47��lid=0 preview=[-17,-7,-17,-8,-17,-10,-16,-11,-16,-12,-16,-13,-16,-13,-16,-14]
+rssi=-�7 noise=-99 rate=11,chann����
+
+
+����,-2,-20]
+I (941206) esp32_capture_fw: ping reply count=3761 timeouts=0
+
+�47��9�sl=11 dropped=0 seen=35981 mismatch=28892 zero_len=0 host_ms=9439en=114 sig_len=83 rx_state=0 rx_seq=3802 len=114 first_word_invalid=0 preview=[-2,16,-5,16,-8,16,-10,15,-12,16,-13,14,-14,14,-16,13]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7105 interval=6 dropped=0 seen=36052 mismatch=28947 zero_len=0 host_ms=94608I (946206) esp32_capture_fw: ping reply count=3781 timeouts=0
+��6 hw_us=946623567 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=83 rx_state=0 rx_seq=593 len=490 first_word_invalid=0 preview=[8,-15,10,-14,12,-15,13,-14,14,-14,15,-13,16,-13,16,-13]
+96 hw_us=947634873 mac=dc:a6:32:6f:23:f7 dmac=2e:cf:67:d4:44:d5 rssi=-39 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_le6 hw_us=951741677 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_leen=114 sig_len=28 rx_state=0 rx_seq=3843 len=106 first_word_invalid=0 preview=[-15,3,-17,0,-18,-2,-18,-4,-18,-5,-17,-7,-18,-9,-17,-10]
+��]��]Xl=6 dropped=0 seen=36418 mismatch=29229 zero_len=0 host_ms=956266 hw_us=955806627 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-66 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_le
+
+
+-19]
+n=106 sig_len=83 rx_state=0 rx_seq=792 len=490 first_word_invalid=0 preview=[-16,7,-17,5,-18,4,-19,3,-19,2,-20,2,-21,2,-21,2]
+C_I_SUMMARY ��/8�7�4��9���Wܗ��ݗ�[Y[��D�.���F��$͍�L�.ll=10 dropped=0 seen=36645 mismatch=29399 zero_len=0 host_ms=9634I (963706) esp32_capture_fw: ping reply count=3851 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_�q_b fw_rooe=live total=7257 intervml=11 dropped=� seen=36759 mismatch����2��/�2����W�\O�
+
+CSI_SUMM�SY fw_proVooe=rpi5_�q_b�fw_q_le=live total=7268 �7�29�0l=11 dropped=�reen=36796���rmatSh=295�8 zero_l}n=0 host_ms=9654en=114 sig_len=83 rx_state=0 rx_seq=3884 len=114 first_word_invalid=0 preview=[-15,-6,-15,-9,-14,-11,-13,-14,-11,-15,-10,-17,-9,-18,-8,-18]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7278 interval=5 dropped=0 seen=36851 mismatch=29573 zero_len=0 host_ms=967456 hw_us=966991513 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3892 len=114 first_word_invalid=0 preview=[3,16,0,17,-2,17,-4,17,-6,17,-8,17,-8,17,-10,17]
+06 hw_us=968040286 mac=d0:39:57:b6:3~�����~͘�����Ό�ΌN�rssi=-65 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=3896 len=106 first_word_invalid=0 preview=[-2,-16,1,-17,4,-17,5,-17,7,-17,9,-17,10,-17,11,-17]
+I (968706) esp32_captsr��gw:�|in?�28v<Pq�:7����
+
+YO��\��
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7330 interval=10 dropped=0 seen=37068 mismatch=29738 zero_len=0 host_ms=973586 hw_us=973123443 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3917 len=490 first_word_invalid=0 preview=[17,-1,17,2,18,4,17,7,17,9,16,11,16,13,15,14]
+
+
+�0��^~��Z��[[ό
+�\������l���.�-��'Ƥ�G���en=114 sig_len=83 rx_state=0 rx_seq=3925 len=490 first_word_invalid=0 preview=[8,-14,11,-12,14,-11,15,-10,17,-9,18,-7,19,-7,19,-6]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7361 interval=6 dropped=0 seen=37204 mismatch=29843 zero_len=0 host_ms=97770�!�v�t�����M
+�nY
+hY[�Xo�Θ�N��Ny�N؋.<
+��ssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=3934 len=114 first_word_invalid=0 preview=[-6,15,-9,15,-11,14,-12,14,-14,13,-15,12,-15,12,-16,12]
+
+en=114 sig_len=83 rx_state=0 rx_seq=3938 len=114 first_word_invalid=0 preview=[-6,15,-8,15,-10,14,-12,13,-14,13,-14,12,-16,12,-16,11]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7392 interva56 hw_us=980289507 mac=5c:62:8b:36:83:e0 dmac=01:00:5e:7f:ff:fa I (981206) esp32_capture_fw: ping reply count=3921 timeouts=0
+76 hw_us=981315467 mac=5c:62:8b:36:83:e0 dmac=82:7d:2a:9b:a4:22 rssi=-55 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=82 rx_state=0 rx_seq=3950 len=106 first_word_invalid=0 preview=[5,-16,8,-15,10,-14,13,-13,14,-13,15,-11,16,-11,18,-10]
+
+I �883706) esp32_c�qwur��gw: pin?�28�����:7��������r�:���56 hw_us=983322651 mac=1e:f4:3f:f0:3d:a7 dmac=01:80:c2:00:00:13 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=174 rx_state=0 rx_seq=1072 len=106 first_word_inva1,-5]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7517 interval=10 dropped=0 seen=37895 mismatch=30378 zero_len=0 host_ms=9950CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7527 interval=10 dropped=0 seen=37920 mismatch=30393 zero_len=0 host_ms=995956 hw_us=995491494 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-50 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_lI (996206) esp32_capture_fw: ping reply count=3981 timeouts=0
+n=114 sig_len=83 rx_state=0 rx_seq=4011 len=490 first_word_invalid=0 preview=[7,13,5,14,4,15,2,16,1,16,0,17,0,17,-1,18]
+
+�2���4�9���79��47�0�4d=0 preview=[1,13,-1,14,-4,14,-6,14,-7,15,-9,15,-10,14,-12,15]
+
+
+206 hw_us=1003742397 mac=2e:cf:67:d4:44:d5&����2�13���2�؍N�4 rssi=-52 noise=-99 rate=11 channel=36 second=0 est_valid=1 est3]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7615 interval=10 dropped=0 seen=38263 mismatch=30648 zero_len=0 host_ms=1005206 hw_us=1004741607 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-51 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7620 interval=5 dropped=0 seen=38290 mismatch=30670 zero_len=0 host_ms=1006206 hw_us=1005741601 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-60 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=4048 len=114 first_word_invalid=0 preview=[7,0,6,1,6,1,4,2,4,1,4,0,3,-1,2,-1]
+
+
+
+
+
+
+
+
+
+���2�1 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_656 hw_us=1026192240 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-58 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=1632 len=106 first_word_invalid=0 preview=[-18,3,-19,0,-19,-2,-19,-4,-20,-4,-20,-5,-20,-7,-20,-7]
+,-24,-14,-26]
+
+706 hw_us=1028241511 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=43 len=114 first_word_invalid=0 preview=[3,11,2,13,1,14,0,14,-2,15,-3,15,-4,16,-4,16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7815 interval=9 dropped=0 seen=39076 mismatch=31261 zero_len=0 host_ms=10297CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7824 interval=9 dropped=0 seen=39116 mismatch=31292 zero_len=0 host_ms=1030706 hw_us=1031241508 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=55 len=114 first_word_invalid=0 preview=[4,-12,5,-12,7,-12,8,-12,10,-12,11,-12,11,-12,12,-12]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7834 interval=5 dropped=0 seen=39153 mismatch=31319 zero_len=0 host_ms=1032706 hw_us=1032238556 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_796 hw_us=1033332704 mac=dc:a6:32:6f:23:f7 dmac=2e:cf:67:d4:44:d5 rssi=-41 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_36 hw_us=1034372861 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=67 len=490 first_word_invalid=0 preview=[-5,-14,-3,-15,-2,-16,0,-17,1,-18,3,-18,4,-18,4,-19]
+
+
+956 hw_us=1040491426 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=92 len=114 first_word_invalid=0 preview=[-10,-11,-9,-12,-8,-14,-6,-16,-5,-17,-4,-17,-3,-18,-2,-19]
+�O�������#�Js�CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7946 interval=9 dropped=0 seen=39588 mismatch=31642 zero_len=0 host_ms=10450len=114 sig_len=174 rx_state=0 rx_seq=108 len=106 first_word_invalid=0 preview=[8,2,9,4,9,4,9,6,10,7,10,8,10,9,10,10]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=7961 interval=15 dropped=0 seen=39638 mismatch=31677 zero_len=0 host_ms=1045956 hw_us=1045491463 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-50 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=112 len=114 first_word_invalid=0 preview=[-2,-19,2,-19,4,-19,6,-19,9,-19,10,-17,12,-17,13,-17]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8015 interval=5 dropped=0 seen=39841 mismatch=31826 zero_len=0 host_ms=1053086 hw_us=1052622751 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=141 len=490 first_word_invalid=0 preview=[-10,-9,-9,-11,-8,-13,-7,-14,-6,-15,-5,-16,-4,-17,-3,-18]
+
+06 hw_us=1054738455 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-53 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=150 len=114 first_word_invalid=0 preview=[0,-15,3,-16,6,-17,8,-16,10,-16,12,-15,14,-15,15,-14]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8062 interval=9 dropped=0 seen=40135 mismatch=32073 zero_len=0 host_ms=1059306 hw_us=1058839648 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-67 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=166 len=106 first_word_invalid=0 preview=[-5,-19,-1,-20,2,-21,5,-21,7,-22,9,-20,11,-20,12,-20]
+
+CSI_SUMMARY fw_profile=rpi5_ap_�!Vw_role=live total;808~�47�29�0l=11 dropped=0 seen=40219 mismatch=32137 zero_len=0 host_ms=106136 hw_us=1061872842 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=178 len=490 first_word_invalid=0 preview=[-10,-9,-8,-11,-7,-13,-5,-15,-4,-15,-2,-17,-1,-17,0,-18]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8102 interval=10 dropped=0 seen=40301 mismatch=32199 zero_len=0 host_ms=1064406 hw_us=1063941867 mac=1e:f4:3f:f0:3d:a7 dmac=ff:ff:ff:ff:ff:ff rssi=-44 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8122 interval=10 dropped=0 seen=40354 mismatch=32232 zero_len=0 host_ms=1066alid=0 preview=[9,-4,11,-3,12,-1,12,0,14,1,13,3,14,4,14,5]
+
+len=114 sig_len=83 rx_state=0 rx_seq=203 len=114 first_word_invalid=0 preview=[2,-20,5,-19,7,-18,9,-17,11,-17,11,-15,13,-16,12,-15]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8154 interval=9 dropped=0 seen=40478 mismatch=32324 zero_len=0 host_ms=1070476 hw_us=1070017408 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-59 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8159 interval=5 dropped=0 seen=40497 mismatch=32338 zero_len=0 host_ms=10714len=114 sig_len=83 rx_state=0 rx_seq=220 len=114 first_word_invalid=0 preview=[-8,-16,-5,-18,-3,-19,-1,-20,1,-21,3,-21,4,-22,5,-22]
+
+586 hw_us=1073122774 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-43 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=83 rx_state=0 rx_seq=2222 len=490 first_word_invalid=0 preview=[-6,-20,-4,-21,-1,-21,1,-21,1,-20,1,-20,2,-20,1,-20]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8210 interval=5 dropped=0 seen=40675 mismatch=32465 zero_len=0 host_ms=1077656 hw_us=1077194053 mac=1e:f4:3f:f0:3d:a7 dmac=01:80:c2:00:00:13 rssi=-40 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8219 interval=9 dropped=0 seen=40703 mismatch=32484 zero_len=0 host_ms=10786_len=114 sig_len=83 rx_state=0 rx_seq=249 len=114 first_word_invalid=0 preview=[10,-13,12,-12,14,-10,16,-9,17,-8,18,-7,18,-7,19,-6]
+
+
+�4�9���75��47�0lid=0 preview=[12,6,12,8,12,10,11,11,11,12,10,13,10,14,10,15]
+
+�4�9���75��47�alY��4�2�����m�KK�GLKK��%������%��#�%��%�%Ɔ%�%Ʀ�A�CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8323 interval=6 dropped=0 seen=41204 mismatch=32881 zero_len=0 host_ms=10919len=114 sig_len=28 rx_state=0 rx_seq=311 len=106 first_word_invalid=0 preview=[-8,-5,-8,-6,-8,-8,-7,-10,-6,-11,-5,-12,-5,-13,-5,-14]
+
+��56 hw_us=1096491511 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=319 len=114 first_word_invalid=0 preview=[-13,-4,-13,-7,-13,-9,-12,-11,-11,-12,-10,-14,-10,-15,-10,-16]
+��86 hw_us=1101622379 mac=1e:f,:3~�3����������1�1�M�N�NM��X rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=339 len=490 first_word_invalid=0 preview=[12,-13,15,-11,17,-9,18,-7,20,-6,20,-4,21,-3,22,-2]
+
+
+
+
+
+
+
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8587 interval=9 dropped=0 seen=42367 mismatch=33780 zero_len=0 host_ms=1126626 hw_us=1126159486 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-61 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8592 interval=5 dropped=0 seen=42384 mismatch=33792 zero_len=0 host_ms=11275len=114 sig_len=83 rx_state=0 rx_seq=442 len=490 first_word_invalid=0 preview=[-15,-3,-15,-6,-15,-9,-14,-11,-15,-12,-14,-13,-13,-15,-13,-16]
+
+�W�\OL�LN_len=114 sig_len=28 rx_state=0 rx_seq=450 len=106 first_word_invalid=0 preview=[7,11,5,12,4,14,3,15,2,16,1,16,0,18,0,18]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8636 intervalid=0 preview=[-3,13,-5,14,-8,13,-10,13,-11,12,-13,11,-14,11,-15,11]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8645 interval=9 dropped=0 seen=42628 mismatch=33983 zero_len=0 host_ms=1134786 hw_us=1134323905 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-83 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_lCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8654 interval=9 dropped=0 seen=42659 mismatch=34005 zero_len=0 host_ms=1135806 hw_us=1135346594 mac=7a:9b:5e:89:19:67 dmac=5c:62:8b:36:83:e0 rssi=-65 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=475 len=106 first_word_invalid=0 preview=[1,31,-4,31,-7,30,-10,28,-10,26,-12,24,-12,22,-12,22]
+
+36 hw_us=1136372197 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=479 len=490 first_word_invalid=0 preview=[1,17,-1,18,-3,18,-5,18,-7,18,-9,17,-10,18,-11,18]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8699 interval=11 dropped=0 seen=42825 mismatch=34126 zero_len=0 host_ms=1140len=114 sig_len=83 rx_state=0 rx_seq=500 len=490 first_word_invalid=0 preview=[13,-7,14,-5,16,-3,16,-2,16,0,16,1,16,2,17,3]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8711 interval=6 dropped=0 seen=42869 mismatch=34158 zero_len=0 host_ms=1142956 hw_us=1142491507 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-49 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=505 len=114 first_word_invalid=0 preview=[2,-21,6,-21,8,-20,12,-20,13,-19,16,-19,16,-18,18,-17]
+
+
+�
+��X
+�Z���Θ�ŇN��N؍M
+ rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=529 len=114 first_word_invalid=0 preview=[-12,1,-13,-1,-14,-3,-14,-5,-15,-6,-15,-8,-15,-8,-16,-9]
+���2�1 rsso=-47 noisU=-9�9rare=11 chanmej������6���9�/�3�4����9��CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8794 interval=5 dropped=0 seen=43311 mismatch=34517 zero_len=0 host_ms=11530len=114 sig_len=83 rx_state=0 rx_seq=545 len=490 first_word_invalid=0 preview=[-1,-13,1,-13,2,-14,3,-14,4,-15,5,-15,6,-16,7,-16]
+
+086 hw_us=1153622083 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=83 rx_state=0 rx_seq=3220 len=490 first_word_invalid=0 preview=[14,2,14,4,14,5,14,6,15,8,15,9,15,11,15,11]
+
+_len=106 sig_len=28 rx_state=0 rx_seq=3345 len=106 first_word_invalid=0 preview=[-3,12,-5,13,-7,13,-9,13,-9,13,-11,13,-12,12,-13,13]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8900 interval=9 dropped=0 seen=43767 mismatch=34867 zero_len=0 host_ms=1166416 hw_us=1165956063 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-63 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=599 len=106 first_word_invalid=0 preview=[3,-11,6,-11,8,-11,10,-10,11,-9,13,-8,14,-8,16,-7]
+36 hw_us=1166871964 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8913 interval=8 dropped=0 seen=43827 mismatch=34914 zero_len=0 host_ms=1168456 hw_us=1167991657 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=608 len=114 first_word_invalid=0 preview=[11,2,12,4,12,6,12,8,11,9,11,11,10,12,10,13]
+_len=114 sig_len=83 rx_state=0 rx_seq=612 len=114 first_word_invalid=0 preview=[6,10,5,12,3,12,2,13,1,15,0,15,-2,16,-3,16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8935 interval=9 dropped=0 seen=43899 mismatch=34964 zero_len=0 host_ms=1170456 hw_us=1169991560 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=616 len=114 first_word_invalid=0 preview=[3,-11,5,-11,7,-11,8,-11,9,-11,10,-11,12,-11,13,-11]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8944 interval=9 dropped=0 seen=43940 mismatch=34996 zero_len=0 host_ms=11714CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8949 interval=5 dropped=0 seen=43960 mismatch=35011 zero_len=0 host_ms=1172456 hw_us=1171991557 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=624 len=114 first_word_invalid=0 preview=[12,2,12,4,13,6,12,7,12,8,12,10,12,11,13,12]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8954 interval=5 dropped=0 seen=43986 mismatch=35032 zero_len=0 host_ms=11735len=114 sig_len=131 rx_state=0 rx_seq=628 len=106 first_word_invalid=0 preview=[-6,9,-9,9,-10,9,-11,8,-13,7,-14,6,-15,6,-16,5]
+en=114 sig_len=28 rx_state=0 rx_seq=632 len=106 first_word_invalid=0 preview=[-4,-11,-3,-12,-2,-13,-1,-14,1,-15,2,-15,3,-16,3,-16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8978 interval=15 dropped=0 seen=44126 mismatch=35148 zero_len=0 host_ms=1175586 hw_us=1175121906 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est06 hw_us=1176143234 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-58 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=640 len=106 first_word_invalid=0 preview=[-3,-11,-1,-12,0,-13,1,-13,3,-15,4,-14,4,-15,5,-15]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=8997 interval=10 dropped=0 seen=44191 mismatch=35194 zero_len=0 host_ms=1177CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9002 interval=5 dropped=0 seen=44214 mismatch=35212 zero_len=0 host_ms=1178656 hw_us=1178191014 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-58 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=648 len=106 first_word_invalid=0 preview=[2,12,1,12,-2,13,-4,14,-5,14,-7,13,-8,13,-9,14]
+��47��8�0l=10 dropped=0 seen=44316 mismatch=35284 zero_len=0 host_ms=1181706 hw_us=1181244250 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-81 noise=-99 rate=9 ch�7�2������77���9�/�0�4����9��len=114 sig_len=28 rx_state=0 rx_seq=662 len=106 first_word_invalid=0 preview=[-7,10,-9,9,-12,8,-13,6,-14,6,-15,4,-16,3,-17,3]
+�4/��8�0l=6 dro�qed����2�~
+�L
+H[�<[�Z�L�L��^���K�̭6�m��m�'&G�FCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9043 interval=5 dropped=0 seen=44395 mismatch=35352 zero_len=0 host_ms=1183756 hw_us=1183291574 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-84 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=670 len=106 first_word_invalid=0 preview=[-10,7,-12,5,-14,4,-14,3,-15,2,-16,1,-17,0,-17,-1]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9053 interval=10 dropped=0 seen=44449 mismatch=35396 zero_len=0 host_ms=1184len=114 sig_len=28 rx_state=0 rx_seq=674 len=106 first_word_invalid=0 preview=[0,13,-2,13,-3,13,-5,14,-6,14,-7,14,-8,15,-9,15]
+
+�2���4�9���79��27�0�id=0 preview=[-9,7,-11,6,-13,5,-14,4,-15,2,-16,1,-16,0,-17,-1]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9076 interval=5 dropped=0 seen=44601 mismatch=35525 zero_len=0 host_ms=11878len=114 sig_len=83 rx_state=0 rx_seq=686 len=490 first_word_invalid=0 preview=[-10,-7,-10,-8,-8,-10,-8,-12,-7,-14,-6,-14,-5,-16,-4,-16]
+len=114 sig_len=83 rx_state=0 rx_seq=694 len=490 first_word_invalid=0 preview=[-7,-11,-5,-12,-5,-14,-3,-14,-2,-16,0,-16,0,-18,2,-17]
+len=114 sig_len=83 rx_state=0 rx_seq=698 len=490 first_word_invalid=0 preview=[8,-9,10,-8,12,-7,14,-6,14,-5,15,-4,16,-3,17,-2]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9108 interval=9 dropped=0 seen=44737 mismatch=35629 zero_len=0 host_ms=1191836 hw_us=1191373012 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9113 interva36 hw_us=1192372150 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=706 len=490 first_word_invalid=0 preview=[12,3,12,6,12,7,11,9,11,11,10,12,10,14,10,14]
+
+
+956 hw_us=1196491433 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=723 len=114 first_word_invalid=0 preview=[9,-8,11,-8,12,-7,13,-6,14,-5,15,-4,16,-4,17,-4]
+56 hw_us=1197491437 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=727 len=114 first_word_invalid=0 preview=[0,12,-2,13,-4,13,-6,13,-7,13,-9,13,-10,13,-11,13]
+len=114 sig_len=83 rx_state=0 rx_seq=731 len=114 first_word_invalid=0 preview=[7,-10,9,-9,11,-8,12,-7,14,-6,15,-6,16,-5,17,-4]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9167 interval=9 dropped=0 seen=44970 mismatch=35803 zero_len=0 host_ms=1199956 hw_us=1199491453 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9176 interval=9 dropped=0 seen=45018 mismatch=35842 zero_len=0 host_ms=1201086 hw_us=1200621760 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=739 len=490 first_word_invalid=0 preview=[-12,1,-13,-1,-13,-3,-14,-5,-14,-6,-14,-8,-14,-8,-14,-10]
+
+86 hw_us=1202621919 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=748 len=490 first_word_invalid=0 preview=[-12,-3,-12,-5,-11,-7,-11,-9,-11,-11,-9,-12,-9,-14,-9,-15]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9196 interval=6 dropped=0 seen=45192 mismatch=35996 zero_len=0 host_ms=1204156 hw_us=1203697765 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-62 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=752 len=106 first_word_invalid=0 preview=[-1,12,-3,13,-4,13,-6,12,-8,13,-9,13,-11,13,-11,13]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9205 interval=9 dropped=0 seen=45238 mismatch=36033 zero_len=0 host_ms=12051len=114 sig_len=28 rx_state=0 rx_seq=756 len=106 first_word_invalid=0 preview=[11,5,11,7,11,9,10,11,10,12,9,13,9,14,9,15]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9222 interval=17 dropped=0 seen=45292 mismatch=36070 zero_len=0 host_ms=1206176 hw_us=1205709479 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9232 interval=10 dropped=0 seen=45340 mismatch=36108 zero_len=0 host_ms=1207206 hw_us=1206743721 mac=5c:62:8b:36:83:e0 dmac=d0:39:57:b6:3f:b7 rssi=-56 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=82 rx_state=0 rx_seq=765 len=106 first_word_invalid=0 preview=[-5,11,-7,11,-9,11,-11,10,-12,10,-12,9,-14,9,-15,9]
+
+
+
+
+len=106 sig_len=83 rx_state=0 rx_seq=3973 len=490 first_word_invalid=0 preview=[-5,13,-7,13,-8,13,-10,12,-11,12,-13,12,-14,11,-15,11]
+
+
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9397 interval=5 dropped=0 seen=46130 mismatch=36733 zero_len=0 host_ms=12286len=106 sig_len=28 rx_state=0 rx_seq=58 len=106 first_word_invalid=0 preview=[-10,-10,-9,-12,-8,-14,-7,-15,-6,-16,-5,-17,-3,-18,-3,-18]
+�0�����1�07�2������77���9�/�0�4����9�_len=114 sig_len=342 rx_state=0 rx_seq=855 len=106 first_word_invalid=0 preview=[-9,9,-11,8,-13,7,-14,5,-15,5,-15,3,-16,2,-18,1]
+
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9519 interval=6 dropped=0 seen=46731 mismatch=37212 zero_len=0 host_ms=1243936 hw_us=1243469975 mac=82:7d:2a:9b:a4:22 dmac=5c:62:8b:36:83:e0 rssi=-54 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=251 len=106 first_word_invalid=0 preview=[8,13,6,14,6,16,5,17,4,18,3,18,2,19,2,20]
+956 hw_us=1244491438 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=917 len=114 first_word_invalid=0 preview=[-12,4,-13,2,-15,0,-15,-2,-16,-4,-16,-5,-16,-6,-17,-7]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9548 interval=9 dropped=0 seen=46828 mismatch=37280 zero_len=0 host_ms=1246956 hw_us=1246491441 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=926 len=114 first_word_invalid=0 preview=[-11,7,-13,5,-14,4,-15,2,-16,0,-17,-2,-17,-3,-18,-5]
+len=114 sig_len=83 rx_state=0 rx_seq=930 len=114 first_word_invalid=0 preview=[-12,4,-13,2,-15,1,-16,-1,-16,-3,-17,-5,-16,-6,-17,-8]
+
+�2���4�9���79��47�(6id=0 preview=[-8,-11,-7,-13,-6,-13,-4,-15,-3,-16,-1,-18,0,-18,0,-19]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9590 interval=9 dropped=0 seen=47034 mismatch=37444 zero_len=0 host_ms=1252086 hw_us=1251621443 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=946 len=490 first_word_invalid=0 preview=[-1,13,-3,13,-6,13,-8,14,-9,13,-11,13,-11,12,-13,13]
+
+86 hw_us=1253621381 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=954 len=490 first_word_invalid=0 preview=[2,12,-1,14,-3,14,-4,14,-5,15,-7,14,-9,15,-10,15]
+
+
+
+
+len=114 sig_len=83 rx_state=0 rx_seq=975 len=114 first_word_invalid=0 preview=[13,2,13,4,14,6,13,8,13,9,12,10,13,12,13,13]
+
+����77���9�/�0�4����9��len=114 sig_len=174 rx_state=0 rx_seq=987 len=106 first_word_invalid=0 preview=[12,-2,13,1,14,3,15,5,14,6,14,8,14,10,14,11]
+
+���
+H[�XOL���Ό�����N�
+Y[�X�̘٘�M�N�NM�̘ rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9708 interval=9 dropped=0 seen=47559 mismatch=37851 zero_len=0 host_ms=1266376 hw_us=1265910716 mac=1e:f4:3f:f0:3d:a7 dmac=e6:30:07:01:83:aa rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=342 qx_?�0��9��������2���4�9���79��77valid=0 preview=[-8,9,-10,9,-12,8,-14,6,-14,5,-16,4,-17,3,-18,2]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9719 interval=11 dropped=0 seen=47615 mismatch=37896 zero_len=0 host_ms=1267396 hw_us=1266����M
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9774 interval=11 dropped=0 seen=47867 mismatch=38093 zero_len=0 host_ms=1274456 hw_us=1273991459 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1037 len=114 first_word_invalid=0 preview=[-3,-12,-2,-13,-1,-14,0,-15,2,-15,2,-16,3,-16,3,-17]
+
+KK
+K
+KK
+KL
+K=K�
+K
+K�
++�LWC
+len=114 sig_len=98 rx_state=0 rx_seq=1057 len=106 first_word_invalid=0 preview=[-6,10,-8,10,-11,9,-12,8,-14,8,-15,6,-16,5,-17,4]
+
+
+76 hw_us=1291411233 mac=ee:0d:ed:e9:04:1a dmac=ff:ff:ff:ff:ff:ff rssi=-83 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=170 rx_state=0 rx_seq=869 len=106 first_word_invalid=0 preview=[-26,-23,-28,-24,-29,-25,-30,-26,-31,-27,-33,-28,-34,-29,-36,-29]
+
+
+��
+
+�4�9���79��47�alid=0 preview=[-11,5,-13,4,-14,2,-15,1,-16,0,-16,-2,-17,-2,-17,-3]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=9983 interval=7 dropped=0 seen=48798 mismatch=38815 zero_len=0 host_ms=1298996 hw_us=1298529758 mac=1e:f4:3f:f0:3d:a7 dmac=10:5f:ad:b5:14:27 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=342 rx_state=0 rx_seq=1136 len=106 first_word_invalid=0 preview=[2,13,0,14,-2,14,-4,14,-6,15,-7,15,-8,15,-10,16]
+
+t_len=114 sig_len=83 rx_state=0 rx_seq=1144 len=114 first_word_invalid=0 preview=[13,2,13,4,14,6,14,7,14,9,13,10,13,11,14,12]
+
+�4�9���79��4�valid=0 preview=[-11,-7,-10,-10,-10,-11,-9,-13,-7,-14,-7,-15,-7,-16,-7,-17]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10044 interval=9 dropped=0 seen=49036 mismatch=38992 zero_len=0 host_ms=1306086 hw_us=1305621029 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1164 len=490 first_word_invalid=0 preview=[0,-12,2,-14,4,-13,6,-14,7,-15,8,-15,9,-14,10,-15]
+
+
+
+I (1311206) esp32_capture_fw: ping reply count=5241 timeouts=0
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10083 interval=10 dropped=0 seen=49195 mismatch=39112 zero_len=0 host_ms=1311226 hw_us=1310764595 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-89 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1186 len=106 first_word_invalid=0 preview=[-5,-12,-4,-13,-2,-14,0,-15,1,-16,3,-16,4,-17,5,-16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10092 interval=9 dropped=0 seen=49224 mismatch=39132 zero_len=0 host_ms=1312266 hw_us=1311805013 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-88 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1190 len=106 first_word_invalid=0 preview=[12,5,11,7,11,9,10,11,10,13,9,14,8,16,7,17]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10102 interval=5 dropped=0 seen=49278 mismatch=39176 zero_len=0 host_ms=1314CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10113 interval=11 dropped=0 seen=49326 mismatch=39213 zero_len=0 host_ms=1315336 hw_us=1314870971 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1202 len=490 first_word_invalid=0 preview=[4,-12,7,-12,9,-11,11,-10,12,-10,14,-8,15,-8,17,-7]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10122 interval=9 dropped=0 seen=49358 mismatch=39236 zero_len=0 host_ms=1316336 hw_us=1315870957 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1206 len=490 first_word_invalid=0 preview=[-12,3,-13,2,-14,0,-15,-1,-15,-2,-15,-4,-16,-4,-17,-5]
+valid=0 preview=[-5,11,-7,11,-10,11,-11,10,-12,10,-13,10,-14,9,-15,9]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10142 interval=5 dropped=0 seen=49449 mismatch=39307 zero_len=0 host_ms=1319_len=114 sig_len=83 rx_state=0 rx_seq=1218 len=490 first_word_invalid=0 preview=[4,-12,6,-11,9,-11,10,-11,11,-10,13,-10,14,-9,15,-9]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10151 interval=9 dropped=0 seen=49479 mismatch=39328 zero_len=0 host_ms=1320336 hw_us=1319871085 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est1456 hw_us=1320991142 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 esCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10172 interval=9 dropped=0 seen=49545 mismatch=39373 zero_len=0 host_ms=1322456 hw_us=1321996142 mac=5c:62:8b:36:83:e0 dmac=01:00:5e:00:00:01 rssi=-56 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=84 rx_state=0 rx_seq=1231 len=106 first_word_invalid=0 preview=[-10,-7,-9,-9,-9,-11,-8,-12,-7,-13,-6,-15,-6,-15,-5,-16]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10252 interval=6 dropped=0 seen=49988 mismatch=39736 zero_len=0 host_ms=1333586 hw_us=1333120800 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1276 len=490 first_word_invalid=0 preview=[-2,-12,0,-13,1,-14,3,-15,4,-14,5,-16,5,-15,7,-16]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10276 interval=9 dropped=0 seen=50078 mismatch=39802 zero_len=0 host_ms=1336706 hw_us=1336241441 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1289 len=114 first_word_invalid=0 preview=[3,-12,5,-12,7,-13,8,-12,9,-12,10,-13,11,-12,12,-12]
+
+9706 hw_us=1339241113 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1301 len=114 first_word_invalid=0 preview=[-11,6,-12,5,-14,3,-15,1,-16,1,-16,0,-17,-2,-18,-2]
+�4�9���79���nvalid=0 preview=[5,12,3,13,2,14,1,15,-1,16,-2,16,-3,17,-3,18]
+856 hw_us=1341388019 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-90 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1309 len=106 first_word_invalid=0 preview=[-12,-5,-11,-7,-11,-9,-10,-11,-10,-12,-8,-14,-8,-15,-8,-16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10329 interval=9 dropped=0 seen=50277 mismatch=39948 zero_len=0 host_ms=1342836 hw_us=1342370926 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1313 len=490 first_word_invalid=0 preview=[-10,7,-12,6,-14,5,-15,3,-16,2,-16,1,-17,1,-18,0]
+
+
+
+�0�����1�07�2������77���9�/�0�4����9006 hw_us=1349540778 mac=2e:cf:67:d4:44:d5 dmac=ff:ff:ff:ff:ff:ff rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=80 rx_state=0 rx_seq=1596 len=106 first_word_invalid=0 preview=[-11,-10,-10,-11,-10,-13,-9,-14,-8,-15,-9,-16,-9,-16,-9,-17]
+
+086 hw_us=1354624298 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10442 interval=9 dropped=0 seen=50872 mismatch=40430 zero_len=0 host_ms=1357086 hw_us=1356620676 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1370 len=490 first_word_invalid=0 preview=[-13,-1,-13,-2,-14,-5,-14,-7,-14,-8,-13,-10,-13,-11,-14,-12]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10497 interval=6 dropped=0 seen=51116 mismatch=40619 zero_len=0 host_ms=1364206 hw_us=1363741611 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est236 hw_us=1364776355 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1403 len=106 first_word_invalid=0 preview=[12,3,12,6,12,8,12,9,11,11,10,13,10,14,10,15]
+
+
+_len=106 sig_len=83 rx_state=0 rx_seq=1863 len=490 first_word_invalid=0 preview=[14,5,14,7,14,8,13,10,13,11,13,12,14,13,13,13]
+
+���20c rssi=-47 no�re=-9�!rate=11 ch�7�2������77���ݗ][zYOH�\t_len=114 sig_len=83 rx_state=0 rx_seq=1469 len=490 first_word_invalid=0 preview=[-12,-5,-12,-7,-12,-9,-11,-10,-11,-12,-10,-13,-CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10652 interval=9 dropped=0 seen=51823 mismatch=41171 zero_len=0 host_ms=1382_len=114 sig_len=28 rx_state=0 rx_seq=1473 len=106 first_word_invalid=0 preview=[-9,-10,-6,-12,-5,-13,-4,-14,-2,-16,-1,-16,1,-17,2,-18]
+
+
+
+
+�4�9���79���nvalid=0 preview=[11,11,10,12,9,13,8,15,8,15,7,16,7,17,7,18]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10761 interval=9 dropped=0 seen=52337 mismatch=41576 zero_len=0 host_ms=1395836 hw_us=1395370384 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1526 len=490 first_word_invalid=0 preview=[13,1,14,3,14,5,14,7,14,9,13,11,13,12,13,13]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10786 interval=6 dropped=0 seen=52444 mismatch=41658 zero_len=0 host_ms=1398976 hw_us=1398512096 mac=5c:62:8b:36:83:e0 dmac=c6:89:49:ed:46:ec rssi=-56 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=495 rx_state=0 rx_seq=2209 len=106 first_word_invalid=0 preview=[14,5,14,7,14,9,13,10,13,12,13,13,13,14,12,15]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10791 interval=5 dropped=0 seen=52479 mismatch=41688 zero_len=0 host_ms=1399_len=114 sig_len=28 rx_state=0 rx_seq=1543 len=106 first_word_invalid=0 preview=[-12,4,-13,2,-15,0,-15,-2,-15,-4,-15,-6,-15,-7,-16,-9]
+0986 hw_us=1400519118 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-62 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1547 len=106 first_word_invalid=0 preview=[11,7,10,9,10,10,10,12,8,13,7,15,7,16,8,16]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10810 interval=9 dropped=0 seen=52569 mismatch=41759 zero_len=0 host_ms=1402026 hw_us=1401562102 mac=82:7d:2a:9b:a4:22 dmac=5c:62:8b:36:83:e0 rssi=-57 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1551 len=106 first_word_invalid=0 preview=[-8,11,-10,10,-13,9,-14,8,-15,7,-16,5,-17,4,-19,4]
+
+�47�29;al=9 dropped=0 seen=52750 mismatch=41891 zero_len=0 host_ms=1408len=114 sig_len=28 rx_state=0 rx_seq=1575 len=106 first_word_invalid=0 preview=[-13,2,-14,0,-15,-2,-15,-4,-15,-5,-15,-8,-15,-9,-16,-10]
+
+
+�4�9���79��4nvalid=0 preview=[13,-3,15,-1,15,2,16,3,16,5,16,7,16,8,17,10]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10914 interval=5 dropped=0 seen=53021 mismatch=42107 zero_len=0 host_ms=1414206 hw_us=1413741454 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1604 len=114 first_word_invalid=0 preview=[-11,9,-14,8,-15,6,-17,4,-18,2,-19,0,-19,-1,-20,-2]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=10944 interval=15 dropped=0 seen=53134 mismatch=42190 zero_len=0 host_ms=1417336 hw_us=1416870273 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1613 len=490 first_word_invalid=0 preview=[4,-13,6,-13,8,-12,10,-12,11,-12,12,-11,14,-10,15,-10]
+
+
+
+YO?�l�nvali�<0 nreview=[12,-3,13,-2,1,,0,15,����u���_len=114 sig_len=28 rx_state=0 rx_seq=1646 len=106 first_word_invalid=0 preview=[-17,6,-19,3,-20,0,-21,-2,-20,-4,-20,-6,-19,-7,-19,-8]
+
+_len=114 sig_len=98 rx_state=0 rx_seq=1654 len=106 first_word_invalid=0 preview=[12,-5,13,-3,15,-2,15,0,16,0,16,1,18,3,18,3]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11040 interval=14 dropped=0 seen=53532 mismatch=42492 zero_len=0 host_ms=1428546 hw_us=1428082657 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-66 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=2590 len=106 first_word_invalid=0 preview=[13,-8,14,-7,15,-7,17,-5,17,-5,18,-4,19,-3,19,-3]
+
+
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11126 interval=9 dropped=0 seen=53852 mismatch=42726 zero_len=0 host_ms=1437CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11138 interval=5 dropped=0 seen=53910 mismatch=42772 zero_len=0 host_ms=1439CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11149 interval=11 dropped=0 seen=53944 mismatch=42795 zero_len=0 host_ms=144CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11160 interval=11 dropped=0 seen=53978 mismatch=42818 zero_len=0 host_ms=144836 hw_us=1442370068 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=83 rx_state=0 rx_seq=2776 len=490 first_word_invalid=0 preview=[9,-11,10,-11,12,-10,13,-10,14,-10,15,-9,16,-9,16,-9]
+
+
+
+�0�����1�07�2���r�77���9�/�0�4����9:_len=114 sig_len=83 rx_state=0 rx_seq=1756 len=114 first_word_invalid=0 preview=[13,1,13,3,14,5,14,6,14,6,13,7,14,8,14,9]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11251 interval=5 dropped=0 seen=54391 mismatch=43140 zero_len=0 host_ms=1453956 hw_us=1453491544 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-48 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1760 len=114 first_word_invalid=0 preview=[-6,-10,-5,-12,-4,-13,-3,-14,-3,-15,-2,-15,-2,-16,-2,-16]
+
+086 hw_us=1458619957 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1781 len=490 first_word_invalid=0 preview=[-4,-12,-2,-14,0,-15,2,-15,4,-15,5,-16,6,-16,7,-16]
+
+
+206 hw_us=1464741500 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11374 interval=11 dropped=0 seen=54796 mismatch=43422 zero_len=0 host_ms=1466286 hw_us=1465819800 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-65 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=1810 len=106 first_word_invalid=0 preview=[-8,-10,-7,-12,-5,-13,-4,-14,-2,-15,-1,-16,-1,-17,0,-17]
+
+206 hw_us=1466741523 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1814 len=114 first_word_invalid=0 preview=[-11,-9,-10,-11,-9,-12,-7,-14,-7,-15,-5,-15,-4,-16,-4,-17]
+
+_len=114 sig_len=83 rx_state=0 rx_seq=1830 len=490 first_word_invalid=0 preview=[-10,-10,-8,-13,-6,-14,-5,-16,-3,-17,-1,-18,0,-18,2,-19]
+
+456 hw_us=1474991514 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1847 len=114 first_word_invalid=0 preview=[-15,8,-17,5,-18,3,-19,0,-19,-1,-19,-3,-19,-4,-20,-6]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11454 interval=9 dropped=0 seen=55205 mismatch=43751 zero_len=0 host_ms=1476_len=114 sig_len=83 rx_state=0 rx_seq=1859 len=114 first_word_invalid=0 preview=[17,4,16,7,17,9,15,11,15,13,13,14,14,15,13,15]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11511 interval=15 dropped=0 seen=55426 mismatch=43915 zero_len=0 host_ms=148t_len=114 sig_len=466 rx_state=0 rx_seq=1875 len=106 first_word_invalid=0 preview=[-1,-17,2,-17,4,-17,7,-17,9,-17,10,-16,11,-16,13,-16]
+
+
+t_len=114 sig_len=83 rx_state=0 rx_seq=1900 len=114 first_word_invalid=0 preview=[-3,18,-6,17,-8,17,-10,16,-12,16,-13,15,-15,15,-16,15]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11624 interval=10 dropped=0 seen=55783 mismatch=44159 zero_len=0 host_ms=1493836 hw_us=1493369721 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1920 len=490 first_word_invalid=0 preview=[-1,16,-3,17,-5,17,-7,17,-9,17,-10,17,-11,16,-12,17]
+
+]_len=114 sig_len=28 rx_state=0 rx_seq=1936 len=106 first_word_invalid=0 prenYew=[�4,5,14,8,14,10,14,11,13,13,12,14,13,1�,���
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11675 interval=7 dropped=0 seen=55954 mismatch=44279 zero_len=0 host_ms=1499956 hw_us=1499490799 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=1946 len=114 first_word_invalid=0 preview=[-16,-3,-16,-6,-16,-8,-16,-10,-15,-12,-14,-13,-14,-14,-14,-15]
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11685 interval=10 dropped=0 seen=55990 mismatch=44305 zero_len=0 host_ms=150t_len=114 sig_len=28 rx_state=0 rx_seq=1950 len=106 first_word_invalid=0 preview=[-3,17,-6,17,-8,16,-10,16,-12,15,-13,15,-14,14,-16,14]
+�T3 rssi=+59 noYse=-9� rQte�<1 cha�2������7/���9�/�0�/����9t_len=106 sig_len=28 rx_state=0 rx_seq=3531 len=106 first_word_invalid=0 preview=[9,16,8,18,6,19,4,19,3,20,3,21,2,21,2,21]
+
+
+
+
+
+
+
+����K+OKKKGL�+�KKL�JK
+KKL�K�
+K19,-8]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11803 interval=9 dropped=0 seen=56571 mismatch=44768 zero_len=0 host_ms=1516206 hw_us=1515741641 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2015 len=114 first_word_invalid=0 preview=[-17,-4,-16,-7,-15,-10,-14,-11,-14,-14,-12,-15,-CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11821 interval=9 dropped=0 seen=56631 mismatch=44810 zero_len=0 host_ms=1518316 hw_us=1517852289 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-62 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2019 len=106 first_word_invalid=0 preview=[0,15,-2,16,-4,17,-6,17,-7,17,-8,17,-9,17,-10,17]
+
+�1]3 rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11895 interval=9 dropped=0 seen=56922 mismatch=45027 zero_len=0 host_ms=1527CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11905 interval=10 dropped=0 seen=56949 mismatch=45044 zero_len=0 host_ms=1528456 hw_us=1527991476 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2060 len=114 first_word_invalid=0 preview=[-13,10,-15,8,-17,6,-18,5,-19,4,-20,2,-20,1,-21,0]
+
+18,-10]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11933 interval=�!d�78�2��_Y�[O�
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=11989 interval=5 dropped=0 seen=57334 mismatch=45345 zero_len=0 host_ms=1539706 hw_us=1539241471 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-47 noise=-99 rate=11 channel=36 second=0 est_valid=1 est706 hw_us=1543243971 mac=5c:62:8b:36:83:e0 dmac=42:db:bd:21:28:3d rssi=-57 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12029 interval=7 dropped=0 seen=57492 mismatch=45463 zero_len=0 host_ms=1544836 hw_us=1544369354 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12034 interval=5 dropped=0 seen=57519 mismatch=45485 zero_len=0 host_ms=1545836 hw_us=1545369337 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-42 noise=-99 rate=11 channel=36 second=0 est_valid=1 estCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12061 interval=9 dropped=0 seen=57689 mismatch=45628 zero_len=0 host_ms=1548876 hw_us=1548415781 mac=9a:c5:1f:3b:cd:cb dmac=5c:62:8b:36:83:e0 rssi=-85 noise=-99 rate=9 channel=36 second=0 est_valid=1 est_len=114 sig_len=225 rx_state=0 rx_seq=2146 len=106 first_word_invalid=0 preview=[-13,12,-15,9,-18,8,-19,6,-19,3,-20,2,-20,0,-21,-1]
+
+t_len=114 sig_len=83 rx_state=0 rx_seq=2159 len=114 first_word_invalid=0 preview=[-4,-16,-2,-17,0,-17,3,-17,4,-18,6,-18,7,-19,8,-19]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12117 interval=6 dropped=0 seen=57922 mismatch=45805 zero_len=0 host_ms=1555956 hw_us=1555491448 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2171 len=114 first_word_invalid=0 preview=[5,16,2,18,1,19,-2,19,-3,20,-5,19,-6,20,-6,20]
+
+6956 hw_us=1556491437 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-45 noise=-99 rate=11 channel=36 second=0 est_valid=1 esCSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12144 interval=9 dropped=0 seen=58010 mismatch=45866 zero_len=0 host_ms=1558086 hw_us=1558619412 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-41 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2183 len=490 first_word_invalid=0 preview=[15,-6,17,-4,18,-2,18,1,19,2,19,4,19,5,19,6]
+���
+�K��
+K4,-25]
+
+t_len=106 sig_len=277 rx_state=0 rx_seq=197 len=106 first_word_invalid=0 preview=[15,35,12,34,10,33,8,32,5,31,4,31,2,30,0,29]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12234 interval=9 dropped=0 seen=58391 mismatch=46157 zero_len=0 host_ms=1568296 hw_us=1567832370 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-65 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=28 rx_state=0 rx_seq=2220 len=106 first_word_invalid=0 preview=[-11,-12,-9,-15,-7,-16,-5,-17,-4,-19,-2,-19,0,-20,1,-20]
+9206 hw_us=1568741468 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 es_len=114 sig_len=83 rx_state=0 rx_seq=2228 len=490 first_word_invalid=0 preview=[-2,15,-5,15,-7,14,-10,14,-11,13,-12,12,-14,12,-15,11]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12285 interval=9 dropped=0 seen=58580 mismatch=46295 zero_len=0 host_ms=1574_len=114 sig_len=83 rx_state=0 rx_seq=2244 len=490 first_word_invalid=0 preview=[7,15,4,17,2,17,0,18,-2,19,-4,18,-5,19,-7,18]
+
+
+1486 hw_us=1581026918 mac=5c:62:8b:36:83:e0 dmac=12:58:9a:08:ed:6d rssi=-57 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=495 rx_state=0 rx_seq=449 len=106 first_word_invalid=0 preview=[11,-13,13,-12,14,-13,16,-12,17,-11,18,-11,18,-11,19,-11]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12460 interval=9 dropped=0 seen=59264 mismatch=46804 zero_len=0 host_ms=1592706 hw_us=1592241620 mac=2e:cf:67:d4:44:d5 dmac=d0:cf:13:e0:a7:14 rssi=-46 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2319 len=114 first_word_invalid=0 preview=[-9,14,-11,13,-13,12,-14,11,-16,11,-17,10,-18,9,-18,9]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12475 interval=5 dropped=0 seen=59394 mismatch=46919 zero_len=0 host_ms=1594_len=114 sig_len=83 rx_state=0 rx_seq=2327 len=114 first_word_invalid=0 preview=[-15,3,-16,0,-17,-2,-17,-4,-16,-7,-16,-9,-16,-10,-16,-12]
+836 hw_us=1595369003 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-41 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2331 len=490 first_word_invalid=0 preview=[-10,-11,-9,-13,-8,-14,-6,-16,-5,-17,-4,-18,-4,-18,-3,-20]
+
+�47�29;al=10 dropped=0 seen=59549 mismatch=47030 zero_len=0 host_ms=159t_len=106 sig_len=495 rx_state=0 rx_seq=681 len=106 first_word_invalid=0 preview=[-19,5,-19,2,-20,0,-20,-2,-21,-4,-20,-4,-21,-6,CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12524 interval=5 dropped=0 seen=59577 mismatch=47053 zero_len=0 host_ms=1600_len=114 sig_len=83 rx_state=0 rx_seq=2351 len=490 first_word_invalid=0 preview=[17,-3,18,-1,19,2,19,3,19,4,19,6,19,6,20,7]
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12537 interval=13 dropped=0 seen=59613 mismatch=47076 zero_len=0 host_ms=160t_len=114 sig_len=83 rx_state=0 rx_seq=2356 len=114 first_word_invalid=0 preview=[-2,17,-4,18,-7,18,-9,17,-10,17,-12,16,-12,16,-14,16]
+
+986 hw_us=1605526706 mac=5c:62:8b:36:83:e0 dmac=b2:08:7e:a8:6c:10 rssi=-60 noise=-99 rate=11 channel=36 second=0 est_valid=1 estnvalid=0 preview=[8,-14,12,-13,14,-12,16,-10,17,-8,19,-6,19,-5,20,-4]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12615 interval=10 dropped=0 seen=59934 mismatch=47319 zero_len=0 host_ms=161t_len=106 sig_len=495 rx_state=0 rx_seq=853 len=106 first_word_invalid=0 preview=[1,-37,3,-36,5,-34,7,-34,10,-33,11,-33,12,-32,13,-32]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12700 interval=9 dropped=0 seen=60261 mismatch=47561 zero_len=0 host_ms=1622336 hw_us=1621868846 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-41 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=114 sig_len=83 rx_state=0 rx_seq=2437 len=490 first_word_invalid=0 preview=[9,-13,12,-12,14,-11,16,-9,17,-8,18,-6,19,-5,21,-4]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12731 interval=5 dropped=0 seen=60471 mismatch=47740 zero_len=0 host_ms=1625336 hw_us=1624875060 mac=d0:39:57:b6:3f:b7 dmac=5c:62:8b:36:83:e0 rssi=-64 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=1009 len=106 first_word_invalid=0 preview=[17,11,15,12,14,14,11,15,10,17,8,16,6,16,6,17]
+
+
+_len=114 sig_len=83 rx_state=0 rx_seq=2471 len=114 first_word_invalid=0 preview=[-14,-4,-14,-7,-14,-9,-13,-11,-12,-13,-11,-14,-10,-15,-11,-16]
+
+
+CSI_SUMMARY fw_profile=rpi5_ap_b fw_role=live total=12813 interval=5 dropped=0 seen=60796 mismatch=47983 zero_len=0 host_ms=1635586 hw_us=1635118946 mac=1e:f4:3f:f0:3d:a7 dmac=3c:dc:75:81:5e:0c rssi=-44 noise=-99 rate=11 channel=36 second=0 est_valid=1 est636 hw_us=1636170551 mac=a8:41:f4:f0:52:9e dmac=2e:cf:67:d4:44:d5 rssi=-60 noise=-99 rate=11 channel=36 second=0 est_valid=1 est_len=106 sig_len=28 rx_state=0 rx_seq=1155 len=106 first_word_invalid=0 preview=[-5,18,-1,16,3,13,8,12,12,8,17,7,19,3,22,1]

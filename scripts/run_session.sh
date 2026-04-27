@@ -8,6 +8,11 @@ usage() {
   echo "usage: $0 <session-id> [session-env-path]" >&2
 }
 
+CAPTURE_PID=""
+AUX_CAPTURE_PID=""
+AUX_CAPTURE_ID=""
+AUX_CAPTURE_RELATIVE_PATH=""
+
 require_cmd() {
   if ! command -v "$1" >/dev/null 2>&1; then
     echo "missing command: $1" >&2
@@ -21,6 +26,10 @@ require_env() {
     echo "missing environment variable: $name" >&2
     exit 1
   fi
+}
+
+aux_capture_enabled() {
+  [[ -n "${CWSLAB_PUBLIC_AUX_SENSOR_COMMAND:-}" ]]
 }
 
 log_line() {
@@ -105,6 +114,33 @@ append_block_log() {
   printf "| `%s` | %s | %s | %s | %s |\n" "$block_id" "$duration_s" "$start_wall" "$end_wall" "$note" >> "$BLOCK_LOG"
 }
 
+stop_pid() {
+  local pid="${1:-}"
+  if [[ -z "$pid" ]]; then
+    return
+  fi
+  kill "$pid" >/dev/null 2>&1 || true
+  wait "$pid" >/dev/null 2>&1 || true
+}
+
+cleanup_capture() {
+  stop_pid "${AUX_CAPTURE_PID:-}"
+  stop_pid "${CAPTURE_PID:-}"
+  AUX_CAPTURE_PID=""
+  CAPTURE_PID=""
+}
+
+check_capture_streams() {
+  if [[ -n "${CAPTURE_PID:-}" ]] && ! kill -0 "$CAPTURE_PID" >/dev/null 2>&1; then
+    echo "primary capture stream exited early" >&2
+    exit 1
+  fi
+  if [[ -n "${AUX_CAPTURE_PID:-}" ]] && ! kill -0 "$AUX_CAPTURE_PID" >/dev/null 2>&1; then
+    echo "auxiliary capture stream exited early: ${AUX_CAPTURE_ID:-aux}" >&2
+    exit 1
+  fi
+}
+
 run_preflight() {
   require_cmd bash
   require_cmd python3
@@ -118,6 +154,10 @@ run_preflight() {
   log_line "reference implementation preflight for the primary prplOS-compatible dual-band AP node"
   log_line "bundle_dir=$BUNDLE_DIR"
   log_line "sensor_device=$CWSLAB_PUBLIC_SENSOR_DEVICE"
+  if aux_capture_enabled; then
+    log_line "aux_sensor_id=${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux-sensor}"
+    log_line "aux_sensor_output=${CWSLAB_PUBLIC_AUX_SENSOR_OUTPUT:-serial/${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux_sensor}_guided_session.log}"
+  fi
   if [[ ! -e "$CWSLAB_PUBLIC_SENSOR_DEVICE" ]]; then
     echo "sensor device not found: $CWSLAB_PUBLIC_SENSOR_DEVICE" >&2
     exit 1
@@ -198,6 +238,8 @@ run_firmware_flash() {
 run_operator_guided_capture() {
   local raw_file="$BUNDLE_DIR/serial/esp32_guided_session.log"
   local log_file="$BUNDLE_DIR/logs/operator_guided_capture.log"
+  local capture_payload="serial/esp32_guided_session.log"
+  local aux_raw_file=""
 
   if [[ ! -t 0 ]]; then
     echo "operator-guided capture requires an interactive terminal" >&2
@@ -210,24 +252,47 @@ run_operator_guided_capture() {
 - Session ID: \`$SESSION_ID\`
 - Publication surface: public-safe reference implementation
 - Controlled node: \`primary prplOS-compatible dual-band AP node\`
+EOF
+
+  if aux_capture_enabled; then
+    AUX_CAPTURE_ID="${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux-sensor}"
+    AUX_CAPTURE_RELATIVE_PATH="${CWSLAB_PUBLIC_AUX_SENSOR_OUTPUT:-serial/${AUX_CAPTURE_ID//-/_}_guided_session.log}"
+    cat >> "$BLOCK_LOG" <<EOF
+- Auxiliary capture: \`$AUX_CAPTURE_ID\` via operator-supplied command -> \`$AUX_CAPTURE_RELATIVE_PATH\`
+EOF
+  else
+    AUX_CAPTURE_ID=""
+    AUX_CAPTURE_RELATIVE_PATH=""
+  fi
+
+  cat >> "$BLOCK_LOG" <<EOF
 
 | Block | Planned Duration (s) | Start Wall Time | End Wall Time | Notes |
 | --- | --- | --- | --- | --- |
 EOF
 
   printf "event\tblock_id\tplanned_duration_s\tepoch_ms\twall_time\tpayload\n" > "$EVENT_LOG"
+  cleanup_capture
   stty -F "$CWSLAB_PUBLIC_SENSOR_DEVICE" "$CWSLAB_PUBLIC_SENSOR_BAUD" raw -echo || true
   stdbuf -oL cat "$CWSLAB_PUBLIC_SENSOR_DEVICE" | tee "$raw_file" &
   CAPTURE_PID=$!
-  trap 'kill "$CAPTURE_PID" >/dev/null 2>&1 || true; wait "$CAPTURE_PID" >/dev/null 2>&1 || true' EXIT INT TERM
+  if aux_capture_enabled; then
+    aux_raw_file="$BUNDLE_DIR/$AUX_CAPTURE_RELATIVE_PATH"
+    mkdir -p "$(dirname "$aux_raw_file")"
+    stdbuf -oL bash -lc "$CWSLAB_PUBLIC_AUX_SENSOR_COMMAND" | tee "$aux_raw_file" &
+    AUX_CAPTURE_PID=$!
+    capture_payload="$capture_payload $AUX_CAPTURE_RELATIVE_PATH"
+  fi
+  check_capture_streams
 
   local capture_start_wall capture_start_epoch_ms
   capture_start_wall="$(date "+%F %T %Z")"
   capture_start_epoch_ms="$(epoch_ms_now)"
-  append_event "capture_started" "-" "0" "$capture_start_epoch_ms" "$capture_start_wall" "serial/esp32_guided_session.log"
+  append_event "capture_started" "-" "0" "$capture_start_epoch_ms" "$capture_start_wall" "$capture_payload"
 
   while IFS=$'\t' read -r block_id duration_s human_present scenario objective instructions; do
     [[ "$block_id" == "block_id" ]] && continue
+    check_capture_streams
     log_line ""
     log_line "=== block $block_id ==="
     log_line "scenario: $scenario"
@@ -243,6 +308,7 @@ EOF
     start_epoch_ms="$(epoch_ms_now)"
     append_event "block_started" "$block_id" "$duration_s" "$start_epoch_ms" "$start_wall" "$scenario"
     countdown "$duration_s"
+    check_capture_streams
     end_wall="$(date "+%F %T %Z")"
     end_epoch_ms="$(epoch_ms_now)"
     append_event "block_finished" "$block_id" "$duration_s" "$end_epoch_ms" "$end_wall" ""
@@ -258,7 +324,8 @@ EOF
   local capture_end_wall capture_end_epoch_ms
   capture_end_wall="$(date "+%F %T %Z")"
   capture_end_epoch_ms="$(epoch_ms_now)"
-  append_event "capture_finished" "-" "0" "$capture_end_epoch_ms" "$capture_end_wall" "serial/esp32_guided_session.log"
+  append_event "capture_finished" "-" "0" "$capture_end_epoch_ms" "$capture_end_wall" "$capture_payload"
+  cleanup_capture
 }
 
 if [[ $# -lt 1 || $# -gt 2 ]]; then
@@ -288,6 +355,7 @@ fi
 
 # shellcheck disable=SC1090
 source "$SESSION_ENV_FILE"
+trap cleanup_capture EXIT
 
 require_env CWSLAB_PUBLIC_OUTPUT_ROOT
 require_env CWSLAB_PUBLIC_AP_HOST
