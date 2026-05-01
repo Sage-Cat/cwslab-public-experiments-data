@@ -1,0 +1,392 @@
+{
+  "bundle_id": "d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z",
+  "config": {
+    "description": "Dissertation D07 as a coordinated T2 launcher with one local live sensor, one AP-B UDP helper node, and one Node-C 2.4 GHz AP plus ESP32-S3 third node",
+    "capture_mode": "coordinated_multi_sensor",
+    "ap": {
+      "kind": "ssh",
+      "public_node_role": "primary prplOS-compatible dual-band AP node",
+      "snapshot_command_names": [
+        "uname",
+        "ip-brief",
+        "iw-dev"
+      ],
+      "ssh_args": [
+        "-o",
+        "StrictHostKeyChecking=accept-new"
+      ]
+    },
+    "ap_control": {
+      "profile_id": "public_reference_ap_profile",
+      "radio_ref": "Device.WiFi.Radio.2.",
+      "ssid_ref": "Device.WiFi.SSID.4.",
+      "access_point_ref": "Device.WiFi.AccessPoint.3.",
+      "bridge_interface": "br-lan",
+      "channel": 36,
+      "operating_channel_bandwidth": "20MHz",
+      "auto_channel_enable": false,
+      "radio_enable": true,
+      "ssid_enable": true,
+      "access_point_enable": true,
+      "ssid_advertisement_enabled": true,
+      "security_mode_enabled": "WPA2-Personal",
+      "key_passphrase": "<redacted>",
+      "ssid_name": "<redacted>",
+      "wds_enable": false,
+      "wps_enable": false
+    },
+    "sensor": {
+      "sensor_id": "esp32-c5-a",
+      "label": "node-a",
+      "kind": "command_stream",
+      "capture_seconds": 1500,
+      "public_command_role": "primary AP UDP summary capture command"
+    },
+    "auxiliary_sensors": [
+      {
+        "sensor_id": "esp32-c5-b",
+        "label": "node-b",
+        "kind": "command_stream",
+        "capture_seconds": 1500,
+        "public_command_role": "AP-B UDP summary capture command"
+      },
+      {
+        "sensor_id": "esp32-s3-c",
+        "label": "node-c",
+        "kind": "command_stream",
+        "capture_seconds": 1500,
+        "public_command_role": "Node-C AP UDP summary capture command"
+      }
+    ],
+    "capture_blocks": [
+      {
+        "block_id": "W0",
+        "duration_s": 120,
+        "human_present": false,
+        "objective": "confirm that all three node streams are active before capture",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "three-node warm-up and subset sanity check"
+      },
+      {
+        "block_id": "E1",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "collect the three-node empty baseline",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "shared empty-scene reference"
+      },
+      {
+        "block_id": "S1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "collect the first heterogeneity segment",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "static presence in the shared interaction zone"
+      },
+      {
+        "block_id": "M1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "collect the first moving three-node segment",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "slow motion through the shared interaction zone"
+      },
+      {
+        "block_id": "E2",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "capture the reverse transition to empty",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "empty recovery after the first cycle"
+      },
+      {
+        "block_id": "S2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the subset ranking surface",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second static presence"
+      },
+      {
+        "block_id": "M2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the moving subset comparison",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second slow motion segment"
+      },
+      {
+        "block_id": "E3",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "complete the three-node bundle and subset manifest",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "final empty recovery"
+      }
+    ],
+    "capture_quality_gates": {
+      "max_controller_traffic_gap_ms": null,
+      "max_csi_row_ratio_across_live_sensors": 4.0,
+      "max_dropped_per_sensor": 0,
+      "max_timeouts_per_sensor": 0,
+      "max_zero_len_per_sensor": 0,
+      "min_controller_decisions_per_required_controller_stream": 1,
+      "min_csi_rows_per_sensor": 32,
+      "min_feature_windows_per_required_feature_stream": 1,
+      "min_latency_samples_per_required_traffic_stream": 1,
+      "min_lines_per_required_sidecar": 1,
+      "min_throughput_samples_per_required_traffic_stream": 0,
+      "min_traffic_samples_per_required_traffic_stream": 1,
+      "require_activity_after_every_block": true,
+      "startup_activity_grace_s": 15
+    },
+    "firmware": {
+      "root": "<redacted>",
+      "env_script": "<redacted>",
+      "tools_path": "<redacted>",
+      "target": "esp32c5",
+      "build_command": "idf.py build",
+      "flash_command": "idf.py -p <serial-device> flash"
+    },
+    "research": {
+      "baselines": [
+        "B1",
+        "B2"
+      ],
+      "campaign_code": "C3",
+      "condition_code": "L1",
+      "condition_confirmation": "not_required",
+      "execution_mode": "H",
+      "fallback_condition_code": null,
+      "honesty_notes": [
+        "D07 exercises the three-node subset-selection launcher surface.",
+        "Node B must use the same real AP-B UDP summary path that made D05-D06 claim-grade; the RPi4 UART path is diagnostic only unless it later gets a separate clean transport proof.",
+        "The third node is the dedicated `RPi5 + ESP32-S3` path where Node C hosts `<redacted-node-c-ssid>` on channel 6 and the ESP32-S3 joins that 2.4 GHz AP; if Node C falls back to a stub or direct-attach geometry prevents a credible sensing path, keep the result below claim-grade evidence.",
+        "Confirm from the captured Node-C stream that the `ESP32-S3` emits `CSI_PROFILE fw_profile=rpi5_node_c_24g fw_role=live`; if it still reports `rpi5_node_c_test_24g`, the deprecated `rpi5_mgmt_24g` alias, or any other test image, treat Node C as not yet live for `T2`.",
+        "The subset manifest must be completed after the run before any ranking claim is made."
+      ],
+      "human_participant_name": null,
+      "novelty_placeholders": [
+        "[K_bh^min]",
+        "[K_dec^min]",
+        "[\u0394CPU^min]",
+        "[\u03b4Q_p^max]"
+      ],
+      "program_id": "D07",
+      "support_level": "full",
+      "topology_code": "T2"
+    },
+    "operator_notes": [
+      "D07 tests heterogeneity and subset value across three nodes on one shared timeline.",
+      "Use the corrected D07-D09 clock-face layout: Node A ESP32-C5 connected to the laptop by USB at 12 o'clock / 0 degrees; primary router/AP at 6 o'clock / 180 degrees; Node B RPi5 at 9 o'clock / 270 degrees; Node B RPi4 with USB-connected ESP32-C5 at 3 o'clock / 90 degrees; Node C RPi5 at 7:30 / 7.5 o'clock / 225 degrees; Node C ESP32-S3 power-only receiver off the 1.00 m ring at 1:30 / 1.5 o'clock / 45 degrees, 2.00 m from the experiment center.",
+      "Clock-to-degree convention: 12 o'clock is 0 degrees, 3 o'clock is 90 degrees, 6 o'clock is 180 degrees, and 9 o'clock is 270 degrees, measured clockwise from 12.",
+      "Primary ring radius: Node A ESP32-C5, router/AP, Node B RPi5, Node B RPi4 plus ESP32-C5, and Node C RPi5 are each 1.00 m from the experiment center; the Node C ESP32-S3 is the only off-ring device and sits in the separate 1:30 corner at 2.00 m from the center.",
+      "Controlled primary sensing diameter: Node A ESP32-C5 at 12 o'clock / 0 degrees to the router/AP at 6 o'clock / 180 degrees, for a 2.00 m line through the experiment center.",
+      "Router/AP, active esp32-c5-a, rpi4-a, rpi5-a, Node-C RPi5, and Node-C ESP32-S3 stay at 0.50 m height unless the operator records a deliberate offset; the capture laptop stays adjacent to the Node A USB setup and must not intrude into another sensing corridor.",
+      "Node A is live on the primary sensing plane, Node B uses the AP-B UDP summary plane, and Node C uses the dedicated `RPi5 + ESP32-S3` 2.4 GHz AP path at `<node-c-ap-address>` with ESP32-S3 summaries captured over UDP.",
+      "Node A is captured over the primary-router UDP DNAT listener on the laptop; `<local-serial-device>` is used for liveness/reset and serial drain, not as the claim-grade data transport for the current firmware image.",
+      "Node C physical geometry must be recorded as an RPi5 2.4 GHz AP/router and a separately placed ESP32-S3 receiver; USB is only a local flashing/preflight transport, not the claim-grade capture path.",
+      "Do not use RPi4 UART as the D07 claim-grade node-B capture path unless it has a separate clean transport proof; the AP-B UDP summary path is the claim-grade node-B stream.",
+      "Geometry requirement: record the ESP32-S3 receiver position relative to the Node-C RPi5 AP before treating the Node-C path as separated sensing evidence.",
+      "Keep the interaction zone centered on the same room midpoint and record any asymmetry immediately.",
+      "Post-run public status: captured Node-C stream reported `fw_profile=rpi5_node_c_24g` and `fw_role=live`; this public metadata preserves the claim-grade D07 verdict without retaining private addresses or adapter names."
+    ],
+    "topology_notes": [
+      "D07-D09 clock/degree convention: 12 o'clock = 0 degrees, 3 o'clock = 90 degrees, 6 o'clock = 180 degrees, 9 o'clock = 270 degrees, measured clockwise from 12.",
+      "Primary 1.00 m ring around the experiment center: Node A ESP32-C5 connected to the laptop by USB at 12 o'clock / 0 degrees; primary router/AP at 6 o'clock / 180 degrees; Node B RPi5 at 9 o'clock / 270 degrees; Node B RPi4 with USB-connected ESP32-C5 at 3 o'clock / 90 degrees; Node C RPi5 at 7:30 / 7.5 o'clock / 225 degrees, midway along the perimeter between the router/AP and the Node B RPi5.",
+      "Off-ring Node C receiver: ESP32-S3 is connected only to power in the separate 1:30 / 1.5 o'clock / 45 degrees corner, 2.00 m from the experiment center.",
+      "Controlled primary sensing diameter: Node A ESP32-C5 at 12 o'clock / 0 degrees to the router/AP at 6 o'clock / 180 degrees.",
+      "Vertical placement: router/AP, active esp32-c5-a, rpi5-a, rpi4-a, Node-C RPi5, and Node-C ESP32-S3 at 0.50 m unless otherwise recorded; capture laptop adjacent to the Node A USB setup.",
+      "Node A is the live primary stand; Node B uses the AP-B UDP summary path; Node C uses the dedicated Node-C 2.4 GHz AP and ESP32-S3 UDP summary path.",
+      "Node-C RPi5 AP/router placement is 7:30 / 225 degrees on the 1.00 m ring; the ESP32-S3 receiver was power-only at 1:30 / 45 degrees, 2.00 m from the experiment center.",
+      "Record which subset combinations were considered credible for analysis and whether any helper gear intruded into the 12-to-6 sensing corridor."
+    ],
+    "timing_evidence": {
+      "checkpoints": [
+        {
+          "block_id": null,
+          "checkpoint_id": "sync_pre",
+          "description": "controller-side start-of-session alignment checkpoint",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "after_capture_start"
+        },
+        {
+          "block_id": "E2",
+          "checkpoint_id": "sync_mid",
+          "description": "controller-side mid-session alignment checkpoint before empty recovery",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "before_block"
+        },
+        {
+          "block_id": null,
+          "checkpoint_id": "sync_post",
+          "description": "controller-side end-of-session alignment checkpoint",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "before_capture_stop"
+        }
+      ],
+      "marginal_max_bracketing_gap_ms": 600,
+      "marginal_max_residual_ms": 100,
+      "marginal_max_uncertainty_ms": 200,
+      "min_common_pulses": 12,
+      "trustworthy_max_bracketing_gap_ms": 200,
+      "trustworthy_max_residual_ms": 25,
+      "trustworthy_max_uncertainty_ms": 50
+    },
+    "session_id": "d07_c3_t2_l1_heterogeneity_subset_value",
+    "workspace_root": "<redacted>"
+  },
+  "config_path": "<not-published>",
+  "generated_at_utc": "2026-05-01T11:42:21+00:00",
+  "published_at_utc": "2026-05-01T13:03:25+00:00",
+  "publication_status": "published-claim-grade",
+  "quality_summary": {
+    "verdict": "usable as planned",
+    "capture_finished": true,
+    "completed_block_count": 8,
+    "planned_block_count": 8,
+    "live_sensor_row_ratio": 2.488622754491018,
+    "claim_blockers": [],
+    "timing_evidence_verdict": "trustworthy",
+    "sensor_log_summaries": [
+      {
+        "sensor_id": "esp32-c5-a",
+        "label": "node-a",
+        "role": "primary",
+        "live": true,
+        "emulated": false,
+        "path": "serial/esp32_guided_session.log",
+        "summary": {
+          "csi_row_count": 8576,
+          "emulated_row_count": 0,
+          "max_dropped": 0,
+          "max_timeouts": 0,
+          "max_zero_len": 0,
+          "raw_line_count": 327895
+        }
+      },
+      {
+        "sensor_id": "esp32-c5-b",
+        "label": "node-b",
+        "role": "auxiliary",
+        "live": true,
+        "emulated": false,
+        "path": "serial/esp32_c5_b_guided_session.log",
+        "summary": {
+          "csi_row_count": 7515,
+          "emulated_row_count": 0,
+          "max_dropped": 0,
+          "max_timeouts": 0,
+          "max_zero_len": 0,
+          "raw_line_count": 326789
+        }
+      },
+      {
+        "sensor_id": "esp32-s3-c",
+        "label": "node-c",
+        "role": "auxiliary",
+        "live": true,
+        "emulated": false,
+        "path": "serial/esp32_s3_c_guided_session.log",
+        "summary": {
+          "csi_row_count": 18702,
+          "emulated_row_count": 0,
+          "max_dropped": 0,
+          "max_timeouts": 0,
+          "max_zero_len": 0,
+          "raw_line_count": 287507
+        }
+      }
+    ]
+  },
+  "physical_topology": {
+    "clock_degree_convention": {
+      "12_o_clock": 0,
+      "3_o_clock": 90,
+      "6_o_clock": 180,
+      "9_o_clock": 270,
+      "direction": "clockwise from 12 oclock"
+    },
+    "ring_radius_m": 1.0,
+    "ring_devices": [
+      {
+        "device": "Node A ESP32-C5 connected to laptop by USB",
+        "clock": "12 o'clock",
+        "degrees": 0,
+        "radius_m": 1.0
+      },
+      {
+        "device": "primary prplOS-compatible dual-band AP node",
+        "clock": "6 o'clock",
+        "degrees": 180,
+        "radius_m": 1.0
+      },
+      {
+        "device": "Node B RPi5",
+        "clock": "9 o'clock",
+        "degrees": 270,
+        "radius_m": 1.0
+      },
+      {
+        "device": "Node B RPi4 with USB-connected ESP32-C5",
+        "clock": "3 o'clock",
+        "degrees": 90,
+        "radius_m": 1.0
+      },
+      {
+        "device": "Node C RPi5",
+        "clock": "7:30 / 7.5 oclock",
+        "degrees": 225,
+        "radius_m": 1.0
+      }
+    ],
+    "off_ring_devices": [
+      {
+        "device": "Node C ESP32-S3 connected only to power",
+        "clock": "1:30 / 1.5 oclock",
+        "degrees": 45,
+        "radius_m": 2.0
+      }
+    ],
+    "primary_sensing_diameter": "Node A ESP32-C5 at 12 oclock / 0 degrees to primary AP at 6 oclock / 180 degrees"
+  },
+  "included_surfaces": [
+    "metadata.json",
+    "runbook.md",
+    "operator_notes.md",
+    "logs/operator_block_events.tsv",
+    "logs/cooperative_timing_markers.tsv",
+    "serial/esp32_guided_session.log",
+    "serial/esp32_c5_b_guided_session.log",
+    "serial/esp32_s3_c_guided_session.log",
+    "notes/per_node_alignment_notes.md",
+    "notes/d07_subset_manifest.md",
+    "analysis/cooperative_timing/summary.md",
+    "qc_summary.md",
+    "experiment_report.md"
+  ],
+  "sanitization_summary": [
+    "removed absolute local paths, private host addresses, AP credentials, adapter names, and runtime-specific environment details",
+    "kept all three raw capture logs and the operator/timing event logs for auditability",
+    "added explicit clock-face and degree topology for the D07-D09 physical setup"
+  ]
+}

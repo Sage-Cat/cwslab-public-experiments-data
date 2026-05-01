@@ -13,7 +13,7 @@ It does not claim full 802.11bf or EasyMesh compliance. Public wording stays car
 ## Status Snapshot
 
 - Repository status: public-derived, self-contained dataset repository
-- Published measured bundles: `7`
+- Published measured bundles: `9`
 - Excluded raw-incomplete candidate bundles: `1`
 - Git tagging rule: `experiment/<bundle-id>`
 - Public hardware naming rule: `primary prplOS-compatible dual-band AP node`
@@ -39,7 +39,10 @@ The identifiers below are local shorthand used by this project. They are not pub
 | `dNN` | Dissertation-aligned experiment program identifier. |
 | `C1` | Campaign code for single-link baseline and repeatability evidence on the current stand. |
 | `C2` | Campaign code for single-link support/comparator captures on the same stand. |
+| `C3` | Campaign code for cooperative multi-node and subset-value evidence on the current stand. |
 | `T0` | The current single-link stand topology. |
+| `T1` | The current two-node cooperative topology. |
+| `T2` | The current three-node topology with explicit Node A, Node B, and Node C placement. |
 | `L0` | Honest quiet-control candidate that still requires independent confirmation before being claimed as quieter than ordinary `L1`. |
 | `L1` | The ordinary observed lab condition used as the honest baseline condition in the published runs here. |
 | `baseline` | First structured reference capture for a condition/topology combination. |
@@ -87,6 +90,8 @@ cwslab-public-experiments-data/
 | `d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `experiment/d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z` | `2026-04-06T12:24:40+00:00` | Honest quiet-control candidate on the same stand with an explicit downgrade-to-`L1` gate unless quietness is independently confirmed. | `D02`, `C1 / T0 / L0` | Raw serial log + operator block-event log |
 | `d03_c2_t0_l1_full_support_capture_20260406T125404Z` | `experiment/d03_c2_t0_l1_full_support_capture_20260406T125404Z` | `2026-04-06T12:54:04+00:00` | Full-support capture on the same stand with extended comparator windows for later local-feature and raw-central analysis. | `D03`, `C2 / T0 / L1` | Raw serial log + operator block-event log |
 | `d04_c2_t0_l2_support_under_load_20260420T110543Z` | `experiment/d04_c2_t0_l2_support_under_load_20260420T110543Z` | `2026-04-20T11:05:43+00:00` | Loaded support capture on the same stand with full block coverage, but protected-traffic traces were not retained, so the public bundle is published as a non-claim-grade raw surface. | `D04`, `C2 / T0 / L2` | Raw serial log + operator block-event log |
+| `d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z` | `experiment/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z` | `2026-04-27T10:26:54+00:00` | Cooperative two-node measured bundle retained for auditability; public metadata records the non-claim-grade timing and row-ratio limitations. | `D05`, `C3 / T1 / L1` | Two raw logs + operator/timing event logs |
+| `d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z` | `experiment/d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z` | `2026-05-01T11:42:21+00:00` | Claim-grade three-node heterogeneity/subset-value run with explicit D07-D09 clock-face and degree topology. | `D07`, `C3 / T2 / L1` | Three raw logs + operator/timing event logs |
 
 ## What A Published Bundle Contains
 
@@ -94,7 +99,8 @@ cwslab-public-experiments-data/
 - `runbook.md`: compact bundle-level summary
 - `operator_notes.md`: sanitized operator-facing notes and block instructions
 - `logs/operator_block_events.tsv`: machine-readable timing for the labeled block sequence
-- `serial/esp32_guided_session.log`: raw captured stream
+- `logs/cooperative_timing_markers.tsv` and `analysis/cooperative_timing/summary.md` when cooperative timing is part of the published claim surface
+- `serial/`: one or more raw captured streams, depending on the experiment topology
 
 ## Current Evidence Boundaries
 

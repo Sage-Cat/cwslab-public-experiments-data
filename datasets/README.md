@@ -4,8 +4,8 @@ This directory contains curated measured bundles only.
 
 ## Included Surface
 
-- raw serial capture logs
-- operator block-event logs
+- raw serial capture logs, including multi-node logs where the public bundle needs them
+- operator block-event logs and cooperative timing logs where they are part of the claim surface
 - sanitized metadata
 - sanitized runbook/operator notes
 

@@ -12,6 +12,9 @@ CAPTURE_PID=""
 AUX_CAPTURE_PID=""
 AUX_CAPTURE_ID=""
 AUX_CAPTURE_RELATIVE_PATH=""
+AUX2_CAPTURE_PID=""
+AUX2_CAPTURE_ID=""
+AUX2_CAPTURE_RELATIVE_PATH=""
 
 require_cmd() {
   if ! command -v "$1" >/dev/null 2>&1; then
@@ -30,6 +33,10 @@ require_env() {
 
 aux_capture_enabled() {
   [[ -n "${CWSLAB_PUBLIC_AUX_SENSOR_COMMAND:-}" ]]
+}
+
+aux2_capture_enabled() {
+  [[ -n "${CWSLAB_PUBLIC_AUX2_SENSOR_COMMAND:-}" ]]
 }
 
 log_line() {
@@ -124,8 +131,10 @@ stop_pid() {
 }
 
 cleanup_capture() {
+  stop_pid "${AUX2_CAPTURE_PID:-}"
   stop_pid "${AUX_CAPTURE_PID:-}"
   stop_pid "${CAPTURE_PID:-}"
+  AUX2_CAPTURE_PID=""
   AUX_CAPTURE_PID=""
   CAPTURE_PID=""
 }
@@ -137,6 +146,10 @@ check_capture_streams() {
   fi
   if [[ -n "${AUX_CAPTURE_PID:-}" ]] && ! kill -0 "$AUX_CAPTURE_PID" >/dev/null 2>&1; then
     echo "auxiliary capture stream exited early: ${AUX_CAPTURE_ID:-aux}" >&2
+    exit 1
+  fi
+  if [[ -n "${AUX2_CAPTURE_PID:-}" ]] && ! kill -0 "$AUX2_CAPTURE_PID" >/dev/null 2>&1; then
+    echo "auxiliary capture stream exited early: ${AUX2_CAPTURE_ID:-aux2}" >&2
     exit 1
   fi
 }
@@ -157,6 +170,10 @@ run_preflight() {
   if aux_capture_enabled; then
     log_line "aux_sensor_id=${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux-sensor}"
     log_line "aux_sensor_output=${CWSLAB_PUBLIC_AUX_SENSOR_OUTPUT:-serial/${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux_sensor}_guided_session.log}"
+  fi
+  if aux2_capture_enabled; then
+    log_line "aux2_sensor_id=${CWSLAB_PUBLIC_AUX2_SENSOR_ID:-aux2-sensor}"
+    log_line "aux2_sensor_output=${CWSLAB_PUBLIC_AUX2_SENSOR_OUTPUT:-serial/${CWSLAB_PUBLIC_AUX2_SENSOR_ID:-aux2_sensor}_guided_session.log}"
   fi
   if [[ ! -e "$CWSLAB_PUBLIC_SENSOR_DEVICE" ]]; then
     echo "sensor device not found: $CWSLAB_PUBLIC_SENSOR_DEVICE" >&2
@@ -240,6 +257,7 @@ run_operator_guided_capture() {
   local log_file="$BUNDLE_DIR/logs/operator_guided_capture.log"
   local capture_payload="serial/esp32_guided_session.log"
   local aux_raw_file=""
+  local aux2_raw_file=""
 
   if [[ ! -t 0 ]]; then
     echo "operator-guided capture requires an interactive terminal" >&2
@@ -264,6 +282,16 @@ EOF
     AUX_CAPTURE_ID=""
     AUX_CAPTURE_RELATIVE_PATH=""
   fi
+  if aux2_capture_enabled; then
+    AUX2_CAPTURE_ID="${CWSLAB_PUBLIC_AUX2_SENSOR_ID:-aux2-sensor}"
+    AUX2_CAPTURE_RELATIVE_PATH="${CWSLAB_PUBLIC_AUX2_SENSOR_OUTPUT:-serial/${AUX2_CAPTURE_ID//-/_}_guided_session.log}"
+    cat >> "$BLOCK_LOG" <<EOF
+- Auxiliary capture: \`$AUX2_CAPTURE_ID\` via operator-supplied command -> \`$AUX2_CAPTURE_RELATIVE_PATH\`
+EOF
+  else
+    AUX2_CAPTURE_ID=""
+    AUX2_CAPTURE_RELATIVE_PATH=""
+  fi
 
   cat >> "$BLOCK_LOG" <<EOF
 
@@ -282,6 +310,13 @@ EOF
     stdbuf -oL bash -lc "$CWSLAB_PUBLIC_AUX_SENSOR_COMMAND" | tee "$aux_raw_file" &
     AUX_CAPTURE_PID=$!
     capture_payload="$capture_payload $AUX_CAPTURE_RELATIVE_PATH"
+  fi
+  if aux2_capture_enabled; then
+    aux2_raw_file="$BUNDLE_DIR/$AUX2_CAPTURE_RELATIVE_PATH"
+    mkdir -p "$(dirname "$aux2_raw_file")"
+    stdbuf -oL bash -lc "$CWSLAB_PUBLIC_AUX2_SENSOR_COMMAND" | tee "$aux2_raw_file" &
+    AUX2_CAPTURE_PID=$!
+    capture_payload="$capture_payload $AUX2_CAPTURE_RELATIVE_PATH"
   fi
   check_capture_streams
 

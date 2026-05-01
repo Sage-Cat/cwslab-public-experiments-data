@@ -1,0 +1,40 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_stream_started	esp32-c5-a	0	1777635829264	2026-05-01 14:43:49 EEST	command:./scripts/capture_esp32_c5_primary_udp_summary_via_router_dnat.sh:serial/esp32_guided_session.log
+capture_stream_started	esp32-c5-b	0	1777635829282	2026-05-01 14:43:49 EEST	command:./scripts/capture_esp32_c5_ap_b_udp_summary_via_rpi5.sh:serial/esp32_c5_b_guided_session.log
+capture_stream_started	esp32-s3-c	0	1777635829302	2026-05-01 14:43:49 EEST	command:public-node-c-capture-wrapper:serial/esp32_s3_c_guided_session.log
+capture_started	-	0	1777635830355	2026-05-01 14:43:50 EEST	serial/esp32_guided_session.log serial/esp32_c5_b_guided_session.log serial/esp32_s3_c_guided_session.log
+timing_checkpoint	sync_pre	0	1777635830375	2026-05-01 14:43:50 EEST	sync_pre.p1:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777635830671	2026-05-01 14:43:50 EEST	sync_pre.p2:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777635830969	2026-05-01 14:43:50 EEST	sync_pre.p3:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777635831267	2026-05-01 14:43:51 EEST	sync_pre.p4:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777635831566	2026-05-01 14:43:51 EEST	sync_pre.p5:controller-side start-of-session alignment checkpoint
+block_started	W0	120	1777635837193	2026-05-01 14:43:57 EEST	three-node warm-up and subset sanity check
+block_finished	W0	120	1777635957498	2026-05-01 14:45:57 EEST
+block_started	E1	180	1777635961013	2026-05-01 14:46:01 EEST	shared empty-scene reference
+block_finished	E1	180	1777636141460	2026-05-01 14:49:01 EEST
+block_started	S1	150	1777636146265	2026-05-01 14:49:06 EEST	static presence in the shared interaction zone
+block_finished	S1	150	1777636296648	2026-05-01 14:51:36 EEST
+block_started	M1	150	1777636303898	2026-05-01 14:51:43 EEST	slow motion through the shared interaction zone
+block_finished	M1	150	1777636454284	2026-05-01 14:54:14 EEST
+timing_checkpoint	sync_mid	0	1777636459837	2026-05-01 14:54:19 EEST	sync_mid.p1:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777636460147	2026-05-01 14:54:20 EEST	sync_mid.p2:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777636460457	2026-05-01 14:54:20 EEST	sync_mid.p3:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777636460770	2026-05-01 14:54:20 EEST	sync_mid.p4:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777636461079	2026-05-01 14:54:21 EEST	sync_mid.p5:controller-side mid-session alignment checkpoint before empty recovery
+block_started	E2	180	1777636462414	2026-05-01 14:54:22 EEST	empty recovery after the first cycle
+block_finished	E2	180	1777636642869	2026-05-01 14:57:22 EEST
+block_started	S2	150	1777636649160	2026-05-01 14:57:29 EEST	second static presence
+block_finished	S2	150	1777636799539	2026-05-01 14:59:59 EEST
+block_started	M2	150	1777636948065	2026-05-01 15:02:28 EEST	second slow motion segment
+block_finished	M2	150	1777637098454	2026-05-01 15:04:58 EEST
+block_started	E3	180	1777637106555	2026-05-01 15:05:06 EEST	final empty recovery
+block_finished	E3	180	1777637287010	2026-05-01 15:08:06 EEST
+timing_checkpoint	sync_post	0	1777637290316	2026-05-01 15:08:10 EEST	sync_post.p1:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777637290621	2026-05-01 15:08:10 EEST	sync_post.p2:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777637290932	2026-05-01 15:08:10 EEST	sync_post.p3:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777637291258	2026-05-01 15:08:11 EEST	sync_post.p4:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777637291582	2026-05-01 15:08:11 EEST	sync_post.p5:controller-side end-of-session alignment checkpoint
+capture_stream_stopped	esp32-c5-a	0	1777637291843	2026-05-01 15:08:11 EEST	serial/esp32_guided_session.log
+capture_stream_stopped	esp32-c5-b	0	1777637292062	2026-05-01 15:08:12 EEST	serial/esp32_c5_b_guided_session.log
+capture_stream_stopped	esp32-s3-c	0	1777637292280	2026-05-01 15:08:12 EEST	serial/esp32_s3_c_guided_session.log
+capture_finished	-	0	1777637292297	2026-05-01 15:08:12 EEST	serial/esp32_guided_session.log serial/esp32_c5_b_guided_session.log serial/esp32_s3_c_guided_session.log

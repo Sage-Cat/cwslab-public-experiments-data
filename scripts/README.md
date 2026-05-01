@@ -15,7 +15,7 @@ This directory contains the public-safe experimental launch surface.
 The generic runtime supports:
 
 - one primary local serial/UART capture stream
-- one optional auxiliary command-backed capture stream for cooperative/helper-node sessions such as `D05`
+- up to two optional auxiliary command-backed capture streams for cooperative/helper-node sessions such as `D05` and `D07`
 
 ## Runtime Model
 
