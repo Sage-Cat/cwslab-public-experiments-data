@@ -13,7 +13,7 @@ It does not claim full 802.11bf or EasyMesh compliance. Public wording stays car
 ## Status Snapshot
 
 - Repository status: public-derived, self-contained dataset repository
-- Published measured bundles: `9`
+- Published measured bundles: `10`
 - Excluded raw-incomplete candidate bundles: `1`
 - Git tagging rule: `experiment/<bundle-id>`
 - Public hardware naming rule: `primary prplOS-compatible dual-band AP node`
@@ -92,6 +92,7 @@ cwslab-public-experiments-data/
 | `d04_c2_t0_l2_support_under_load_20260420T110543Z` | `experiment/d04_c2_t0_l2_support_under_load_20260420T110543Z` | `2026-04-20T11:05:43+00:00` | Loaded support capture on the same stand with full block coverage, but protected-traffic traces were not retained, so the public bundle is published as a non-claim-grade raw surface. | `D04`, `C2 / T0 / L2` | Raw serial log + operator block-event log |
 | `d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z` | `experiment/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z` | `2026-04-27T10:26:54+00:00` | Cooperative two-node measured bundle retained for auditability; public metadata records the non-claim-grade timing and row-ratio limitations. | `D05`, `C3 / T1 / L1` | Two raw logs + operator/timing event logs |
 | `d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z` | `experiment/d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z` | `2026-05-01T11:42:21+00:00` | Claim-grade three-node heterogeneity/subset-value run with explicit D07-D09 clock-face and degree topology. | `D07`, `C3 / T2 / L1` | Three raw logs + operator/timing event logs |
+| `d08_c4_t1_l1_budget_aware_controller_20260501T130657Z` | `experiment/d08_c4_t1_l1_budget_aware_controller_20260501T130657Z` | `2026-05-01T13:06:57+00:00` | Claim-grade two-sensor controller run with synchronized protected-traffic evidence retained as public summaries and timing/event surfaces. | `D08`, `C4 / T1 / L1` | Two raw logs + operator/timing event logs |
 
 ## What A Published Bundle Contains
 

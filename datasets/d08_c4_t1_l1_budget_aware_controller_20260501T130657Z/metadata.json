@@ -1,0 +1,434 @@
+{
+  "bundle_id": "d08_c4_t1_l1_budget_aware_controller_20260501T130657Z",
+  "config": {
+    "description": "Dissertation D08 as a coordinated T1 controller launcher with AP-B UDP sensing, derived feature/controller sidecars, and protected-traffic sidecars",
+    "capture_mode": "coordinated_multi_sensor",
+    "ap": {
+      "kind": "ssh",
+      "public_node_role": "primary prplOS-compatible dual-band AP node",
+      "snapshot_command_names": [
+        "uname",
+        "ip-brief",
+        "iw-dev"
+      ],
+      "ssh_args": [
+        "-o",
+        "StrictHostKeyChecking=accept-new"
+      ]
+    },
+    "ap_control": {
+      "profile_id": "public_reference_ap_profile",
+      "radio_ref": "Device.WiFi.Radio.2.",
+      "ssid_ref": "Device.WiFi.SSID.4.",
+      "access_point_ref": "Device.WiFi.AccessPoint.3.",
+      "bridge_interface": "br-lan",
+      "channel": 36,
+      "operating_channel_bandwidth": "20MHz",
+      "auto_channel_enable": false,
+      "radio_enable": true,
+      "ssid_enable": true,
+      "access_point_enable": true,
+      "ssid_advertisement_enabled": true,
+      "security_mode_enabled": "WPA2-Personal",
+      "key_passphrase": "<redacted>",
+      "ssid_name": "<redacted>",
+      "wds_enable": false,
+      "wps_enable": false
+    },
+    "sensor": {
+      "sensor_id": "esp32-c5-a",
+      "label": "node-a",
+      "kind": "command_stream",
+      "capture_seconds": 1500,
+      "public_command_role": "primary AP UDP summary capture command"
+    },
+    "auxiliary_sensors": [
+      {
+        "sensor_id": "esp32-c5-b",
+        "label": "node-b",
+        "kind": "command_stream",
+        "capture_seconds": 1500,
+        "public_command_role": "AP-B UDP summary capture command"
+      }
+    ],
+    "sidecar_streams": [
+      {
+        "label": "node-a-feature-export",
+        "summary_kind": "feature_ndjson",
+        "required_for_claim": true,
+        "emulated": false,
+        "publication_status": "summary-only"
+      },
+      {
+        "label": "node-b-feature-export",
+        "summary_kind": "feature_ndjson",
+        "required_for_claim": true,
+        "emulated": false,
+        "publication_status": "summary-only"
+      },
+      {
+        "label": "node-c-protected-traffic",
+        "summary_kind": "traffic_ndjson",
+        "required_for_claim": true,
+        "emulated": false,
+        "publication_status": "summary-only"
+      },
+      {
+        "label": "controller-decisions",
+        "summary_kind": "controller_ndjson",
+        "required_for_claim": true,
+        "emulated": false,
+        "publication_status": "summary-only"
+      }
+    ],
+    "capture_blocks": [
+      {
+        "block_id": "W0",
+        "duration_s": 120,
+        "human_present": false,
+        "objective": "confirm that sensing, protected-traffic, and controller sidecars are all active before the first measured block",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "controller and traffic warm-up"
+      },
+      {
+        "block_id": "E1",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "collect the empty baseline for the controller surface",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "shared empty-scene reference under moderate protected traffic"
+      },
+      {
+        "block_id": "S1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "collect the first controller-driven static segment",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "static presence in the shared interaction zone"
+      },
+      {
+        "block_id": "M1",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "collect the first controller-driven motion segment",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "slow motion through the shared interaction zone"
+      },
+      {
+        "block_id": "E2",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "observe the reverse transition while traffic remains active",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "empty recovery after the first cycle"
+      },
+      {
+        "block_id": "S2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the controller comparison",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second static presence"
+      },
+      {
+        "block_id": "M2",
+        "duration_s": 150,
+        "human_present": true,
+        "objective": "provide an in-session repeat for the controller comparison",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "second slow motion segment"
+      },
+      {
+        "block_id": "E3",
+        "duration_s": 180,
+        "human_present": false,
+        "objective": "complete the controller bundle and notes",
+        "operator_instructions": [],
+        "post_block_commands": [],
+        "pre_block_commands": [],
+        "scenario": "final empty recovery"
+      }
+    ],
+    "capture_quality_gates": {
+      "max_controller_traffic_gap_ms": 0,
+      "max_csi_row_ratio_across_live_sensors": 4,
+      "max_dropped_per_sensor": 0,
+      "max_timeouts_per_sensor": 0,
+      "max_zero_len_per_sensor": 0,
+      "min_controller_decisions_per_required_controller_stream": 4,
+      "min_csi_rows_per_sensor": 32,
+      "min_feature_windows_per_required_feature_stream": 4,
+      "min_latency_samples_per_required_traffic_stream": 4,
+      "min_lines_per_required_sidecar": 1,
+      "min_throughput_samples_per_required_traffic_stream": 1,
+      "min_traffic_samples_per_required_traffic_stream": 4,
+      "require_activity_after_every_block": true,
+      "startup_activity_grace_s": 15
+    },
+    "firmware": {
+      "root": "<redacted>",
+      "env_script": "<redacted>",
+      "tools_path": "<redacted>",
+      "target": "esp32c5",
+      "build_command": "idf.py build",
+      "flash_command": "idf.py -p <serial-device> flash"
+    },
+    "research": {
+      "baselines": [
+        "B0",
+        "B1",
+        "B2",
+        "B3"
+      ],
+      "campaign_code": "C4",
+      "condition_code": "L1",
+      "condition_confirmation": "not_required",
+      "execution_mode": "H",
+      "fallback_condition_code": null,
+      "honesty_notes": [
+        "D08 combines cooperative sensing with controller and protected-traffic artifacts.",
+        "Controller decisions were derived from live node A/B feature sidecars; if those inputs had failed or emitted only parse errors, the run would not be claim-grade.",
+        "Completed D08 requires controller decisions and protected-traffic traces to overlap on the same block timeline and to retain at least one real throughput sample.",
+        "The dedicated Node-C helper reused the same two-Wi-Fi AP path family introduced for D07, but public metadata redacts helper addresses, SSIDs, and interface names.",
+        "Node B uses the same real AP-B UDP summary path that made D05-D07 claim-grade; the RPi4 UART path remains diagnostic only unless separately validated.",
+        "Protected traffic was generated on the Node-C helper path as live, non-emulated traffic for the current stand.",
+        "The Node-C ESP32-S3 corner placement remained documented physical context only and was not promoted to a live D08 sensing-node claim."
+      ],
+      "human_participant_name": null,
+      "novelty_placeholders": [
+        "[M_Q]",
+        "[ΔQ_1^min]",
+        "[ΔQ_1^max]",
+        "[t_c]",
+        "[t_r^max]",
+        "[V_1^max]"
+      ],
+      "program_id": "D08",
+      "support_level": "full",
+      "topology_code": "T1"
+    },
+    "operator_notes": [
+      "D08 reuses the T1 cooperative stand but adds controller and protected-traffic artifacts.",
+      "Use the corrected D07-D09 clock-face layout: Node A ESP32-C5 connected to the laptop by USB at 12 o'clock / 0 degrees; primary router/AP at 6 o'clock / 180 degrees; Node B RPi5 at 9 o'clock / 270 degrees; Node B RPi4 with USB-connected ESP32-C5 at 3 o'clock / 90 degrees; Node C RPi5 at 7:30 / 7.5 o'clock / 225 degrees; Node C ESP32-S3 power-only receiver off the 1.00 m ring at 1:30 / 1.5 o'clock / 45 degrees, 2.00 m from the experiment center.",
+      "Clock-to-degree convention: 12 o'clock is 0 degrees, 3 o'clock is 90 degrees, 6 o'clock is 180 degrees, and 9 o'clock is 270 degrees, measured clockwise from 12.",
+      "Primary ring radius: Node A ESP32-C5, router/AP, Node B RPi5, Node B RPi4 plus ESP32-C5, and Node C RPi5 are each 1.00 m from the experiment center; the Node C ESP32-S3 is the only off-ring device and sits in the separate 1:30 corner at 2.00 m from the center.",
+      "Controlled primary sensing diameter: Node A ESP32-C5 at 12 o'clock / 0 degrees to the router/AP at 6 o'clock / 180 degrees, for a 2.00 m line through the experiment center.",
+      "Router/AP, active esp32-c5-a, rpi5-a, rpi4-a, Node-C RPi5, and Node-C ESP32-S3 stay at 0.50 m height unless otherwise recorded; the capture laptop stays adjacent to the Node A USB setup and must not intrude into another sensing corridor.",
+      "Node A is captured over the primary-router UDP DNAT listener on the laptop; <local-serial-device> is used for liveness/reset and serial drain, not as the claim-grade data transport for the current firmware image.",
+      "Node B is the separate AP-B plane and is expected to stream real UDP CSI summaries from esp32-c5-b through the helper AP path.",
+      "Protected traffic comes from the dedicated Node-C helper path between the helper RPi5 and the laptop-side second Wi-Fi path; public metadata redacts the private addresses and interface names used during the run.",
+      "Controller decisions were derived from live feature-window sidecars instead of an emulated stream.",
+      "Keep the helper, traffic, and management paths out of band and do not let them contaminate the 12-to-6 sensing corridor.",
+      "Post-run public status: the D08 controller, protected-traffic, and timing evidence remained live and synchronized, but the raw sidecar artifacts are intentionally excluded from this public repository."
+    ],
+    "topology_notes": [
+      "D07-D09 clock/degree convention: 12 o'clock = 0 degrees, 3 o'clock = 90 degrees, 6 o'clock = 180 degrees, 9 o'clock = 270 degrees, measured clockwise from 12.",
+      "Primary 1.00 m ring around the experiment center: Node A ESP32-C5 connected to the laptop by USB at 12 o'clock / 0 degrees; primary router/AP at 6 o'clock / 180 degrees; Node B RPi5 at 9 o'clock / 270 degrees; Node B RPi4 with USB-connected ESP32-C5 at 3 o'clock / 90 degrees; Node C RPi5 at 7:30 / 7.5 o'clock / 225 degrees, midway along the perimeter between the router/AP and the Node B RPi5.",
+      "Off-ring Node C receiver: ESP32-S3 is connected only to power in the separate 1:30 / 1.5 o'clock / 45 degrees corner, 2.00 m from the experiment center.",
+      "Controlled primary sensing diameter: Node A ESP32-C5 at 12 o'clock / 0 degrees to the router/AP at 6 o'clock / 180 degrees.",
+      "Vertical placement: router/AP, active esp32-c5-a, rpi5-a, rpi4-a, Node-C RPi5, and Node-C ESP32-S3 at 0.50 m unless otherwise recorded; capture laptop adjacent to the Node A USB setup.",
+      "Node A is live through the primary-router UDP DNAT summary path, and Node B is live through the AP-B UDP summary path.",
+      "The controller layer remained aligned to the same shared block-event timeline and cooperative timing evidence on top of this stand.",
+      "Protected traffic belongs to the dedicated Node-C helper path and not to the router/AP sensing plane.",
+      "For D08, the Node-C ESP32-S3 power-only corner placement is documented as physical context only and is not promoted to a sensing-node claim.",
+      "Protected traffic and controller outputs must remain aligned with the sensing blocks and final notes must mark whether any traffic or controller artifact was real or emulated."
+    ],
+    "timing_evidence": {
+      "checkpoints": [
+        {
+          "block_id": null,
+          "checkpoint_id": "sync_pre",
+          "description": "controller-side start-of-session alignment checkpoint",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "after_capture_start"
+        },
+        {
+          "block_id": "E2",
+          "checkpoint_id": "sync_mid",
+          "description": "controller-side mid-session alignment checkpoint before empty recovery",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "before_block"
+        },
+        {
+          "block_id": null,
+          "checkpoint_id": "sync_post",
+          "description": "controller-side end-of-session alignment checkpoint",
+          "pulse_count": 5,
+          "pulse_spacing_ms": 250,
+          "trigger": "before_capture_stop"
+        }
+      ],
+      "marginal_max_bracketing_gap_ms": 600,
+      "marginal_max_residual_ms": 100,
+      "marginal_max_uncertainty_ms": 200,
+      "min_common_pulses": 12,
+      "trustworthy_max_bracketing_gap_ms": 200,
+      "trustworthy_max_residual_ms": 25,
+      "trustworthy_max_uncertainty_ms": 50
+    },
+    "session_id": "d08_c4_t1_l1_budget_aware_controller",
+    "workspace_root": "<redacted>"
+  },
+  "config_path": "<not-published>",
+  "generated_at_utc": "2026-05-01T13:06:57+00:00",
+  "published_at_utc": "2026-05-01T16:53:25+00:00",
+  "publication_status": "published-claim-grade",
+  "quality_summary": {
+    "verdict": "usable as planned",
+    "capture_finished": true,
+    "completed_block_count": 8,
+    "planned_block_count": 8,
+    "live_sensor_row_ratio": 1.1461465528904238,
+    "claim_blockers": [],
+    "timing_evidence_verdict": "trustworthy",
+    "controller_traffic_gap_ms": 0,
+    "protected_traffic_present": true,
+    "controller_decisions_present": true,
+    "sensor_log_summaries": [
+      {
+        "sensor_id": "esp32-c5-a",
+        "label": "node-a",
+        "role": "primary",
+        "live": true,
+        "emulated": false,
+        "path": "serial/esp32_guided_session.log",
+        "summary": {
+          "csi_row_count": 8464,
+          "emulated_row_count": 0,
+          "max_dropped": 0,
+          "max_timeouts": 0,
+          "max_zero_len": 0,
+          "raw_line_count": 332233
+        }
+      },
+      {
+        "sensor_id": "esp32-c5-b",
+        "label": "node-b",
+        "role": "auxiliary",
+        "live": true,
+        "emulated": false,
+        "path": "serial/esp32_c5_b_guided_session.log",
+        "summary": {
+          "csi_row_count": 7383,
+          "emulated_row_count": 0,
+          "max_dropped": 0,
+          "max_timeouts": 0,
+          "max_zero_len": 0,
+          "raw_line_count": 331658
+        }
+      }
+    ],
+    "sidecar_summaries": [
+      {
+        "label": "node-a-feature-export",
+        "publication_status": "summary-only",
+        "count": "734 windows",
+        "bytes": 738198
+      },
+      {
+        "label": "node-b-feature-export",
+        "publication_status": "summary-only",
+        "count": "734 windows",
+        "bytes": 725496
+      },
+      {
+        "label": "node-c-protected-traffic",
+        "publication_status": "summary-only",
+        "count": "3473 samples / 1736 throughput",
+        "bytes": 1395752
+      },
+      {
+        "label": "controller-decisions",
+        "publication_status": "summary-only",
+        "count": "734 decisions",
+        "bytes": 573448
+      }
+    ]
+  },
+  "physical_topology": {
+    "clock_degree_convention": {
+      "12_o_clock": 0,
+      "3_o_clock": 90,
+      "6_o_clock": 180,
+      "9_o_clock": 270,
+      "direction": "clockwise from 12 oclock"
+    },
+    "ring_radius_m": 1,
+    "ring_devices": [
+      {
+        "device": "Node A ESP32-C5 connected to laptop by USB",
+        "clock": "12 o'clock",
+        "degrees": 0,
+        "radius_m": 1
+      },
+      {
+        "device": "primary prplOS-compatible dual-band AP node",
+        "clock": "6 o'clock",
+        "degrees": 180,
+        "radius_m": 1
+      },
+      {
+        "device": "Node B RPi5",
+        "clock": "9 o'clock",
+        "degrees": 270,
+        "radius_m": 1
+      },
+      {
+        "device": "Node B RPi4 with USB-connected ESP32-C5",
+        "clock": "3 o'clock",
+        "degrees": 90,
+        "radius_m": 1
+      },
+      {
+        "device": "Node C RPi5 helper path",
+        "clock": "7:30 / 7.5 oclock",
+        "degrees": 225,
+        "radius_m": 1
+      }
+    ],
+    "off_ring_devices": [
+      {
+        "device": "Node C ESP32-S3 connected only to power",
+        "clock": "1:30 / 1.5 oclock",
+        "degrees": 45,
+        "radius_m": 2
+      }
+    ],
+    "primary_sensing_diameter": "Node A ESP32-C5 at 12 oclock / 0 degrees to primary AP at 6 oclock / 180 degrees"
+  },
+  "included_surfaces": [
+    "metadata.json",
+    "runbook.md",
+    "operator_notes.md",
+    "logs/operator_block_events.tsv",
+    "logs/cooperative_timing_markers.tsv",
+    "serial/esp32_guided_session.log",
+    "serial/esp32_c5_b_guided_session.log",
+    "notes/per_node_alignment_notes.md",
+    "notes/d08_policy_notes.md",
+    "analysis/cooperative_timing/summary.md",
+    "qc_summary.md",
+    "experiment_report.md"
+  ],
+  "sanitization_summary": [
+    "removed absolute local paths, private helper-host addresses, AP credentials, adapter names, and runtime-specific environment details from metadata and notes",
+    "kept both raw sensing capture logs and the operator/timing event logs for auditability",
+    "preserved the claim-grade D08 controller and protected-traffic result while keeping raw sidecar outputs out of the public repository"
+  ]
+}

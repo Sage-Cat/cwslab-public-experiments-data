@@ -1,7 +1,7 @@
 {
   "repository": "cwslab-public-experiments-data",
   "generated_from": "cws-lab",
-  "generated_at": "2026-05-01T16:03:36+03:00",
+  "generated_at": "2026-05-01T19:53:30+03:00",
   "datasets": [
     {
       "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
@@ -294,6 +294,48 @@
         "removed absolute local paths, private host addresses, AP credentials, adapter names, and runtime-specific environment details from metadata and notes",
         "kept all three raw capture logs and the operator/timing event logs for auditability",
         "preserved the claim-grade D07 result while adding explicit clock-face and degree topology documentation"
+      ]
+    },
+    {
+      "bundle_id": "d08_c4_t1_l1_budget_aware_controller_20260501T130657Z",
+      "status": "published-claim-grade",
+      "source_bundle": "experiments/runs/d08_c4_t1_l1_budget_aware_controller_20260501T130657Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "logs/cooperative_timing_markers.tsv",
+        "serial/esp32_guided_session.log",
+        "serial/esp32_c5_b_guided_session.log",
+        "notes/per_node_alignment_notes.md",
+        "notes/d08_policy_notes.md",
+        "analysis/cooperative_timing/summary.md",
+        "qc_summary.md",
+        "experiment_report.md"
+      ],
+      "excluded_surfaces": [
+        "analysis/feature_exports/",
+        "analysis/guided_segments/",
+        "analysis_handoff*",
+        "artifact_checklist.md",
+        "interference_load_notes.md",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/controller_decision_log.ndjson",
+        "logs/operator_block_log.md",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "manifest.json",
+        "runner-logs/",
+        "scripts/",
+        "session.env",
+        "traffic/"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths, private helper-host addresses, AP credentials, adapter names, and runtime-specific environment details from metadata and notes",
+        "kept both raw sensing capture logs and the operator/timing event logs for auditability",
+        "preserved the claim-grade D08 controller and protected-traffic result while keeping raw sidecar outputs out of the public repository"
       ]
     }
   ],

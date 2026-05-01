@@ -1,0 +1,31 @@
+checkpoint_id	marker_id	sensor_label	controller_epoch_ms	controller_wall	capture_file	byte_offset	line_count	description
+sync_pre	sync_pre.p1	esp32-c5-a	1777640885695	2026-05-01 16:08:05 EEST	serial/esp32_guided_session.log	60201	722	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p1	esp32-c5-b	1777640885695	2026-05-01 16:08:05 EEST	serial/esp32_c5_b_guided_session.log	58104	705	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p2	esp32-c5-a	1777640885988	2026-05-01 16:08:05 EEST	serial/esp32_guided_session.log	65843	788	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p2	esp32-c5-b	1777640885988	2026-05-01 16:08:05 EEST	serial/esp32_c5_b_guided_session.log	63245	770	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p3	esp32-c5-a	1777640886283	2026-05-01 16:08:06 EEST	serial/esp32_guided_session.log	71936	858	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p3	esp32-c5-b	1777640886283	2026-05-01 16:08:06 EEST	serial/esp32_c5_b_guided_session.log	67818	833	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p4	esp32-c5-a	1777640886579	2026-05-01 16:08:06 EEST	serial/esp32_guided_session.log	77800	927	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p4	esp32-c5-b	1777640886579	2026-05-01 16:08:06 EEST	serial/esp32_c5_b_guided_session.log	75026	907	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p5	esp32-c5-a	1777640886871	2026-05-01 16:08:06 EEST	serial/esp32_guided_session.log	83649	995	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p5	esp32-c5-b	1777640886871	2026-05-01 16:08:06 EEST	serial/esp32_c5_b_guided_session.log	80376	973	controller-side start-of-session alignment checkpoint
+sync_mid	sync_mid.p1	esp32-c5-a	1777641598662	2026-05-01 16:19:58 EEST	serial/esp32_guided_session.log	14190758	163133	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p1	esp32-c5-b	1777641598662	2026-05-01 16:19:58 EEST	serial/esp32_c5_b_guided_session.log	13995024	162227	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p2	esp32-c5-a	1777641598964	2026-05-01 16:19:58 EEST	serial/esp32_guided_session.log	14196741	163203	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p2	esp32-c5-b	1777641598964	2026-05-01 16:19:58 EEST	serial/esp32_c5_b_guided_session.log	14000311	162293	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p3	esp32-c5-a	1777641599272	2026-05-01 16:19:59 EEST	serial/esp32_guided_session.log	14202794	163274	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p3	esp32-c5-b	1777641599272	2026-05-01 16:19:59 EEST	serial/esp32_c5_b_guided_session.log	14007380	162368	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p4	esp32-c5-a	1777641599581	2026-05-01 16:19:59 EEST	serial/esp32_guided_session.log	14208835	163344	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p4	esp32-c5-b	1777641599581	2026-05-01 16:19:59 EEST	serial/esp32_c5_b_guided_session.log	14012214	162433	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p5	esp32-c5-a	1777641599887	2026-05-01 16:19:59 EEST	serial/esp32_guided_session.log	14215119	163414	controller-side mid-session alignment checkpoint before empty recovery
+sync_mid	sync_mid.p5	esp32-c5-b	1777641599887	2026-05-01 16:19:59 EEST	serial/esp32_c5_b_guided_session.log	14019509	162508	controller-side mid-session alignment checkpoint before empty recovery
+sync_post	sync_post.p1	esp32-c5-a	1777642347505	2026-05-01 16:32:27 EEST	serial/esp32_guided_session.log	28785815	331908	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p1	esp32-c5-b	1777642347505	2026-05-01 16:32:27 EEST	serial/esp32_c5_b_guided_session.log	28561921	331155	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p2	esp32-c5-a	1777642347801	2026-05-01 16:32:27 EEST	serial/esp32_guided_session.log	28791530	331976	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p2	esp32-c5-b	1777642347801	2026-05-01 16:32:27 EEST	serial/esp32_c5_b_guided_session.log	28569106	331227	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p3	esp32-c5-a	1777642348101	2026-05-01 16:32:28 EEST	serial/esp32_guided_session.log	28797557	332046	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p3	esp32-c5-b	1777642348101	2026-05-01 16:32:28 EEST	serial/esp32_c5_b_guided_session.log	28574376	331296	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p4	esp32-c5-a	1777642348412	2026-05-01 16:32:28 EEST	serial/esp32_guided_session.log	28803510	332117	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p4	esp32-c5-b	1777642348412	2026-05-01 16:32:28 EEST	serial/esp32_c5_b_guided_session.log	28580964	331370	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p5	esp32-c5-a	1777642348729	2026-05-01 16:32:28 EEST	serial/esp32_guided_session.log	28810098	332191	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p5	esp32-c5-b	1777642348729	2026-05-01 16:32:28 EEST	serial/esp32_c5_b_guided_session.log	28586465	331438	controller-side end-of-session alignment checkpoint

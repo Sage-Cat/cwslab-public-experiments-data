@@ -1,0 +1,38 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_stream_started	esp32-c5-a	0	1777640882482	2026-05-01 16:08:02 EEST	command:./scripts/capture_esp32_c5_primary_udp_summary_via_router_dnat.sh:serial/esp32_guided_session.log
+capture_stream_started	esp32-c5-b	0	1777640882504	2026-05-01 16:08:02 EEST	command:./scripts/capture_esp32_c5_ap_b_udp_summary_via_rpi5.sh:serial/esp32_c5_b_guided_session.log
+capture_started	-	0	1777640885675	2026-05-01 16:08:05 EEST	serial/esp32_guided_session.log serial/esp32_c5_b_guided_session.log
+timing_checkpoint	sync_pre	0	1777640885695	2026-05-01 16:08:05 EEST	sync_pre.p1:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777640885988	2026-05-01 16:08:05 EEST	sync_pre.p2:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777640886283	2026-05-01 16:08:06 EEST	sync_pre.p3:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777640886579	2026-05-01 16:08:06 EEST	sync_pre.p4:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777640886871	2026-05-01 16:08:06 EEST	sync_pre.p5:controller-side start-of-session alignment checkpoint
+block_started	W0	120	1777640889399	2026-05-01 16:08:09 EEST	controller and traffic warm-up
+block_finished	W0	120	1777641009689	2026-05-01 16:10:09 EEST	
+block_started	E1	180	1777641083294	2026-05-01 16:11:23 EEST	shared empty-scene reference under moderate protected traffic
+block_finished	E1	180	1777641263726	2026-05-01 16:14:23 EEST	
+block_started	S1	150	1777641292278	2026-05-01 16:14:52 EEST	static presence in the shared interaction zone
+block_finished	S1	150	1777641442644	2026-05-01 16:17:22 EEST	
+block_started	M1	150	1777641445811	2026-05-01 16:17:25 EEST	slow motion through the shared interaction zone
+block_finished	M1	150	1777641596179	2026-05-01 16:19:56 EEST	
+timing_checkpoint	sync_mid	0	1777641598662	2026-05-01 16:19:58 EEST	sync_mid.p1:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777641598964	2026-05-01 16:19:58 EEST	sync_mid.p2:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777641599272	2026-05-01 16:19:59 EEST	sync_mid.p3:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777641599581	2026-05-01 16:19:59 EEST	sync_mid.p4:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777641599887	2026-05-01 16:19:59 EEST	sync_mid.p5:controller-side mid-session alignment checkpoint before empty recovery
+block_started	E2	180	1777641605861	2026-05-01 16:20:05 EEST	empty recovery after the first cycle
+block_finished	E2	180	1777641786301	2026-05-01 16:23:06 EEST	
+block_started	S2	150	1777641835656	2026-05-01 16:23:55 EEST	second static presence
+block_finished	S2	150	1777641986022	2026-05-01 16:26:26 EEST	
+block_started	M2	150	1777641990670	2026-05-01 16:26:30 EEST	second slow motion segment
+block_finished	M2	150	1777642141040	2026-05-01 16:29:01 EEST	
+block_started	E3	180	1777642164383	2026-05-01 16:29:24 EEST	final empty recovery
+block_finished	E3	180	1777642344823	2026-05-01 16:32:24 EEST	
+timing_checkpoint	sync_post	0	1777642347505	2026-05-01 16:32:27 EEST	sync_post.p1:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777642347801	2026-05-01 16:32:27 EEST	sync_post.p2:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777642348101	2026-05-01 16:32:28 EEST	sync_post.p3:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777642348412	2026-05-01 16:32:28 EEST	sync_post.p4:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777642348729	2026-05-01 16:32:28 EEST	sync_post.p5:controller-side end-of-session alignment checkpoint
+capture_stream_stopped	esp32-c5-a	0	1777642349382	2026-05-01 16:32:29 EEST	serial/esp32_guided_session.log
+capture_stream_stopped	esp32-c5-b	0	1777642350211	2026-05-01 16:32:30 EEST	serial/esp32_c5_b_guided_session.log
+capture_finished	-	0	1777642351038	2026-05-01 16:32:31 EEST	serial/esp32_guided_session.log serial/esp32_c5_b_guided_session.log
