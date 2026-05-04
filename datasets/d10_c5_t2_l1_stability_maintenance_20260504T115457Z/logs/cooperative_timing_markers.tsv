@@ -1,0 +1,76 @@
+checkpoint_id	marker_id	sensor_label	controller_epoch_ms	controller_wall	capture_file	byte_offset	line_count	description
+sync_pre	sync_pre.p1	esp32-c5-a	1777895767689	2026-05-04 14:56:07 EEST	serial/esp32_guided_session.log.gz	41978	502	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p1	esp32-c5-b	1777895767689	2026-05-04 14:56:07 EEST	serial/esp32_c5_b_guided_session.log.gz	37527	478	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p1	esp32-s3-c	1777895767689	2026-05-04 14:56:07 EEST	serial/esp32_s3_c_guided_session.log.gz	32578	436	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p2	esp32-c5-a	1777895767983	2026-05-04 14:56:07 EEST	serial/esp32_guided_session.log.gz	48110	572	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p2	esp32-c5-b	1777895767983	2026-05-04 14:56:07 EEST	serial/esp32_c5_b_guided_session.log.gz	45025	553	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p2	esp32-s3-c	1777895767983	2026-05-04 14:56:07 EEST	serial/esp32_s3_c_guided_session.log.gz	37360	497	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p3	esp32-c5-a	1777895768282	2026-05-04 14:56:08 EEST	serial/esp32_guided_session.log.gz	54104	642	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p3	esp32-c5-b	1777895768282	2026-05-04 14:56:08 EEST	serial/esp32_c5_b_guided_session.log.gz	50271	620	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p3	esp32-s3-c	1777895768282	2026-05-04 14:56:08 EEST	serial/esp32_s3_c_guided_session.log.gz	42100	560	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p4	esp32-c5-a	1777895768579	2026-05-04 14:56:08 EEST	serial/esp32_guided_session.log.gz	60132	708	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p4	esp32-c5-b	1777895768579	2026-05-04 14:56:08 EEST	serial/esp32_c5_b_guided_session.log.gz	57204	693	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p4	esp32-s3-c	1777895768579	2026-05-04 14:56:08 EEST	serial/esp32_s3_c_guided_session.log.gz	46973	621	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p5	esp32-c5-a	1777895768874	2026-05-04 14:56:08 EEST	serial/esp32_guided_session.log.gz	66222	778	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p5	esp32-c5-b	1777895768874	2026-05-04 14:56:08 EEST	serial/esp32_c5_b_guided_session.log.gz	63393	762	controller-side start-of-session alignment checkpoint
+sync_pre	sync_pre.p5	esp32-s3-c	1777895768874	2026-05-04 14:56:08 EEST	serial/esp32_s3_c_guided_session.log.gz	51302	680	controller-side start-of-session alignment checkpoint
+sync_early	sync_early.p1	esp32-c5-a	1777896731301	2026-05-04 15:12:11 EEST	serial/esp32_guided_session.log.gz	19563074	222641	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p1	esp32-c5-b	1777896731301	2026-05-04 15:12:11 EEST	serial/esp32_c5_b_guided_session.log.gz	19545863	222889	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p1	esp32-s3-c	1777896731301	2026-05-04 15:12:11 EEST	serial/esp32_s3_c_guided_session.log.gz	14917180	194427	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p2	esp32-c5-a	1777896731603	2026-05-04 15:12:11 EEST	serial/esp32_guided_session.log.gz	19569151	222713	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p2	esp32-c5-b	1777896731603	2026-05-04 15:12:11 EEST	serial/esp32_c5_b_guided_session.log.gz	19552968	222964	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p2	esp32-s3-c	1777896731603	2026-05-04 15:12:11 EEST	serial/esp32_s3_c_guided_session.log.gz	14922015	194489	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p3	esp32-c5-a	1777896731914	2026-05-04 15:12:11 EEST	serial/esp32_guided_session.log.gz	19575687	222785	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p3	esp32-c5-b	1777896731914	2026-05-04 15:12:11 EEST	serial/esp32_c5_b_guided_session.log.gz	19558458	223032	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p3	esp32-s3-c	1777896731914	2026-05-04 15:12:11 EEST	serial/esp32_s3_c_guided_session.log.gz	14926850	194552	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p4	esp32-c5-a	1777896732229	2026-05-04 15:12:12 EEST	serial/esp32_guided_session.log.gz	19582089	222860	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p4	esp32-c5-b	1777896732229	2026-05-04 15:12:12 EEST	serial/esp32_c5_b_guided_session.log.gz	19565669	223110	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p4	esp32-s3-c	1777896732229	2026-05-04 15:12:12 EEST	serial/esp32_s3_c_guided_session.log.gz	14931730	194616	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p5	esp32-c5-a	1777896732545	2026-05-04 15:12:12 EEST	serial/esp32_guided_session.log.gz	19588512	222935	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p5	esp32-c5-b	1777896732545	2026-05-04 15:12:12 EEST	serial/esp32_c5_b_guided_session.log.gz	19571761	223189	early long-horizon checkpoint after the first adaptation cycle
+sync_early	sync_early.p5	esp32-s3-c	1777896732545	2026-05-04 15:12:12 EEST	serial/esp32_s3_c_guided_session.log.gz	14936669	194682	early long-horizon checkpoint after the first adaptation cycle
+sync_mid	sync_mid.p1	esp32-c5-a	1777899484345	2026-05-04 15:58:04 EEST	serial/esp32_guided_session.log.gz	75321708	854004	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p1	esp32-c5-b	1777899484345	2026-05-04 15:58:04 EEST	serial/esp32_c5_b_guided_session.log.gz	74872091	854714	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p1	esp32-s3-c	1777899484345	2026-05-04 15:58:04 EEST	serial/esp32_s3_c_guided_session.log.gz	57477910	747111	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p2	esp32-c5-a	1777899484677	2026-05-04 15:58:04 EEST	serial/esp32_guided_session.log.gz	75328475	854082	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p2	esp32-c5-b	1777899484677	2026-05-04 15:58:04 EEST	serial/esp32_c5_b_guided_session.log.gz	74878435	854793	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p2	esp32-s3-c	1777899484677	2026-05-04 15:58:04 EEST	serial/esp32_s3_c_guided_session.log.gz	57482975	747179	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p3	esp32-c5-a	1777899485009	2026-05-04 15:58:05 EEST	serial/esp32_guided_session.log.gz	75335326	854161	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p3	esp32-c5-b	1777899485009	2026-05-04 15:58:05 EEST	serial/esp32_c5_b_guided_session.log.gz	74885069	854867	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p3	esp32-s3-c	1777899485009	2026-05-04 15:58:05 EEST	serial/esp32_s3_c_guided_session.log.gz	57488091	747246	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p4	esp32-c5-a	1777899485338	2026-05-04 15:58:05 EEST	serial/esp32_guided_session.log.gz	75342038	854237	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p4	esp32-c5-b	1777899485338	2026-05-04 15:58:05 EEST	serial/esp32_c5_b_guided_session.log.gz	74892467	854947	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p4	esp32-s3-c	1777899485338	2026-05-04 15:58:05 EEST	serial/esp32_s3_c_guided_session.log.gz	57493109	747312	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p5	esp32-c5-a	1777899485668	2026-05-04 15:58:05 EEST	serial/esp32_guided_session.log.gz	75348795	854313	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p5	esp32-c5-b	1777899485668	2026-05-04 15:58:05 EEST	serial/esp32_c5_b_guided_session.log.gz	74897722	855017	mid-session checkpoint before the late stability cycles
+sync_mid	sync_mid.p5	esp32-s3-c	1777899485668	2026-05-04 15:58:05 EEST	serial/esp32_s3_c_guided_session.log.gz	57498113	747379	mid-session checkpoint before the late stability cycles
+sync_late	sync_late.p1	esp32-c5-a	1777900813594	2026-05-04 16:20:13 EEST	serial/esp32_guided_session.log.gz	101837143	1156716	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p1	esp32-c5-b	1777900813594	2026-05-04 16:20:13 EEST	serial/esp32_c5_b_guided_session.log.gz	101222615	1157713	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p1	esp32-s3-c	1777900813594	2026-05-04 16:20:13 EEST	serial/esp32_s3_c_guided_session.log.gz	77707510	1012976	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p2	esp32-c5-a	1777900813939	2026-05-04 16:20:13 EEST	serial/esp32_guided_session.log.gz	101843869	1156795	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p2	esp32-c5-b	1777900813939	2026-05-04 16:20:13 EEST	serial/esp32_c5_b_guided_session.log.gz	101229636	1157795	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p2	esp32-s3-c	1777900813939	2026-05-04 16:20:13 EEST	serial/esp32_s3_c_guided_session.log.gz	77713181	1013046	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p3	esp32-c5-a	1777900814283	2026-05-04 16:20:14 EEST	serial/esp32_guided_session.log.gz	101850354	1156874	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p3	esp32-c5-b	1777900814283	2026-05-04 16:20:14 EEST	serial/esp32_c5_b_guided_session.log.gz	101237547	1157880	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p3	esp32-s3-c	1777900814283	2026-05-04 16:20:14 EEST	serial/esp32_s3_c_guided_session.log.gz	77718338	1013116	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p4	esp32-c5-a	1777900814630	2026-05-04 16:20:14 EEST	serial/esp32_guided_session.log.gz	101857546	1156956	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p4	esp32-c5-b	1777900814630	2026-05-04 16:20:14 EEST	serial/esp32_c5_b_guided_session.log.gz	101243463	1157955	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p4	esp32-s3-c	1777900814630	2026-05-04 16:20:14 EEST	serial/esp32_s3_c_guided_session.log.gz	77724159	1013192	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p5	esp32-c5-a	1777900814996	2026-05-04 16:20:14 EEST	serial/esp32_guided_session.log.gz	101865069	1157042	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p5	esp32-c5-b	1777900814996	2026-05-04 16:20:14 EEST	serial/esp32_c5_b_guided_session.log.gz	101251067	1158042	late-session checkpoint before the final maintenance window
+sync_late	sync_late.p5	esp32-s3-c	1777900814996	2026-05-04 16:20:14 EEST	serial/esp32_s3_c_guided_session.log.gz	77729999	1013262	late-session checkpoint before the final maintenance window
+sync_post	sync_post.p1	esp32-c5-a	1777901142278	2026-05-04 16:25:42 EEST	serial/esp32_guided_session.log.gz	108408201	1231755	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p1	esp32-c5-b	1777901142278	2026-05-04 16:25:42 EEST	serial/esp32_c5_b_guided_session.log.gz	107821754	1233071	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p1	esp32-s3-c	1777901142278	2026-05-04 16:25:42 EEST	serial/esp32_s3_c_guided_session.log.gz	82693568	1078744	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p2	esp32-c5-a	1777901142628	2026-05-04 16:25:42 EEST	serial/esp32_guided_session.log.gz	108415136	1231836	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p2	esp32-c5-b	1777901142628	2026-05-04 16:25:42 EEST	serial/esp32_c5_b_guided_session.log.gz	107829388	1233155	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p2	esp32-s3-c	1777901142628	2026-05-04 16:25:42 EEST	serial/esp32_s3_c_guided_session.log.gz	82699185	1078815	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p3	esp32-c5-a	1777901142977	2026-05-04 16:25:42 EEST	serial/esp32_guided_session.log.gz	108422510	1231916	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p3	esp32-c5-b	1777901142977	2026-05-04 16:25:42 EEST	serial/esp32_c5_b_guided_session.log.gz	107837400	1233239	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p3	esp32-s3-c	1777901142977	2026-05-04 16:25:42 EEST	serial/esp32_s3_c_guided_session.log.gz	82704788	1078887	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p4	esp32-c5-a	1777901143328	2026-05-04 16:25:43 EEST	serial/esp32_guided_session.log.gz	108429604	1231996	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p4	esp32-c5-b	1777901143328	2026-05-04 16:25:43 EEST	serial/esp32_c5_b_guided_session.log.gz	107843580	1233316	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p4	esp32-s3-c	1777901143328	2026-05-04 16:25:43 EEST	serial/esp32_s3_c_guided_session.log.gz	82710048	1078958	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p5	esp32-c5-a	1777901143676	2026-05-04 16:25:43 EEST	serial/esp32_guided_session.log.gz	108436769	1232078	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p5	esp32-c5-b	1777901143676	2026-05-04 16:25:43 EEST	serial/esp32_c5_b_guided_session.log.gz	107850498	1233397	controller-side end-of-session alignment checkpoint
+sync_post	sync_post.p5	esp32-s3-c	1777901143676	2026-05-04 16:25:43 EEST	serial/esp32_s3_c_guided_session.log.gz	82715599	1079028	controller-side end-of-session alignment checkpoint

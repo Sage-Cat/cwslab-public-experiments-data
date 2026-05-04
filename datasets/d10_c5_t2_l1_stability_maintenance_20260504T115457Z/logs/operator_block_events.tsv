@@ -1,0 +1,68 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_stream_started	esp32-c5-a	0	1777895765444	2026-05-04 14:56:05 EEST	command:./scripts/capture_esp32_c5_primary_udp_summary_via_router_dnat.sh:serial/esp32_guided_session.log.gz:stderr=serial/esp32_guided_session.log.gz.stderr.log
+capture_stream_started	esp32-c5-b	0	1777895765464	2026-05-04 14:56:05 EEST	command:./scripts/capture_esp32_c5_ap_b_udp_summary_via_rpi5.sh:serial/esp32_c5_b_guided_session.log.gz:stderr=serial/esp32_c5_b_guided_session.log.gz.stderr.log
+capture_stream_started	esp32-s3-c	0	1777895765485	2026-05-04 14:56:05 EEST	command:RPI5_HOST="${NODE_C_RPI5_HOST:-<node-c-ap-address>}" RPI5_PORT="${NODE_C_RPI5_PORT:-2222}" ./scripts/capture_esp32_s3_rpi5_node_c_udp_summary.sh:serial/esp32_s3_c_guided_session.log.gz:stderr=serial/esp32_s3_c_guided_session.log.gz.stderr.log
+capture_started	-	0	1777895767669	2026-05-04 14:56:07 EEST	serial/esp32_guided_session.log.gz serial/esp32_c5_b_guided_session.log.gz serial/esp32_s3_c_guided_session.log.gz not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle
+timing_checkpoint	sync_pre	0	1777895767689	2026-05-04 14:56:07 EEST	sync_pre.p1:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777895767983	2026-05-04 14:56:07 EEST	sync_pre.p2:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777895768282	2026-05-04 14:56:08 EEST	sync_pre.p3:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777895768579	2026-05-04 14:56:08 EEST	sync_pre.p4:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777895768874	2026-05-04 14:56:08 EEST	sync_pre.p5:controller-side start-of-session alignment checkpoint
+block_started	W0	180	1777895804048	2026-05-04 14:56:44 EEST	three-node and maintenance warm-up
+block_finished	W0	180	1777895984471	2026-05-04 14:59:44 EEST	
+block_started	E1	240	1777896102185	2026-05-04 15:01:42 EEST	long empty-scene reference under light protected traffic
+block_finished	E1	240	1777896342762	2026-05-04 15:05:42 EEST	
+block_started	S1	180	1777896362915	2026-05-04 15:06:02 EEST	first static presence period
+block_finished	S1	180	1777896543343	2026-05-04 15:09:03 EEST	
+block_started	M1	180	1777896547564	2026-05-04 15:09:07 EEST	first slow motion period
+block_finished	M1	180	1777896727999	2026-05-04 15:12:07 EEST	
+timing_checkpoint	sync_early	0	1777896731301	2026-05-04 15:12:11 EEST	sync_early.p1:early long-horizon checkpoint after the first adaptation cycle
+timing_checkpoint	sync_early	0	1777896731603	2026-05-04 15:12:11 EEST	sync_early.p2:early long-horizon checkpoint after the first adaptation cycle
+timing_checkpoint	sync_early	0	1777896731914	2026-05-04 15:12:11 EEST	sync_early.p3:early long-horizon checkpoint after the first adaptation cycle
+timing_checkpoint	sync_early	0	1777896732229	2026-05-04 15:12:12 EEST	sync_early.p4:early long-horizon checkpoint after the first adaptation cycle
+timing_checkpoint	sync_early	0	1777896732545	2026-05-04 15:12:12 EEST	sync_early.p5:early long-horizon checkpoint after the first adaptation cycle
+block_started	E2	240	1777896782910	2026-05-04 15:13:02 EEST	first empty recovery window
+block_finished	E2	240	1777897023459	2026-05-04 15:17:03 EEST	
+block_started	S2	180	1777898384469	2026-05-04 15:39:44 EEST	second static presence period
+block_finished	S2	180	1777898564904	2026-05-04 15:42:44 EEST	
+block_started	M2	180	1777898572322	2026-05-04 15:42:52 EEST	second slow motion period
+block_finished	M2	180	1777898752764	2026-05-04 15:45:52 EEST	
+block_started	E3	240	1777898857122	2026-05-04 15:47:37 EEST	second empty recovery window
+block_finished	E3	240	1777899097697	2026-05-04 15:51:37 EEST	
+block_started	S3	180	1777899113498	2026-05-04 15:51:53 EEST	third static presence period
+block_finished	S3	180	1777899293924	2026-05-04 15:54:53 EEST	
+block_started	M3	180	1777899299339	2026-05-04 15:54:59 EEST	third slow motion period
+block_finished	M3	180	1777899479781	2026-05-04 15:57:59 EEST	
+timing_checkpoint	sync_mid	0	1777899484345	2026-05-04 15:58:04 EEST	sync_mid.p1:mid-session checkpoint before the late stability cycles
+timing_checkpoint	sync_mid	0	1777899484677	2026-05-04 15:58:04 EEST	sync_mid.p2:mid-session checkpoint before the late stability cycles
+timing_checkpoint	sync_mid	0	1777899485009	2026-05-04 15:58:05 EEST	sync_mid.p3:mid-session checkpoint before the late stability cycles
+timing_checkpoint	sync_mid	0	1777899485338	2026-05-04 15:58:05 EEST	sync_mid.p4:mid-session checkpoint before the late stability cycles
+timing_checkpoint	sync_mid	0	1777899485668	2026-05-04 15:58:05 EEST	sync_mid.p5:mid-session checkpoint before the late stability cycles
+block_started	E4	240	1777899505645	2026-05-04 15:58:25 EEST	third empty recovery window
+block_finished	E4	240	1777899746220	2026-05-04 16:02:26 EEST	
+block_started	S4	180	1777899777322	2026-05-04 16:02:57 EEST	fourth static presence period
+block_finished	S4	180	1777899957764	2026-05-04 16:05:57 EEST	
+block_started	M4	180	1777899963318	2026-05-04 16:06:03 EEST	fourth slow motion period
+block_finished	M4	180	1777900143744	2026-05-04 16:09:03 EEST	
+block_started	E5	240	1777900156516	2026-05-04 16:09:16 EEST	fourth empty recovery window
+block_finished	E5	240	1777900397087	2026-05-04 16:13:17 EEST	
+block_started	S5	180	1777900435499	2026-05-04 16:13:55 EEST	late-session static confirmation
+block_finished	S5	180	1777900615938	2026-05-04 16:16:55 EEST	
+block_started	M5	180	1777900624498	2026-05-04 16:17:04 EEST	late-session motion confirmation
+block_finished	M5	180	1777900804928	2026-05-04 16:20:04 EEST	
+timing_checkpoint	sync_late	0	1777900813594	2026-05-04 16:20:13 EEST	sync_late.p1:late-session checkpoint before the final maintenance window
+timing_checkpoint	sync_late	0	1777900813939	2026-05-04 16:20:13 EEST	sync_late.p2:late-session checkpoint before the final maintenance window
+timing_checkpoint	sync_late	0	1777900814283	2026-05-04 16:20:14 EEST	sync_late.p3:late-session checkpoint before the final maintenance window
+timing_checkpoint	sync_late	0	1777900814630	2026-05-04 16:20:14 EEST	sync_late.p4:late-session checkpoint before the final maintenance window
+timing_checkpoint	sync_late	0	1777900814996	2026-05-04 16:20:14 EEST	sync_late.p5:late-session checkpoint before the final maintenance window
+block_started	E6	300	1777900830059	2026-05-04 16:20:30 EEST	final long empty maintenance window
+block_finished	E6	300	1777901130723	2026-05-04 16:25:30 EEST	
+timing_checkpoint	sync_post	0	1777901142278	2026-05-04 16:25:42 EEST	sync_post.p1:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777901142628	2026-05-04 16:25:42 EEST	sync_post.p2:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777901142977	2026-05-04 16:25:42 EEST	sync_post.p3:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777901143328	2026-05-04 16:25:43 EEST	sync_post.p4:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777901143676	2026-05-04 16:25:43 EEST	sync_post.p5:controller-side end-of-session alignment checkpoint
+capture_stream_stopped	esp32-c5-a	0	1777901144373	2026-05-04 16:25:44 EEST	serial/esp32_guided_session.log.gz
+capture_stream_stopped	esp32-c5-b	0	1777901145199	2026-05-04 16:25:45 EEST	serial/esp32_c5_b_guided_session.log.gz
+capture_stream_stopped	esp32-s3-c	0	1777901146026	2026-05-04 16:25:46 EEST	serial/esp32_s3_c_guided_session.log.gz
+capture_finished	-	0	1777901147057	2026-05-04 16:25:47 EEST	serial/esp32_guided_session.log.gz serial/esp32_c5_b_guided_session.log.gz serial/esp32_s3_c_guided_session.log.gz not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle not published; summarized from private bundle
