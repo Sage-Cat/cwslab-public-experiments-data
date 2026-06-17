@@ -2,7 +2,7 @@
 
 - Bundle ID: `d01_c1_t0_l1_repeatability_20260406T113903Z`
 - Session ID: `d01_c1_t0_l1_repeatability`
-- Publication scope: raw/public-safe measured bundle
+- Publication scope: sanitized measured bundle
 - Target node: `primary prplOS-compatible dual-band AP node`
 - Capture seconds: `1320`
 - Raw serial capture: `serial/esp32_guided_session.log`
@@ -24,7 +24,7 @@
 
 | Step ID | Purpose |
 | --- | --- |
-| `preflight_local` | Check local WSL/Linux dependencies and capture-device visibility. |
+| `preflight_local` | Check runtime dependencies and capture-device visibility. |
 | `ap_configure` | Apply the requested router radio, SSID, and AccessPoint settings. |
 | `ap_snapshot` | Collect router-side snapshots over SSH or serial console. |
 | `firmware_build` | Build the configured ESP32 firmware workspace. |
@@ -50,4 +50,4 @@
 
 - TODO(hw): this published bundle is a measured raw surface and does not by itself prove validated CSI sensing fidelity.
 - TODO(spec): AP-control references remain a reference mapping and need closer mapping to 802.11bf / EasyMesh / TR-181 semantics.
-- TODO(driver): host-side serial access and AP control still depend on local OS/driver/prplOS specifics.
+- Reproduction note: compatible serial access and AP-control interfaces are required.

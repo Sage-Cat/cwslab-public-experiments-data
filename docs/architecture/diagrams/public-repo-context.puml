@@ -8,7 +8,7 @@ skinparam shadowing false
 actor Operator
 component "scripts/\npublic launch surface" as Scripts
 component "scripts/sessions/\nsession profiles" as Profiles
-component "runtime output bundle\n(local operator workspace)" as RuntimeBundle
+component "new runtime bundle\n(untracked)" as RuntimeBundle
 database "datasets/\ncurated measured bundles" as Datasets
 component "datasets/manifest.json\npublication index" as Manifest
 component "docs/\npublic repository docs" as Docs
@@ -26,7 +26,7 @@ No full 802.11bf or EasyMesh compliance claim.
 end note
 
 note bottom of Datasets
-Published bundles keep raw/public-safe surfaces only.
+Published bundles keep sanitized measured surfaces only.
 Derived analysis is excluded.
 end note
 

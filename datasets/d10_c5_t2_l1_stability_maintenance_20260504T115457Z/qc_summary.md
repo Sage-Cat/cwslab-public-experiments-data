@@ -12,7 +12,7 @@
 - Max zero_len: `0`
 - Max timeouts: `0`
 - Auxiliary sensor logs: `serial/esp32_c5_b_guided_session.log.gz, serial/esp32_s3_c_guided_session.log.gz`
-- Required sidecar outputs: `private bundle sidecars summarized here only: node_a_features, node_b_features, node_c_features, protected_traffic_trace_node_c, controller_decision_log`
+- Required sidecar outputs: `non-public sidecar streams summarized here only: node_a_features, node_b_features, node_c_features, protected_traffic_trace_node_c, controller_decision_log`
 - Templated notes completed: `yes`
 - Baselines: `B3`
 - Condition interpretation: `L1 is the requested working condition`
@@ -39,11 +39,11 @@
 
 | Sidecar | Kind | Emulated | Primary Count | Bytes | Path |
 | --- | --- | --- | --- | --- | --- |
-| `node-a-feature-export` | `feature_ndjson` | `no` | `2690 windows` | `2693676` | `not published; summarized from private bundle` |
-| `node-b-feature-export` | `feature_ndjson` | `no` | `2690 windows` | `2667927` | `not published; summarized from private bundle` |
-| `node-c-feature-export` | `feature_ndjson` | `no` | `2640 windows` | `2688156` | `not published; summarized from private bundle` |
-| `node-c-protected-traffic` | `traffic_ndjson` | `no` | `11180 samples / 5590 throughput` | `4488244` | `not published; summarized from private bundle` |
-| `controller-decisions` | `controller_ndjson` | `no` | `2640 decisions` | `2179765` | `not published; summarized from private bundle` |
+| `node-a-feature-export` | `feature_ndjson` | `no` | `2690 windows` | `2693676` | `not included in the public bundle; summarized here` |
+| `node-b-feature-export` | `feature_ndjson` | `no` | `2690 windows` | `2667927` | `not included in the public bundle; summarized here` |
+| `node-c-feature-export` | `feature_ndjson` | `no` | `2640 windows` | `2688156` | `not included in the public bundle; summarized here` |
+| `node-c-protected-traffic` | `traffic_ndjson` | `no` | `11180 samples / 5590 throughput` | `4488244` | `not included in the public bundle; summarized here` |
+| `controller-decisions` | `controller_ndjson` | `no` | `2640 decisions` | `2179765` | `not included in the public bundle; summarized here` |
 
 ## Interpretation
 

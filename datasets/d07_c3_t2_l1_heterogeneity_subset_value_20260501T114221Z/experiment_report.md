@@ -5,7 +5,7 @@
 - Program ID: `D07`
 - Session ID: `d07_c3_t2_l1_heterogeneity_subset_value`
 - Status: `usable as planned`
-- Bundle dir: `<cws-lab>/experiments/runs/d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z`
+- Bundle ID: `d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z`
 - Fixed operating point: `5 GHz / channel 36 / 20 MHz`
 - Raw line count: `327895`
 - CSI row count: `8576`

@@ -26,7 +26,8 @@
       "sanitization_summary": [
         "removed absolute local paths and internal plan references",
         "removed AP host/device identifiers and credential material",
-        "kept raw serial capture and operator block timing surface"
+        "kept raw serial capture and operator block timing surface",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -54,7 +55,8 @@
       "sanitization_summary": [
         "removed future-plan and internal-analysis references where they were not needed for public dataset context",
         "removed absolute local paths and private runtime identifiers",
-        "kept raw serial capture and operator block timing surface"
+        "kept raw serial capture and operator block timing surface",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -80,7 +82,8 @@
       "sanitization_summary": [
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
-        "kept raw serial capture and operator block timing surface"
+        "kept raw serial capture and operator block timing surface",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -112,7 +115,8 @@
       "sanitization_summary": [
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
-        "kept raw serial capture and operator block timing surface"
+        "kept raw serial capture and operator block timing surface",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -145,7 +149,8 @@
       "sanitization_summary": [
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
-        "kept raw serial capture and operator block timing surface while preserving the honest L0 downgrade gate"
+        "kept raw serial capture and operator block timing surface while preserving the honest L0 downgrade gate",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -179,7 +184,8 @@
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
         "removed personal participant identity while keeping human-presence block semantics",
-        "kept raw serial capture and operator block timing surface for later comparator analysis"
+        "kept raw serial capture and operator block timing surface for later comparator analysis",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -215,7 +221,9 @@
         "removed absolute local paths and non-public device identifiers",
         "removed AP credentials and runtime-specific environment details",
         "removed internal analysis and reporting outputs from the public copy",
-        "preserved the honest D04 limitation that protected traffic traces were not retained, so the published bundle is not claim-grade under-load evidence"
+        "preserved the honest D04 limitation that protected traffic traces were not retained, so the published bundle is not claim-grade under-load evidence",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values",
+        "replaced local source paths in operator event logs with repository-relative paths"
       ]
     },
     {
@@ -253,7 +261,8 @@
       "sanitization_summary": [
         "removed absolute local paths, private helper-host addresses, AP credentials, and runtime-specific environment details from metadata and notes",
         "kept both raw serial captures and the operator/timing event logs for auditability",
-        "preserved the honest D05 limitation that node-B stalled, capture_finished is missing, the row-ratio gate failed, and cooperative timing failed"
+        "preserved the honest D05 limitation that node-B stalled, capture_finished is missing, the row-ratio gate failed, and cooperative timing failed",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -293,7 +302,8 @@
       "sanitization_summary": [
         "removed absolute local paths, private host addresses, AP credentials, adapter names, and runtime-specific environment details from metadata and notes",
         "kept all three raw capture logs and the operator/timing event logs for auditability",
-        "preserved the claim-grade D07 result while adding explicit clock-face and degree topology documentation"
+        "preserved the claim-grade D07 result while adding explicit clock-face and degree topology documentation",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -335,7 +345,8 @@
       "sanitization_summary": [
         "removed absolute local paths, private helper-host addresses, AP credentials, adapter names, and runtime-specific environment details from metadata and notes",
         "kept both raw sensing capture logs and the operator/timing event logs for auditability",
-        "preserved the claim-grade D08 controller and protected-traffic result while keeping raw sidecar outputs out of the public repository"
+        "preserved the claim-grade D08 controller and protected-traffic result while keeping raw sidecar outputs out of the public repository",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values"
       ]
     },
     {
@@ -378,7 +389,9 @@
       "sanitization_summary": [
         "removed absolute local paths, private host addresses, AP credentials, adapter names, MAC addresses, and runtime-specific environment details from metadata and notes",
         "kept all three raw sensing capture logs as gzip-compressed text logs because two uncompressed D10 logs exceed the normal GitHub per-file size limit",
-        "preserved the claim-grade D10 long-horizon controller/stability result while keeping raw feature, controller, and protected-traffic sidecar NDJSON out of the public repository"
+        "preserved the claim-grade D10 long-horizon controller/stability result while keeping raw feature, controller, and protected-traffic sidecar NDJSON out of the public repository",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values",
+        "redacted Node-C SSID and private IP fields in serial status lines"
       ]
     }
   ],

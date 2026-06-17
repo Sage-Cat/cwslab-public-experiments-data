@@ -205,7 +205,7 @@
         "Completed D08 requires controller decisions and protected-traffic traces to overlap on the same block timeline and to retain at least one real throughput sample.",
         "The dedicated Node-C helper reused the same two-Wi-Fi AP path family introduced for D07, but public metadata redacts helper addresses, SSIDs, and interface names.",
         "Node B uses the same real AP-B UDP summary path that made D05-D07 claim-grade; the RPi4 UART path remains diagnostic only unless separately validated.",
-        "Protected traffic was generated on the Node-C helper path as live, non-emulated traffic for the current stand.",
+        "Protected traffic was generated on the Node-C helper path as live, non-emulated traffic for the capture topology.",
         "The Node-C ESP32-S3 corner placement remained documented physical context only and was not promoted to a live D08 sensing-node claim."
       ],
       "human_participant_name": null,

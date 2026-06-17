@@ -29,7 +29,7 @@
 - AccessPoint ref: `Device.WiFi.AccessPoint.3.`
 - Channel plan: `36` / `20MHz`
 - Requested SSID: `<redacted>`
-- TODO(driver): verify the target AP node exposes the same writable surface before treating this mapping as stable hardware truth.
+- Validation note: verify the target AP node exposes the same writable surface before treating this mapping as stable hardware truth.
 
 ## Block Log Template
 

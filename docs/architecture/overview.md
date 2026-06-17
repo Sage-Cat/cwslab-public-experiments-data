@@ -2,19 +2,22 @@
 
 This repository has two public product surfaces:
 
-- a script surface that acts as a reference launch path for hardware capture sessions
+- a script surface that acts as a reference launch path for capture sessions
 - a dataset surface that publishes curated measured bundles
 
-The script path is intentionally independent from the original monorepo. Session-specific configuration lives under `scripts/sessions/`, while `scripts/run_session.sh` provides the generic operator-guided runtime. The runtime can prepare a new output bundle outside the tracked measured datasets.
+Session-specific configuration lives under `scripts/sessions/`, while
+`scripts/run_session.sh` provides the generic operator-guided runtime. The
+runtime writes a new untracked bundle selected by the operator.
 
-The dataset path is read-only publication content. Each published bundle in `datasets/` contains only curated raw/public-safe artifacts:
+The dataset path is read-only publication content. Each published bundle in
+`datasets/` contains only curated public artifacts:
 
-- raw serial capture logs
+- sanitized serial capture logs
 - operator block-event logs
 - sanitized metadata
 - sanitized runbook and operator notes
 
-Derived analysis and reporting artifacts are not published here.
+Derived analysis and runtime artifacts with non-public configuration are not published here.
 
 ## Diagram Source Of Truth
 

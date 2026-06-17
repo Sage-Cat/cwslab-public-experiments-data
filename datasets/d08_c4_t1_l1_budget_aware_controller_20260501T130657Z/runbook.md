@@ -2,7 +2,7 @@
 
 - Bundle ID: `d08_c4_t1_l1_budget_aware_controller_20260501T130657Z`
 - Session ID: `d08_c4_t1_l1_budget_aware_controller`
-- Publication scope: raw/public-safe claim-grade D08 controller and protected-traffic bundle
+- Publication scope: sanitized claim-grade D08 controller and protected-traffic bundle
 - Target node: `primary prplOS-compatible dual-band AP node`
 - Capture seconds: `1500`
 - Primary raw capture: `serial/esp32_guided_session.log`
@@ -12,7 +12,7 @@
 - Cooperative timing summary: `analysis/cooperative_timing/summary.md`
 - Requested operating channel: `36` / `20MHz`
 - Publication verdict: `usable as planned`
-- Sanitization: local paths, host/device identifiers, private helper addresses, interface names, credentials, and monorepo-only launch details removed from public notes/metadata
+- Sanitization: local paths, host/device identifiers, private helper addresses, interface names, credentials, and non-public launch details removed from public notes/metadata
 
 ## Physical Topology
 

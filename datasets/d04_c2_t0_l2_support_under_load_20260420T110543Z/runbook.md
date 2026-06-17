@@ -2,7 +2,7 @@
 
 - Bundle ID: `d04_c2_t0_l2_support_under_load_20260420T110543Z`
 - Session ID: `d04_c2_t0_l2_support_under_load`
-- Publication scope: raw/public-safe measured bundle
+- Publication scope: sanitized measured bundle
 - Target node: `primary prplOS-compatible dual-band AP node`
 - Capture seconds: `1500`
 - Raw serial capture: `serial/esp32_guided_session.log`
@@ -25,7 +25,7 @@
 
 | Step ID | Purpose |
 | --- | --- |
-| `preflight_local` | Check local WSL/Linux dependencies and capture-device visibility. |
+| `preflight_local` | Check runtime dependencies and capture-device visibility. |
 | `ap_configure` | Apply the requested router radio, SSID, and AccessPoint settings. |
 | `ap_snapshot` | Collect router-side snapshots over SSH or serial console. |
 | `firmware_build` | Build the configured ESP32 firmware workspace. |
@@ -52,4 +52,4 @@
 - TODO(hw): this published bundle is a measured raw surface and does not by itself prove validated CSI sensing fidelity.
 - TODO(verify): protected-traffic traces are missing from the retained public bundle, so this surface alone must not be treated as claim-grade under-load evidence.
 - TODO(spec): AP-control references remain a reference mapping and need closer mapping to 802.11bf / EasyMesh / TR-181 semantics.
-- TODO(driver): host-side serial access and AP control still depend on local OS/driver/prplOS specifics.
+- Reproduction note: compatible serial access and AP-control interfaces are required.

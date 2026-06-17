@@ -4,11 +4,11 @@
 
 `cwslab-public-experiments-data` is the public-derived repository for:
 
-- experimental launch scripts that can be reviewed independently from the original monorepo
-- curated measured bundles that preserve raw capture surfaces without derived analysis
+- experimental launch scripts that can be reviewed independently from the source capture repository
+- curated measured bundles that preserve sanitized measurement surfaces without derived analysis
 - repository-level public documentation and diagrams
 
-The repository is designed to live independently from `cws-lab`. It should remain understandable without the original monorepo checkout.
+The repository should remain understandable without external workflow context.
 
 ## Product Boundaries
 
@@ -21,13 +21,13 @@ This repository includes:
 This repository intentionally excludes:
 
 - offline analysis, report assembly, dissertation drafting, status reporting, and internal planning
-- monorepo-only helper surfaces that exist mainly to support private automation
-- host-specific environment snapshots and hardware-specific secrets or identifiers
+- non-public helper surfaces used only for automation
+- environment snapshots and hardware-specific secrets or identifiers
 
 ## Design Principles
 
 - Keep the repository honest about evidence stage: measured data stays separate from derived claims.
-- Publish raw/public-safe surfaces only; derived interpretation belongs elsewhere.
+- Publish sanitized measured surfaces only; derived interpretation belongs elsewhere.
 - Preserve PlantUML sources as the source of truth for architecture and structure diagrams.
 - Keep wording careful: `802.11bf-inspired`, `EasyMesh-inspired metrics/control-plane alignment`, and `reference implementation`.
 - Avoid vendor and version naming in public docs, diagrams, comments, and examples.
@@ -48,10 +48,12 @@ The repository can evolve without `cws-lab` when:
 3. Sanitize metadata, runbook text, and operator notes to remove:
    - absolute local paths
    - AP hostnames, device nodes, and firmware workspace paths
+   - concrete SSIDs, IP addresses, MAC addresses, BSSIDs, and adapter names
    - credentials, passphrases, and secrets
    - internal plan references and non-public status notes
-4. Exclude derived analysis, reports, QC summaries, and environment dumps.
-5. Add the bundle entry to `datasets/manifest.json`.
+4. Pseudonymize serial-log identifiers while preserving measurement values.
+5. Exclude derived analysis, reports, QC summaries, and environment dumps.
+6. Add the bundle entry to `datasets/manifest.json`.
 
 ## Adding A New Script
 

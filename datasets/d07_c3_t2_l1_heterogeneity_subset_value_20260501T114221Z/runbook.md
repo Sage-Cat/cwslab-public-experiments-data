@@ -2,7 +2,7 @@
 
 - Bundle ID: `d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z`
 - Session ID: `d07_c3_t2_l1_heterogeneity_subset_value`
-- Publication scope: raw/public-safe claim-grade D07 cooperative three-node bundle
+- Publication scope: sanitized claim-grade D07 cooperative three-node bundle
 - Target node: `primary prplOS-compatible dual-band AP node`
 - Capture seconds: `1500`
 - Primary raw capture: `serial/esp32_guided_session.log`

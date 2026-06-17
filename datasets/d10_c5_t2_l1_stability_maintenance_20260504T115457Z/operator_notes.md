@@ -11,7 +11,7 @@
 - Controlled primary sensing diameter: Node A ESP32-C5 at 12 o'clock / 0 degrees to the primary prplOS-compatible dual-band AP node at 6 o'clock / 180 degrees, for a 2.00 m line through the experiment center.
 - Node A is captured over the primary-router UDP DNAT listener, Node B uses the AP-B UDP summary path, and Node C is the dedicated `RPi5 + ESP32-S3` `2.4 GHz` sensing path captured over UDP at `<node-c-ap-address>`.
 - Protected traffic remains on the dedicated Node-C AP path: the laptop keeps `<node-c-wifi-adapter>` on `<redacted-node-c-ssid>` at `<operator-node-c-address>`, SSH reaches the Node-C RPi5 at `<node-c-ap-address>`, and the RPi5 sends live light-load ping plus byte-stream traffic back to the laptop over that AP.
-- Integrated D10 uses two laptop Wi-Fi adapters: `<operator-main-wifi-adapter>` is switched to AP-B for node B, while `<node-c-wifi-adapter>` stays associated to the Node-C AP at `<node-c-ap-address>`; do not use the router-side Node-C address `<private-ip>` for the current stand.
+- Integrated D10 uses two laptop Wi-Fi adapters: `<operator-main-wifi-adapter>` is switched to AP-B for node B, while `<node-c-wifi-adapter>` stays associated to the Node-C AP at `<node-c-ap-address>`; do not use the router-side Node-C address `<private-ip>` for the capture topology.
 - Verify on the helper `RPi5` that SSH over `<node-c-ap-address>`, `ping`, and POSIX `dd` are present before the run; the structured traffic sidecar uses SSH byte-stream measurement and does not require remote `python3` or local `iperf3`.
 - Do not let helper traffic, management cabling, or long-session operator movement contaminate the 12-to-6 sensing corridor.
 

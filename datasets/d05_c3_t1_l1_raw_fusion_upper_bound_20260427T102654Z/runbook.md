@@ -2,7 +2,7 @@
 
 - Bundle ID: `d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z`
 - Session ID: `d05_c3_t1_l1_raw_fusion_upper_bound`
-- Publication scope: raw/public-safe measured cooperative bundle
+- Publication scope: sanitized measured cooperative bundle
 - Target node: `primary prplOS-compatible dual-band AP node`
 - Capture seconds: `1500`
 - Primary raw serial capture: `serial/esp32_guided_session.log`
@@ -40,5 +40,5 @@
 ## Current Limits
 
 - TODO(verify): the cooperative timing report is failed, so cross-node fusion must be treated as analysis-only.
-- TODO(driver): node-B stream transport needs a clean end-of-capture path before D05 can be claim-grade.
+- Limitation: node-B stream transport needs a clean end-of-capture path before D05 can be claim-grade.
 - TODO(qc): node-B CSI output rate must be brought close enough to node-A to pass the live-sensor row-ratio gate.

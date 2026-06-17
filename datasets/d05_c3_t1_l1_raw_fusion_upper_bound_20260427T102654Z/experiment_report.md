@@ -5,7 +5,7 @@
 - Program ID: `D05`
 - Session ID: `d05_c3_t1_l1_raw_fusion_upper_bound`
 - Status: `not claim-grade`
-- Bundle dir: `datasets/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z`
+- Bundle ID: `d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z`
 - Fixed operating point: `5 GHz / channel 36 / 20 MHz`
 - Raw line count: `2045`
 - CSI row count: `1452`

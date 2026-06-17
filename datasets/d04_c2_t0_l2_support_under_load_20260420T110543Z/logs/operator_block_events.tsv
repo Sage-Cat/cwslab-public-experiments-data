@@ -1,5 +1,5 @@
 event	block_id	planned_duration_s	epoch_ms	wall_time	payload
-capture_started	-	0	1776683173843	2026-04-20 14:06:13 EEST	/home/sagecat/Projects/research-workspace/cws-lab/experiments/runs/d04_c2_t0_l2_support_under_load_20260420T110543Z/serial/esp32_guided_session.log
+capture_started	-	0	1776683173843	2026-04-20 14:06:13 EEST	serial/esp32_guided_session.log
 block_started	W0	120	1776683189194	2026-04-20 14:06:29 EEST	technical warm-up and protected-traffic synchronization check before the loaded capture
 block_finished	W0	120	1776683309465	2026-04-20 14:08:29 EEST	
 block_started	E1	180	1776683331962	2026-04-20 14:08:51 EEST	extended empty reference under injected protected traffic
@@ -16,4 +16,4 @@ block_started	M2	150	1776684294526	2026-04-20 14:24:54 EEST	second extended slow
 block_finished	M2	150	1776684444861	2026-04-20 14:27:24 EEST	
 block_started	E3	180	1776684483278	2026-04-20 14:28:03 EEST	final extended empty recovery under the same injected load
 block_finished	E3	180	1776684663688	2026-04-20 14:31:03 EEST	
-capture_finished	-	0	1776684683280	2026-04-20 14:31:23 EEST	/home/sagecat/Projects/research-workspace/cws-lab/experiments/runs/d04_c2_t0_l2_support_under_load_20260420T110543Z/serial/esp32_guided_session.log
+capture_finished	-	0	1776684683280	2026-04-20 14:31:23 EEST	serial/esp32_guided_session.log

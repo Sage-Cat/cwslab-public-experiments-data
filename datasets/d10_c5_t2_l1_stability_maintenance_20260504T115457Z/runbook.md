@@ -1,8 +1,7 @@
-# WSL/Linux Experiment Bundle
+# Experiment Bundle
 
 - Session ID: `d10_c5_t2_l1_stability_maintenance`
-- Bundle dir: `<cws-lab>/experiments/runs/d10_c5_t2_l1_stability_maintenance_20260504T115457Z`
-- Workspace root: `<cws-lab>`
+- Bundle ID: `d10_c5_t2_l1_stability_maintenance_20260504T115457Z`
 - Router access: `ssh root@<primary-ap-address>:22`
 - Primary sensor: `esp32-c5-a` -> `command_stream: ./scripts/capture_esp32_c5_primary_udp_summary_via_router_dnat.sh`
 - Capture seconds: `3720`
@@ -28,14 +27,14 @@
 - AccessPoint ref: `Device.WiFi.AccessPoint.3.`
 - Requested SSID: `<redacted-main-ssid>`
 - Requested operating channel: `36` / `20MHz`
-- Firmware tools path: `<workspace>/.espressif`
-- Experiment plan: `<cws-lab>/experiments/plans/2026-04-02-d10-c5-t2-l1-stability-maintenance-plan-uk.md`
+- Firmware tools: configured outside the public bundle
+- Experiment plan: summarized by this runbook
 
 ## Generated Scripts
 
 | Step ID | Purpose | Script |
 | --- | --- | --- |
-| `preflight_local` | Check local WSL/Linux dependencies and capture-device visibility. | `00_preflight_local.sh` |
+| `preflight_local` | Check runtime dependencies and capture-device visibility. | `00_preflight_local.sh` |
 | `ap_configure` | Apply the requested router radio, SSID, and AccessPoint settings. | `01_ap_configure.sh` |
 | `ap_snapshot` | Collect router-side snapshots over SSH or serial console. | `02_ap_snapshot.sh` |
 | `firmware_build` | Build the configured ESP32 firmware workspace. | `03_firmware_build.sh` |
@@ -123,4 +122,4 @@
 - It automates the currently configured launcher path for this stand.
 - Any `command_stub` helper sensor or emulated sidecar keeps the result below claim-grade live hardware evidence.
 - Router AP control stores canonical `Device.WiFi.*` references in config and writes through the current `WiFi.*` `ba-cli` aliases exposed by the router-management toolchain.
-- Router commands still run as best-effort snapshots over SSH or serial console, so host-specific driver and shell behavior remain part of the live contract.
+- Router commands still run as best-effort snapshots over SSH or serial console, so reproduction depends on compatible serial access and router-management interfaces.

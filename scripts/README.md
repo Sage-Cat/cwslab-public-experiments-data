@@ -1,6 +1,6 @@
 # Scripts
 
-This directory contains the public-safe experimental launch surface.
+This directory contains the public experimental launch surface.
 
 ## Files
 
@@ -14,11 +14,14 @@ This directory contains the public-safe experimental launch surface.
 
 The generic runtime supports:
 
-- one primary local serial/UART capture stream
+- one primary serial/UART capture stream
 - up to two optional auxiliary command-backed capture streams for cooperative/helper-node sessions such as `D05` and `D07`
 
 ## Runtime Model
 
-The wrapper scripts do not depend on the `cws-lab` internal CLI. They expect a local `session.env` file next to `session.env.example` for the selected session profile.
+The wrapper scripts expect an untracked `session.env` file next to
+`session.env.example` for the selected session profile.
 
-The scripts remain a `reference implementation`. They should not be presented as validated end-to-end hardware support.
+Do not commit concrete hostnames, addresses, credentials, SSIDs, or device
+paths. The scripts remain a `reference implementation`, not a certification or
+end-to-end hardware-support claim.

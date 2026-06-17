@@ -154,7 +154,7 @@
   "scripts": [
     {
       "step_id": "preflight_local",
-      "description": "Check local WSL/Linux dependencies and capture-device visibility."
+      "description": "Check runtime dependencies and capture-device visibility."
     },
     {
       "step_id": "ap_configure",

@@ -10,7 +10,7 @@
 - `docs/architecture/`: public architecture explanation and context diagram
 - `docs/structure/`: repository layout explanation and structure diagram
 - `docs/dataset-policy/`: whitelist/blacklist and sanitization policy for published bundles
-- `scripts/`: public-safe launchers, generic runtime script, and session profiles
+- `scripts/`: public launchers, generic runtime script, and session profiles
 - `datasets/`: curated measured bundles and publication manifest
 
 ## Adding A New Session Profile
@@ -31,7 +31,7 @@ Add a directory under `datasets/<bundle-id>/` and keep only:
 - `operator_notes.md`
 - `logs/operator_block_events.tsv`
 - optional extra operator-facing notes if sanitized
-- `serial/` raw measurement artifacts
+- `serial/` sanitized measurement artifacts
 
 Do not add:
 
@@ -46,4 +46,4 @@ Do not add:
 
 - Update `datasets/manifest.json` whenever inclusion or exclusion decisions change.
 - Keep public docs in sync with the published structure.
-- Keep the new repository self-contained; do not require `cws-lab` to understand the file layout.
+- Keep the repository self-contained; do not require external workflow context to understand the file layout.
