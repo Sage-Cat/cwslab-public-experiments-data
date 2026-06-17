@@ -350,6 +350,51 @@
       ]
     },
     {
+      "bundle_id": "d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z",
+      "status": "published-claim-grade",
+      "source_bundle": "experiments/runs/d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z",
+      "included_surfaces": [
+        "metadata.json",
+        "runbook.md",
+        "operator_notes.md",
+        "logs/operator_block_events.tsv",
+        "logs/cooperative_timing_markers.tsv",
+        "serial/esp32_guided_session.log.gz",
+        "serial/esp32_c5_b_guided_session.log.gz",
+        "serial/esp32_s3_c_guided_session.log.gz",
+        "notes/per_node_alignment_notes.md",
+        "notes/d09_controller_load_notes.md",
+        "analysis/cooperative_timing/summary.md",
+        "qc_summary.md",
+        "experiment_report.md"
+      ],
+      "excluded_surfaces": [
+        "analysis/feature_exports/",
+        "analysis/guided_segments/",
+        "analysis_handoff*",
+        "artifact_checklist.md",
+        "interference_load_notes.md",
+        "logs/ap_configure.log",
+        "logs/ap_snapshot.log",
+        "logs/controller_decision_log.ndjson",
+        "logs/operator_block_log.md",
+        "logs/operator_guided_capture.log",
+        "logs/run_experiment.log",
+        "manifest.json",
+        "runner-logs/",
+        "scripts/",
+        "session.env",
+        "traffic/"
+      ],
+      "sanitization_summary": [
+        "removed absolute local paths, private host addresses, AP credentials, adapter names, MAC addresses, serial device paths, and runtime-specific environment details from metadata and notes",
+        "kept all three raw sensing capture logs as gzip-compressed sanitized text logs for consistency with the D10 controller/stability bundle",
+        "preserved the claim-grade D09 high-load controller and protected-traffic result while keeping raw feature, controller, and protected-traffic sidecar NDJSON out of the public repository",
+        "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values",
+        "redacted Node-C SSID and private IP fields in serial status and reporting lines"
+      ]
+    },
+    {
       "bundle_id": "d10_c5_t2_l1_stability_maintenance_20260504T115457Z",
       "status": "published-claim-grade",
       "source_bundle": "experiments/runs/d10_c5_t2_l1_stability_maintenance_20260504T115457Z",

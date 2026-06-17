@@ -1,0 +1,40 @@
+event	block_id	planned_duration_s	epoch_ms	wall_time	payload
+capture_stream_started	esp32-c5-a	0	1777890373634	2026-05-04 13:26:13 EEST	command:./scripts/capture_esp32_c5_primary_udp_summary_via_router_dnat.sh:serial/esp32_guided_session.log.gz:stderr=serial/esp32_guided_session.log.gz.stderr.log
+capture_stream_started	esp32-c5-b	0	1777890373653	2026-05-04 13:26:13 EEST	command:./scripts/capture_esp32_c5_ap_b_udp_summary_via_rpi5.sh:serial/esp32_c5_b_guided_session.log.gz:stderr=serial/esp32_c5_b_guided_session.log.gz.stderr.log
+capture_stream_started	esp32-s3-c	0	1777890373674	2026-05-04 13:26:13 EEST	command:RPI5_HOST="${NODE_C_RPI5_HOST:-<node-c-ap-address>}" RPI5_PORT="${NODE_C_RPI5_PORT:-2222}" ./scripts/capture_esp32_s3_rpi5_node_c_udp_summary.sh:serial/esp32_s3_c_guided_session.log.gz:stderr=serial/esp32_s3_c_guided_session.log.gz.stderr.log
+capture_started	-	0	1777890376891	2026-05-04 13:26:16 EEST	serial/esp32_guided_session.log.gz serial/esp32_c5_b_guided_session.log.gz serial/esp32_s3_c_guided_session.log.gz not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here
+timing_checkpoint	sync_pre	0	1777890376912	2026-05-04 13:26:16 EEST	sync_pre.p1:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777890377207	2026-05-04 13:26:17 EEST	sync_pre.p2:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777890377505	2026-05-04 13:26:17 EEST	sync_pre.p3:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777890377805	2026-05-04 13:26:17 EEST	sync_pre.p4:controller-side start-of-session alignment checkpoint
+timing_checkpoint	sync_pre	0	1777890378103	2026-05-04 13:26:18 EEST	sync_pre.p5:controller-side start-of-session alignment checkpoint
+block_started	W0	120	1777890390428	2026-05-04 13:26:30 EEST	three-node and high-load warm-up
+block_finished	W0	120	1777890510721	2026-05-04 13:28:30 EEST	-
+block_started	E1	180	1777890514585	2026-05-04 13:28:34 EEST	shared empty-scene reference under sustained load
+block_finished	E1	180	1777890695020	2026-05-04 13:31:35 EEST	-
+block_started	S1	150	1777890730908	2026-05-04 13:32:10 EEST	static presence in the shared interaction zone
+block_finished	S1	150	1777890881274	2026-05-04 13:34:41 EEST	-
+block_started	M1	150	1777890888819	2026-05-04 13:34:48 EEST	slow motion through the shared interaction zone
+block_finished	M1	150	1777891039183	2026-05-04 13:37:19 EEST	-
+timing_checkpoint	sync_mid	0	1777891053797	2026-05-04 13:37:33 EEST	sync_mid.p1:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777891054105	2026-05-04 13:37:34 EEST	sync_mid.p2:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777891054420	2026-05-04 13:37:34 EEST	sync_mid.p3:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777891054734	2026-05-04 13:37:34 EEST	sync_mid.p4:controller-side mid-session alignment checkpoint before empty recovery
+timing_checkpoint	sync_mid	0	1777891055047	2026-05-04 13:37:35 EEST	sync_mid.p5:controller-side mid-session alignment checkpoint before empty recovery
+block_started	E2	180	1777891066520	2026-05-04 13:37:46 EEST	empty recovery after the first cycle
+block_finished	E2	180	1777891246942	2026-05-04 13:40:46 EEST	-
+block_started	S2	150	1777891259092	2026-05-04 13:40:59 EEST	second static presence
+block_finished	S2	150	1777891409449	2026-05-04 13:43:29 EEST	-
+block_started	M2	150	1777891412864	2026-05-04 13:43:32 EEST	second slow motion segment
+block_finished	M2	150	1777891563224	2026-05-04 13:46:03 EEST	-
+block_started	E3	180	1777891771110	2026-05-04 13:49:31 EEST	final empty recovery
+block_finished	E3	180	1777891951548	2026-05-04 13:52:31 EEST	-
+timing_checkpoint	sync_post	0	1777892003730	2026-05-04 13:53:23 EEST	sync_post.p1:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777892004038	2026-05-04 13:53:24 EEST	sync_post.p2:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777892004343	2026-05-04 13:53:24 EEST	sync_post.p3:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777892004655	2026-05-04 13:53:24 EEST	sync_post.p4:controller-side end-of-session alignment checkpoint
+timing_checkpoint	sync_post	0	1777892004987	2026-05-04 13:53:24 EEST	sync_post.p5:controller-side end-of-session alignment checkpoint
+capture_stream_stopped	esp32-c5-a	0	1777892005655	2026-05-04 13:53:25 EEST	serial/esp32_guided_session.log.gz
+capture_stream_stopped	esp32-c5-b	0	1777892006482	2026-05-04 13:53:26 EEST	serial/esp32_c5_b_guided_session.log.gz
+capture_stream_stopped	esp32-s3-c	0	1777892007311	2026-05-04 13:53:27 EEST	serial/esp32_s3_c_guided_session.log.gz
+capture_finished	-	0	1777892008342	2026-05-04 13:53:28 EEST	serial/esp32_guided_session.log.gz serial/esp32_c5_b_guided_session.log.gz serial/esp32_s3_c_guided_session.log.gz not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here not included in the public bundle; summarized here

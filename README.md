@@ -56,6 +56,17 @@ fields, CSI values, and event timing are preserved.
 - Surface: three sanitized compressed serial logs, operator events,
   cooperative timing, and compact claim summaries.
 
+### D09 - Budget-Aware Controller Under High Load
+
+- Dataset:
+  [`d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z`](datasets/d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z/)
+- Script:
+  [`scripts/run_d09_c4_t2_l2_budget_aware_controller_high_load.sh`](scripts/run_d09_c4_t2_l2_budget_aware_controller_high_load.sh)
+- Profile:
+  [`scripts/sessions/d09_c4_t2_l2_budget_aware_controller_high_load/`](scripts/sessions/d09_c4_t2_l2_budget_aware_controller_high_load/)
+- Surface: three sanitized compressed serial logs, operator events,
+  cooperative timing, and compact high-load controller summaries.
+
 ### D08 - Budget-Aware Controller
 
 - Dataset:
