@@ -8,10 +8,12 @@ This directory contains curated measured bundles only.
 - operator block-event logs and cooperative timing logs where they are part of the claim surface
 - sanitized metadata
 - sanitized runbook/operator notes
+- sanitized compact analysis/QC/report summaries only when required for
+  interpretation and explicitly included by the manifest
 
 ## Excluded Surface
 
-- analysis and reporting outputs
+- unlisted/bulk analysis, intermediate outputs, and private reporting packages
 - environment snapshots
 - AP snapshot/configuration logs
 - concrete SSIDs, IP addresses, MAC addresses, BSSIDs, and local paths

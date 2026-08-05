@@ -2,61 +2,77 @@
 
 ## Purpose
 
-This policy defines what may and may not be published under `datasets/`.
-The goal is reproducible public evidence without private infrastructure
-identifiers.
+Publish reproducible measured evidence without exposing private infrastructure,
+credentials, machine-specific identifiers, or internal workflow material.
+`datasets/manifest.json` is the authoritative per-bundle inclusion record.
 
-## Whitelist
+## Standard Public Surface
 
-Allowed publication surfaces:
+A sanitized bundle may include:
 
-- sanitized measurement artifacts under `serial/`
-- operator timing and block-event logs such as `logs/operator_block_events.tsv`
-- sanitized `metadata.json`
-- sanitized `runbook.md`
-- sanitized `operator_notes.md`
-- minimal per-bundle notes that explain curation or sanitization decisions
+- measurement artifacts under `serial/`;
+- operator timing/block-event logs and cooperative timing markers;
+- `metadata.json`, `runbook.md`, and `operator_notes.md`;
+- compact notes needed to explain curation or sanitization.
 
-## Blacklist
+## Manifest-Approved Derived Evidence
+
+Compact derived evidence may be published only when all conditions hold:
+
+1. it is necessary to interpret the public measured claim surface;
+2. it is sanitized and self-contained;
+3. it contains no private infrastructure or internal planning material;
+4. its exact path is listed in the bundle's `included_surfaces`.
+
+Allowed shapes include bounded summaries such as:
+
+- `analysis/<analysis-name>/summary.md`;
+- `qc_summary.md`;
+- `experiment_report.md`;
+- a compact claim-bearing table or note with the same documented purpose.
+
+This exception does not allow wholesale analysis trees, private handoff
+packages, caches, intermediate arrays/models, or every generated report.
+
+## Forbidden Content
 
 Do not publish:
 
-- `analysis/`
-- `analysis_handoff*`
-- `experiment_report*`
-- `qc_summary*`
-- `session.env`
-- environment-specific or device-specific absolute paths
-- AP management hostnames, device nodes, firmware workspace paths, or machine-specific serial device names
-- concrete SSIDs, IP addresses, MAC addresses, BSSIDs, board serials, or adapter names
-- passphrases, tokens, secrets, or credentials
-- AP snapshot or AP configure logs that expose private device state or version details
-- dissertation, status, internal planning, research methodology drift notes, or private workflow artifacts
+- unlisted or bulk `analysis/` content, `analysis_handoff*`, caches,
+  intermediate/generated workspaces, or private workflow artifacts;
+- `session.env` or environment/device-specific absolute paths;
+- AP management hostnames, device nodes, firmware workspace paths, concrete
+  SSIDs, IP/MAC/BSSID values, board serials, adapter names, passphrases, tokens,
+  secrets, or credentials;
+- AP snapshot/configure logs exposing private device state or version details;
+- dissertation/status/internal planning material or research-methodology drift
+  notes not needed to interpret the public dataset.
 
-## Sanitization Rules
+## Sanitization
 
-- Replace local paths with repository-relative language.
-- Replace non-public AP/network identifiers with generic descriptions.
-- Pseudonymize repeated serial-log identifiers with stable redacted labels when
-  grouping is scientifically useful.
-- Keep router naming generic: `primary prplOS-compatible dual-band AP node`.
-- Preserve measured facts, timestamps, block labels, channel/rate/RSSI fields,
-  CSI values, and event timing.
-- Remove derived interpretation that belongs to offline analysis or reporting.
+- Replace local paths with repository-relative descriptions.
+- Replace non-public network/device identifiers with generic descriptions.
+- Pseudonymize repeated identifiers consistently when grouping is
+  scientifically useful.
+- Use `primary prplOS-compatible dual-band AP node` for the router role.
+- Preserve measured facts needed for analysis: timestamps, block labels,
+  channel/rate/RSSI fields, CSI values, and event timing.
+- Keep derived interpretation bounded to what the published measurements
+  support.
 
 ## Inclusion Threshold
 
-A bundle is publishable only when it contains a meaningful measured surface.
-Metadata-only or plan-only bundles should stay out of `datasets/` and may be
-tracked only as exclusions in `datasets/manifest.json`.
+Publish only bundles with a meaningful measured surface. Metadata-only or
+plan-only candidates remain outside `datasets/` and may be recorded as
+exclusions in the manifest.
 
 ## Manifest Rule
 
-Every publish or exclusion decision must be reflected in `datasets/manifest.json` with:
+Every publication or exclusion decision must record:
 
-- bundle identifier
-- source bundle identifier
-- included surfaces
-- excluded surfaces
-- sanitization summary
-- publication status
+- bundle and source-bundle identifiers;
+- included and excluded surfaces;
+- sanitization summary;
+- publication status.
+
+The checked-in bundle, manifest entry, and public documentation must agree.

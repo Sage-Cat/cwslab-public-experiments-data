@@ -171,7 +171,12 @@ Some cooperative runs also include:
 
 - `logs/cooperative_timing_markers.tsv`
 - `analysis/cooperative_timing/summary.md`
-- compact notes or QC summaries required to interpret the public claim surface
+- compact experiment/QC summaries required to interpret the public claim
+  surface
+
+These derived files are exceptions to the standard minimal bundle. They must
+be sanitized and explicitly listed in the bundle's manifest entry under the
+[dataset policy](docs/dataset-policy/policy.md).
 
 ## Notation
 

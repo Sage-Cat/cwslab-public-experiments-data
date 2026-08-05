@@ -9,7 +9,7 @@
 - `docs/plan/`: repository purpose, scope, and extension rules
 - `docs/architecture/`: public architecture explanation and context diagram
 - `docs/structure/`: repository layout explanation and structure diagram
-- `docs/dataset-policy/`: whitelist/blacklist and sanitization policy for published bundles
+- `docs/dataset-policy/`: inclusion, derived-evidence, and sanitization policy for published bundles
 - `scripts/`: public launchers, generic runtime script, and session profiles
 - `datasets/`: curated measured bundles and publication manifest
 
@@ -32,15 +32,20 @@ Add a directory under `datasets/<bundle-id>/` and keep only:
 - `logs/operator_block_events.tsv`
 - optional extra operator-facing notes if sanitized
 - `serial/` sanitized measurement artifacts
+- manifest-approved compact derived evidence when required to interpret the
+  measured claim, such as `analysis/<name>/summary.md`, `qc_summary.md`, or
+  `experiment_report.md`
 
 Do not add:
 
-- `analysis/`
+- unlisted or bulk `analysis/` content
 - `analysis_handoff*`
-- `experiment_report*`
-- `qc_summary*`
+- intermediate arrays/models, caches, or private report packages
 - `session.env`
 - AP snapshot/configuration logs with non-public host or version details
+
+Every nonstandard derived path must be sanitized and named explicitly in that
+bundle's manifest `included_surfaces`.
 
 ## Repository-Level Consistency Rules
 

@@ -5,7 +5,8 @@
 `cwslab-public-experiments-data` is the public-derived repository for:
 
 - experimental launch scripts that can be reviewed independently from the source capture repository
-- curated measured bundles that preserve sanitized measurement surfaces without derived analysis
+- curated measured bundles that preserve sanitized measurement surfaces and
+  only the compact derived evidence needed to interpret them
 - repository-level public documentation and diagrams
 
 The repository should remain understandable without external workflow context.
@@ -20,14 +21,17 @@ This repository includes:
 
 This repository intentionally excludes:
 
-- offline analysis, report assembly, dissertation drafting, status reporting, and internal planning
+- bulk/offline analysis workspaces, private report assembly, dissertation
+  drafting, status reporting, and internal planning
 - non-public helper surfaces used only for automation
 - environment snapshots and hardware-specific secrets or identifiers
 
 ## Design Principles
 
-- Keep the repository honest about evidence stage: measured data stays separate from derived claims.
-- Publish sanitized measured surfaces only; derived interpretation belongs elsewhere.
+- Keep the repository honest about evidence stage: measured data remains
+  distinguishable from derived interpretation.
+- Publish compact derived evidence only when it is sanitized, needed to
+  interpret the measured claim surface, and explicitly listed in the manifest.
 - Preserve PlantUML sources as the source of truth for architecture and structure diagrams.
 - Keep wording careful: `802.11bf-inspired`, `EasyMesh-inspired metrics/control-plane alignment`, and `reference implementation`.
 - Avoid vendor and version naming in public docs, diagrams, comments, and examples.
@@ -52,7 +56,9 @@ The repository can evolve without `cws-lab` when:
    - credentials, passphrases, and secrets
    - internal plan references and non-public status notes
 4. Pseudonymize serial-log identifiers while preserving measurement values.
-5. Exclude derived analysis, reports, QC summaries, and environment dumps.
+5. Exclude bulk/unlisted analysis, private reports, intermediate artifacts, and
+   environment dumps. Keep only manifest-approved compact analysis/QC/report
+   summaries required to interpret the published measurements.
 6. Add the bundle entry to `datasets/manifest.json`.
 
 ## Adding A New Script
