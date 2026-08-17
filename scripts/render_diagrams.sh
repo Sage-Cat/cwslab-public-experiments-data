@@ -18,8 +18,9 @@ render_with_plantuml() {
 
 render_pattern() {
   local pattern="$1"
-  if compgen -G "${pattern}" >/dev/null; then
-    local files=(${pattern})
+  local files=()
+  mapfile -t files < <(compgen -G "${pattern}")
+  if (( ${#files[@]} > 0 )); then
     render_with_plantuml "${files[@]}"
   fi
 }

@@ -2,7 +2,6 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 usage() {
   echo "usage: $0 <session-id> [session-env-path]" >&2
@@ -48,13 +47,23 @@ run_remote_logged() {
   local log_file="$1"
   local label="$2"
   local command="$3"
+  local display_command="${4:-$command}"
   {
     printf "### %s\n" "$label"
-    printf "$ %s\n" "$command"
+    printf "$ %s\n" "$display_command"
     ssh -p "$CWSLAB_PUBLIC_AP_PORT" -o StrictHostKeyChecking=accept-new \
       "$CWSLAB_PUBLIC_AP_USER@$CWSLAB_PUBLIC_AP_HOST" "$command" < /dev/null
     printf "\n"
   } | tee -a "$log_file"
+}
+
+require_bundle_relative_path() {
+  local name="$1"
+  local value="$2"
+  if [[ -z "$value" || "$value" == /* || "/$value/" == *"/../"* ]]; then
+    echo "$name must be a non-empty bundle-relative path without '..': $value" >&2
+    exit 1
+  fi
 }
 
 epoch_ms_now() {
@@ -118,7 +127,8 @@ append_block_log() {
   local end_wall="$4"
   local note="$5"
   note="${note//|//}"
-  printf "| `%s` | %s | %s | %s | %s |\n" "$block_id" "$duration_s" "$start_wall" "$end_wall" "$note" >> "$BLOCK_LOG"
+  # shellcheck disable=SC2016 # Backticks are literal Markdown delimiters.
+  printf '| `%s` | %s | %s | %s | %s |\n' "$block_id" "$duration_s" "$start_wall" "$end_wall" "$note" >> "$BLOCK_LOG"
 }
 
 stop_pid() {
@@ -195,7 +205,9 @@ run_ap_configure() {
   run_remote_logged "$log_file" "set-ssid-name" "ba-cli -a '${CWSLAB_PUBLIC_AP_SSID_REF}SSID=\"${CWSLAB_PUBLIC_AP_SSID}\"'"
   run_remote_logged "$log_file" "set-access-point-bridge-interface" "ba-cli -a '${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}BridgeInterface=\"${CWSLAB_PUBLIC_AP_BRIDGE_INTERFACE}\"'"
   run_remote_logged "$log_file" "set-access-point-security-mode" "ba-cli -a '${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}Security.ModeEnabled=\"${CWSLAB_PUBLIC_AP_SECURITY_MODE}\"'"
-  run_remote_logged "$log_file" "set-access-point-passphrase" "ba-cli -a '${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}Security.KeyPassPhrase=\"${CWSLAB_PUBLIC_AP_KEY_PASSPHRASE}\"'"
+  run_remote_logged "$log_file" "set-access-point-passphrase" \
+    "ba-cli -a '${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}Security.KeyPassPhrase=\"${CWSLAB_PUBLIC_AP_KEY_PASSPHRASE}\"'" \
+    "ba-cli -a '${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}Security.KeyPassPhrase=\"<redacted>\"'"
   run_remote_logged "$log_file" "set-access-point-wps-enable" "ba-cli -a ${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}WPS.Enable=0"
   run_remote_logged "$log_file" "set-access-point-wds-enable" "ba-cli -a ${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}WDSEnable=0"
   run_remote_logged "$log_file" "set-access-point-ssid-advertisement" "ba-cli -a ${CWSLAB_PUBLIC_AP_ACCESS_POINT_REF}SSIDAdvertisementEnabled=1"
@@ -219,6 +231,7 @@ run_firmware_build() {
   log_line "=== firmware_build ==="
   (
     cd "$CWSLAB_PUBLIC_FIRMWARE_ROOT"
+    # shellcheck disable=SC2030
     if [[ -n "${CWSLAB_PUBLIC_FIRMWARE_TOOLS_PATH:-}" ]]; then
       export IDF_TOOLS_PATH="$CWSLAB_PUBLIC_FIRMWARE_TOOLS_PATH"
     fi
@@ -227,6 +240,7 @@ run_firmware_build() {
       source "$CWSLAB_PUBLIC_FIRMWARE_ENV_SCRIPT"
     fi
     if [[ -n "${CWSLAB_PUBLIC_FIRMWARE_TARGET:-}" ]]; then
+      # shellcheck disable=SC2030 # The export is intentionally scoped to this build.
       export IDF_TARGET="$CWSLAB_PUBLIC_FIRMWARE_TARGET"
     fi
     bash -lc 'idf.py build'
@@ -238,6 +252,7 @@ run_firmware_flash() {
   log_line "=== firmware_flash ==="
   (
     cd "$CWSLAB_PUBLIC_FIRMWARE_ROOT"
+    # shellcheck disable=SC2031
     if [[ -n "${CWSLAB_PUBLIC_FIRMWARE_TOOLS_PATH:-}" ]]; then
       export IDF_TOOLS_PATH="$CWSLAB_PUBLIC_FIRMWARE_TOOLS_PATH"
     fi
@@ -246,6 +261,7 @@ run_firmware_flash() {
       source "$CWSLAB_PUBLIC_FIRMWARE_ENV_SCRIPT"
     fi
     if [[ -n "${CWSLAB_PUBLIC_FIRMWARE_TARGET:-}" ]]; then
+      # shellcheck disable=SC2031 # The export is intentionally repeated for this flash.
       export IDF_TARGET="$CWSLAB_PUBLIC_FIRMWARE_TARGET"
     fi
     bash -lc "idf.py -p \"$CWSLAB_PUBLIC_SENSOR_DEVICE\" flash"
@@ -409,6 +425,15 @@ require_env CWSLAB_PUBLIC_SENSOR_DEVICE
 require_env CWSLAB_PUBLIC_SENSOR_BAUD
 require_env CWSLAB_PUBLIC_SENSOR_PING_HOST
 require_env CWSLAB_PUBLIC_FIRMWARE_ROOT
+
+if aux_capture_enabled; then
+  require_bundle_relative_path CWSLAB_PUBLIC_AUX_SENSOR_OUTPUT \
+    "${CWSLAB_PUBLIC_AUX_SENSOR_OUTPUT:-serial/${CWSLAB_PUBLIC_AUX_SENSOR_ID:-aux_sensor}_guided_session.log}"
+fi
+if aux2_capture_enabled; then
+  require_bundle_relative_path CWSLAB_PUBLIC_AUX2_SENSOR_OUTPUT \
+    "${CWSLAB_PUBLIC_AUX2_SENSOR_OUTPUT:-serial/${CWSLAB_PUBLIC_AUX2_SENSOR_ID:-aux2_sensor}_guided_session.log}"
+fi
 
 BUNDLE_TIMESTAMP="$(date -u +%Y%m%dT%H%M%SZ)"
 BUNDLE_DIR="$CWSLAB_PUBLIC_OUTPUT_ROOT/${SESSION_ID}_${BUNDLE_TIMESTAMP}"
