@@ -3,10 +3,13 @@
 
 from __future__ import annotations
 
+import csv
 import gzip
+import hashlib
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path, PurePosixPath
 
 
@@ -25,6 +28,34 @@ FORBIDDEN_PATTERNS = {
 }
 IPV4_CANDIDATE = re.compile(rb"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
 MARKDOWN_LINK = re.compile(r"\[[^]]*\]\(([^) #]+)")
+NORMALIZED_BUNDLE = DATASETS / "record-level-csi-summaries-2026"
+CSI_FIELDS = [
+    "dataset_id",
+    "receiver_id",
+    "record_index",
+    "capture_segment",
+    "relative_host_ms",
+    "relative_device_time_us",
+    "total",
+    "interval",
+    "dropped",
+    "seen",
+    "mismatch",
+    "zero_len",
+    "rssi_dbm",
+    "noise_floor_dbm",
+    "rate",
+    "channel",
+    "secondary_channel",
+    "estimator_valid",
+    "estimator_length",
+    "signal_length",
+    "rx_state",
+    "rx_sequence",
+    "csi_length",
+    "first_word_invalid",
+    "csi_iq_preview",
+]
 
 
 def fail(errors: list[str], message: str) -> None:
@@ -76,6 +107,81 @@ def validate_markdown_links(errors: list[str]) -> None:
             linked = (path.parent / target).resolve()
             if not linked.exists():
                 fail(errors, f"broken local link in {path.relative_to(REPO_ROOT)}: {target}")
+
+
+def validate_normalized_csi(errors: list[str]) -> None:
+    checksum_file = NORMALIZED_BUNDLE / "SHA256SUMS"
+    for line in checksum_file.read_text(encoding="utf-8").splitlines():
+        expected, relative = line.split("  ", 1)
+        path = NORMALIZED_BUNDLE / relative
+        digest = hashlib.sha256()
+        with path.open("rb") as stream:
+            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+                digest.update(chunk)
+        if digest.hexdigest() != expected:
+            fail(errors, f"checksum mismatch: {path.relative_to(REPO_ROOT)}")
+
+    accounting_path = NORMALIZED_BUNDLE / "data" / "source_accounting.csv"
+    with accounting_path.open(newline="", encoding="utf-8") as stream:
+        accounting_rows = list(csv.DictReader(stream))
+    expected_counts = {row["dataset_id"]: int(row["accepted_rows"]) for row in accounting_rows}
+    if len(expected_counts) != 16 or sum(expected_counts.values()) != 347391:
+        fail(errors, "normalized CSI source accounting has unexpected dataset or row totals")
+    if sum(int(row["excluded_malformed_rows"]) for row in accounting_rows) != 64:
+        fail(errors, "normalized CSI malformed-row accounting must equal 64")
+
+    observed: Counter[str] = Counter()
+    next_index: dict[tuple[str, str], int] = {}
+    data_path = NORMALIZED_BUNDLE / "data" / "csi_summaries.csv.gz"
+    with gzip.open(data_path, "rt", newline="", encoding="utf-8") as stream:
+        reader = csv.DictReader(stream)
+        if reader.fieldnames != CSI_FIELDS:
+            fail(errors, "normalized CSI CSV header differs from the documented schema")
+            return
+        for line_number, row in enumerate(reader, start=2):
+            try:
+                dataset_id = row["dataset_id"]
+                receiver_id = row["receiver_id"]
+                if dataset_id not in expected_counts:
+                    raise ValueError("unknown dataset_id")
+                if receiver_id not in {"receiver-01", "receiver-02", "receiver-03"}:
+                    raise ValueError("unknown receiver_id")
+                key = (dataset_id, receiver_id)
+                record_index = int(row["record_index"])
+                if record_index != next_index.get(key, 0):
+                    raise ValueError("non-contiguous record_index")
+                next_index[key] = record_index + 1
+                capture_segment = int(row["capture_segment"])
+                if capture_segment < 0:
+                    raise ValueError("negative capture segment")
+                integer_values = {
+                    name: int(row[name])
+                    for name in CSI_FIELDS[4:-1]
+                }
+                if integer_values["relative_host_ms"] < 0 or integer_values["relative_device_time_us"] < 0:
+                    raise ValueError("negative relative time")
+                if not -128 <= integer_values["rssi_dbm"] <= 0:
+                    raise ValueError("RSSI outside signed dBm range")
+                if not -128 <= integer_values["noise_floor_dbm"] <= 0:
+                    raise ValueError("noise floor outside signed dBm range")
+                if not 1 <= integer_values["channel"] <= 196:
+                    raise ValueError("invalid channel")
+                if integer_values["csi_length"] <= 0:
+                    raise ValueError("non-positive reported CSI length")
+                preview = json.loads(row["csi_iq_preview"])
+                if len(preview) not in {8, 16} or any(
+                    type(value) is not int or value < -128 or value > 127 for value in preview
+                ):
+                    raise ValueError("invalid CSI I/Q preview")
+            except (KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+                fail(errors, f"invalid normalized CSI row {line_number}: {exc}")
+                if len(errors) >= 20:
+                    return
+                continue
+            observed[dataset_id] += 1
+
+    if dict(observed) != expected_counts:
+        fail(errors, "normalized CSI row counts differ from source accounting")
 
 
 def main() -> int:
@@ -173,6 +279,7 @@ def main() -> int:
             fail(errors, f"required repository file missing: {required.name}")
 
     validate_markdown_links(errors)
+    validate_normalized_csi(errors)
 
     if errors:
         for error in errors:

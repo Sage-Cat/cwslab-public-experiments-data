@@ -1,7 +1,7 @@
 {
   "repository": "cwslab-public-experiments-data",
   "generated_from": "cws-lab",
-  "generated_at": "2026-05-04T16:34:00+03:00",
+  "generated_at": "2026-08-20T20:42:13+03:00",
   "datasets": [
     {
       "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
@@ -437,6 +437,33 @@
         "preserved the claim-grade D10 long-horizon controller/stability result while keeping raw feature, controller, and protected-traffic sidecar NDJSON out of the public repository",
         "pseudonymized MAC/BSSID fields in serial capture logs while preserving measurement values",
         "redacted Node-C SSID and private IP fields in serial status lines"
+      ]
+    },
+    {
+      "bundle_id": "record-level-csi-summaries-2026",
+      "status": "published-measured-records",
+      "source_bundle": "curated/cwslab-canonical-csi-summary-runs-2026",
+      "included_surfaces": [
+        "README.md",
+        "DATA_DICTIONARY.md",
+        "SHA256SUMS",
+        "data/csi_summaries.csv.gz",
+        "data/source_accounting.csv"
+      ],
+      "excluded_surfaces": [
+        "MAC and BSSID values",
+        "network names and host addresses",
+        "absolute timestamps and local paths",
+        "concrete device identifiers",
+        "malformed or concatenated serial fragments",
+        "full CSI vectors because the source firmware did not record them"
+      ],
+      "sanitization_summary": [
+        "normalized 347391 well-formed measured CSI summary records from 16 run bundles",
+        "added the completed canonical D04, D05, D06, and D11 captures that were absent from the original public bundle set",
+        "replaced receiver identities with three stable abstract roles and converted timing to per-stream relative values",
+        "preserved RSSI, radio metadata, firmware counters, reported CSI length, and the exact 8- or 16-value signed I/Q preview",
+        "excluded 64 malformed records from the already-public non-claim-grade D05 source and retained their accounting"
       ]
     }
   ],

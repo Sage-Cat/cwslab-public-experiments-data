@@ -13,7 +13,7 @@ compliance claim. Experiment descriptions use **802.11bf-inspired** sensing and
 
 | Path | Purpose |
 | --- | --- |
-| [`datasets/`](datasets/) | Twelve curated measured bundles |
+| [`datasets/`](datasets/) | Twelve original run bundles plus one normalized record-level dataset |
 | [`datasets/manifest.json`](datasets/manifest.json) | Authoritative per-bundle inclusion and sanitization record |
 | [`scripts/`](scripts/) | Public launch wrappers and session profiles |
 | [`docs/dataset-policy/`](docs/dataset-policy/) | Publication and privacy boundary |
@@ -28,6 +28,14 @@ compliance claim. Experiment descriptions use **802.11bf-inspired** sensing and
 | D02-D04 | 3 | Quiet-control, support, and under-load captures |
 | D05 | 1 | Published for auditability; not claim-grade |
 | D07-D10 | 4 | Claim-grade cooperative experiment bundles |
+| Normalized summaries | 1 | 347,391 measured records from 16 runs, including canonical D04-D06 and D11 captures |
+
+The easiest analysis surface is
+[`record-level-csi-summaries-2026`](datasets/record-level-csi-summaries-2026/).
+It is a standard gzip-compressed CSV with RSSI, radio metadata, counters, and
+the exact CSI I/Q previews emitted by the firmware. These historical profiles
+did not log complete CSI vectors; that acquisition limitation is documented in
+the dataset instead of being concealed as a privacy exclusion.
 
 Each bundle contains only paths named in the manifest. The normal surface is
 sanitized metadata, runbook and operator notes, event timing, and serial
