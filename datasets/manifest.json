@@ -1,12 +1,12 @@
 {
-  "repository": "cwslab-public-experiments-data",
-  "generated_from": "cws-lab",
+  "repository": "wifi-sensing-site-c-experiments",
+  "generated_from": "sanitized private experiment sessions",
   "generated_at": "2026-08-20T20:42:13+03:00",
   "datasets": [
     {
       "bundle_id": "w01_e01_c1_t0_l1_baseline_20260330T101537Z",
       "status": "published",
-      "source_bundle": "experiments/runs/w01_e01_c1_t0_l1_baseline_20260330T101537Z",
+      "source_bundle": "withheld-private-session-site-c-01",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -33,7 +33,7 @@
     {
       "bundle_id": "w03_e05_c2_t0_l1_low_density_support_20260330T130337Z",
       "status": "published",
-      "source_bundle": "experiments/runs/w03_e05_c2_t0_l1_low_density_support_20260330T130337Z",
+      "source_bundle": "withheld-private-session-site-c-02",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -62,7 +62,7 @@
     {
       "bundle_id": "d01_c1_t0_l1_repeatability_20260406T095034Z",
       "status": "published",
-      "source_bundle": "experiments/runs/d01_c1_t0_l1_repeatability_20260406T095034Z",
+      "source_bundle": "withheld-private-session-site-c-03",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -89,7 +89,7 @@
     {
       "bundle_id": "d01_c1_t0_l1_repeatability_20260406T113903Z",
       "status": "published",
-      "source_bundle": "experiments/runs/d01_c1_t0_l1_repeatability_20260406T113903Z",
+      "source_bundle": "withheld-private-session-site-c-04",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -122,7 +122,7 @@
     {
       "bundle_id": "d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z",
       "status": "published",
-      "source_bundle": "experiments/runs/d02_c1_t0_l0_honest_quiet_candidate_20260406T122440Z",
+      "source_bundle": "withheld-private-session-site-c-05",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -156,7 +156,7 @@
     {
       "bundle_id": "d03_c2_t0_l1_full_support_capture_20260406T125404Z",
       "status": "published",
-      "source_bundle": "experiments/runs/d03_c2_t0_l1_full_support_capture_20260406T125404Z",
+      "source_bundle": "withheld-private-session-site-c-06",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -191,7 +191,7 @@
     {
       "bundle_id": "d04_c2_t0_l2_support_under_load_20260420T110543Z",
       "status": "published",
-      "source_bundle": "experiments/runs/d04_c2_t0_l2_support_under_load_20260420T110543Z",
+      "source_bundle": "withheld-private-session-site-c-07",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -229,7 +229,7 @@
     {
       "bundle_id": "d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z",
       "status": "published-not-claim-grade",
-      "source_bundle": "experiments/runs/d05_c3_t1_l1_raw_fusion_upper_bound_20260427T102654Z",
+      "source_bundle": "withheld-private-session-site-c-08",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -268,7 +268,7 @@
     {
       "bundle_id": "d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z",
       "status": "published-claim-grade",
-      "source_bundle": "experiments/runs/d07_c3_t2_l1_heterogeneity_subset_value_20260501T114221Z",
+      "source_bundle": "withheld-private-session-site-c-09",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -309,7 +309,7 @@
     {
       "bundle_id": "d08_c4_t1_l1_budget_aware_controller_20260501T130657Z",
       "status": "published-claim-grade",
-      "source_bundle": "experiments/runs/d08_c4_t1_l1_budget_aware_controller_20260501T130657Z",
+      "source_bundle": "withheld-private-session-site-c-10",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -352,7 +352,7 @@
     {
       "bundle_id": "d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z",
       "status": "published-claim-grade",
-      "source_bundle": "experiments/runs/d09_c4_t2_l2_budget_aware_controller_high_load_20260504T102505Z",
+      "source_bundle": "withheld-private-session-site-c-11",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -397,7 +397,7 @@
     {
       "bundle_id": "d10_c5_t2_l1_stability_maintenance_20260504T115457Z",
       "status": "published-claim-grade",
-      "source_bundle": "experiments/runs/d10_c5_t2_l1_stability_maintenance_20260504T115457Z",
+      "source_bundle": "withheld-private-session-site-c-12",
       "included_surfaces": [
         "metadata.json",
         "runbook.md",
@@ -442,7 +442,7 @@
     {
       "bundle_id": "record-level-csi-summaries-2026",
       "status": "published-measured-records",
-      "source_bundle": "curated/cwslab-canonical-csi-summary-runs-2026",
+      "source_bundle": "withheld-private-session-aggregate-site-c",
       "included_surfaces": [
         "README.md",
         "DATA_DICTIONARY.md",

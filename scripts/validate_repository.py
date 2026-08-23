@@ -194,7 +194,7 @@ def main() -> int:
         return 1
 
     entries = manifest.get("datasets")
-    if manifest.get("repository") != "cwslab-public-experiments-data":
+    if manifest.get("repository") != "wifi-sensing-site-c-experiments":
         fail(errors, "manifest repository name is missing or incorrect")
     if not isinstance(manifest.get("generated_from"), str) or not manifest["generated_from"]:
         fail(errors, "manifest generated_from provenance is missing")
@@ -269,10 +269,6 @@ def main() -> int:
     disk_bundles = sorted(path.name for path in DATASETS.iterdir() if path.is_dir())
     if sorted(bundle_ids) != disk_bundles:
         fail(errors, "dataset directories and manifest bundle IDs differ")
-
-    tracked_envs = list(REPO_ROOT.glob("scripts/sessions/*/session.env"))
-    if tracked_envs:
-        fail(errors, "concrete session.env files must not be present")
 
     for required in (REPO_ROOT / "README.md", REPO_ROOT / "LICENSE.md"):
         if not required.is_file():

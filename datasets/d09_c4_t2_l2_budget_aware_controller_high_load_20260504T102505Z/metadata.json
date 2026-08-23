@@ -220,7 +220,7 @@
       "If the ESP32-S3 stays directly attached without a measured offset from the AP-C position, keep Node C below claim-grade geometry even if transport and UDP capture look healthy.",
       "Do not allow the helper traffic or management cabling to contaminate the 12-to-6 sensing corridor."
     ],
-    "output_root": "<redacted>/experiments/runs",
+    "output_root": "<redacted>",
     "research": {
       "baselines": [
         "B0",
@@ -359,7 +359,7 @@
     ],
     "workspace_root": "<redacted>"
   },
-  "config_path": "scripts/sessions/d09_c4_t2_l2_budget_aware_controller_high_load/session.env.example",
+  "config_path": "<not-published>",
   "generated_at_utc": "2026-05-04T10:25:05+00:00",
   "scripts": [
     {

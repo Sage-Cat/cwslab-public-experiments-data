@@ -6,4 +6,3 @@ __pycache__/
 .cache/
 .tmp/
 .env
-scripts/sessions/*/session.env

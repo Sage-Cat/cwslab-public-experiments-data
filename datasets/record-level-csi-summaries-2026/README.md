@@ -35,7 +35,7 @@ These historical CWS firmware profiles emitted `CSI_SUMMARY` records, not full
 CSI vectors. The complete vector was not present in the private source logs,
 so it cannot truthfully be reconstructed or published. The I/Q previews are
 real measured CSI samples, but they must not be described as complete channel
-vectors. The AutoCenter and UGRR repositories contain full record-level CSI
+vectors. The Site A and Site B repositories contain full record-level CSI
 vectors from different capture firmware and experiments.
 
 The 64 excluded rows all came from the already-public, non-claim-grade D05

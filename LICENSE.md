@@ -10,7 +10,7 @@ must carry its own notice and provenance before publication.
 Project-authored material under `scripts/` and `.github/workflows/` is licensed
 under the MIT License:
 
-> Copyright (c) 2026 CWSlab public experiments data contributors
+> Copyright (c) 2026 Wi-Fi Sensing Site C experiment contributors
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
@@ -37,7 +37,7 @@ documentation, is licensed under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/legalcode.en)
 (CC BY 4.0).
 
-Attribution should identify "CWSlab public experiments data contributors", link
+Attribution should identify "Wi-Fi Sensing Site C experiment contributors", link
 to this repository, name the exact dataset bundle ID when data is used, link to
 CC BY 4.0, and indicate whether changes were made. CC BY 4.0 does not waive
 privacy, publicity, trademark, or other rights that may apply independently.

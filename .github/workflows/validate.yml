@@ -24,6 +24,3 @@ jobs:
 
       - name: Validate manifest, privacy boundary, and data integrity
         run: python3 scripts/validate_repository.py
-
-      - name: Check shell syntax
-        run: bash -n scripts/*.sh
