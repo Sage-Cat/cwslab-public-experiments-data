@@ -1,8 +1,12 @@
-.venv/
-__pycache__/
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
+# Local and reproducible derivatives
+**/analysis/
+**/derived/
+**/processed/
+**/results/
+**/reports/
+out/
 .cache/
 .tmp/
-.env
+__pycache__/
+*.py[cod]
+.DS_Store
